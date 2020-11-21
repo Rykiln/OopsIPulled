@@ -14,7 +14,7 @@ const client = new Discord.Client();
 let commands = [];
 loadCommands(`${__dirname}/commands`);
 client.on("ready", () => {
-    console.log(`Ready to go!`);
+    console.log(`Oops I Pulled Bot Is Now Online!`);
     client.user.setActivity("Oops I Pulled | .help", { type: "PLAYING" });
 });
 client.on("guildMemberAdd", (member) => __awaiter(this, void 0, void 0, function* () {
