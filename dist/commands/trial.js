@@ -72,6 +72,9 @@ class Trial {
                     case "aa":
                     case "naa":
                     case "vaa":
+                    case "aetherian archive":
+                    case "aetherian":
+                    case "archive":
                         trialname = `Aetherian Archive`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
@@ -89,6 +92,11 @@ class Trial {
                     case "hrc":
                     case "nhrc":
                     case "vhrc":
+                    case "hel ra citadel":
+                    case "helra citadel":
+                    case "hel ra":
+                    case "helra":
+                    case "citadel":
                         trialname = `Hel Ra Citadel`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
@@ -106,6 +114,11 @@ class Trial {
                     case "so":
                     case "nso":
                     case "vso":
+                    case "sanctum ophidia":
+                    case "sanctum":
+                    case "ophidia":
+                    case "snakes and trolls":
+                    case "snake lady":
                         trialname = `Sanctum Ophidia`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
@@ -123,6 +136,11 @@ class Trial {
                     case "mol":
                     case "nmol":
                     case "vmol":
+                    case "maw of lorkhaj":
+                    case "maw":
+                    case "lorkhaj":
+                    case "big cats":
+                    case "pussies":
                         trialname = `Maw Of Lorkhaj`;
                         location = `Located In Reaper's March`;
                         motifstyle = `[Dro-m'Athra](https://elderscrolls.fandom.com/wiki/Dro-m%27Athra_Style)`;
@@ -139,6 +157,9 @@ class Trial {
                     case "hof":
                     case "nhof":
                     case "vhof":
+                    case "halls of fabrication":
+                    case "halls":
+                    case "big robot":
                         trialname = `Halls Of Fabrication`;
                         location = `Located In Vvardenfell`;
                         motifstyle = `[Refabricated](https://elderscrollsonline.wiki.fextralife.com/Refabricated+Style)`;
@@ -155,6 +176,11 @@ class Trial {
                     case "as":
                     case "nas":
                     case "vas":
+                    case "asylum sanctorium":
+                    case "asylum":
+                    case "sanctorium":
+                    case "robot chicken":
+                    case "robot dragon":
                         trialname = `Asylum Sanctorium`;
                         location = `Located In Clockwork City`;
                         motifstyle = `NONE`;
@@ -173,6 +199,12 @@ class Trial {
                     case "cr":
                     case "ncr":
                     case "vcr":
+                    case "cloudrest":
+                    case "z'maja":
+                    case "zmaja":
+                    case "sea sload":
+                    case "sload":
+                    case "slug":
                         trialname = `Cloudrest`;
                         location = `Located In Summerset`;
                         motifstyle = `[Welkynar](https://elderscrollsonline.wiki.fextralife.com/Welkynar+Style)`;
@@ -189,6 +221,9 @@ class Trial {
                     case "ss":
                     case "nss":
                     case "vss":
+                    case "sunspire":
+                    case "sun spire":
+                    case "dragons":
                         trialname = `Sunspire`;
                         location = `Located In Northern Elswyr`;
                         motifstyle = `[Sunspire](https://elderscrollsonline.wiki.fextralife.com/Sunspire+Style)`;
@@ -205,6 +240,10 @@ class Trial {
                     case "ka":
                     case "nka":
                     case "vka":
+                    case "kyne's aegis":
+                    case "kynes aegis":
+                    case "giants":
+                    case "vampires":
                         trialname = `Kyne's Aegis`;
                         location = `Located In Western Skyrim`;
                         motifstyle = `[Sea Giant](https://en.uesp.net/wiki/Online:Sea_Giant_Style)`;
