@@ -67,6 +67,7 @@ class Trial {
                 let cpsetupH = `Coming Soon`;
                 let cpsetupT = `Coming Soon`;
                 let imgName = "undaunted.info.png";
+                let color = `0x000000`;
                 let thumbnail = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ab371d58-f694-4953-a2e5-c79acedd9f56/d9j5i6k-e1a85b7d-1621-4e5b-b5cc-4ddea16325db.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FiMzcxZDU4LWY2OTQtNDk1My1hMmU1LWM3OWFjZWRkOWY1NlwvZDlqNWk2ay1lMWE4NWI3ZC0xNjIxLTRlNWItYjVjYy00ZGRlYTE2MzI1ZGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FJwVnTTzBzntxq-t9Lqo8SsyUS0OiGpcwmI99uTul3k"
                 let dlcrequired = ` `;
                 switch (source) {
@@ -79,6 +80,7 @@ class Trial {
                         trialname = `Aetherian Archive`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
+                        color = `0x3991ff`;
                         imgName = "aetherianarchive.jpg";
                         gearsets = `[Defending Warrior](https://eso-sets.com/set/defending-warrior)
                         [Healing Mage](https://eso-sets.com/set/healing-mage)
@@ -101,6 +103,7 @@ class Trial {
                         trialname = `Hel Ra Citadel`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
+                        color = `0x3991ff`;
                         imgName = `helracitadel.jpg`;
                         gearsets = `[Destructive Mage](https://eso-sets.com/set/destructive-mage)
                         [Poisonous Serpent](https://eso-sets.com/set/poisonous-serpent)
@@ -123,6 +126,7 @@ class Trial {
                         trialname = `Sanctum Ophidia`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
+                        color = `0x3991ff`;
                         imgName = `sanctumophidia.png`;
                         gearsets = `[Immortal Warrior](https://eso-sets.com/set/immortal-warrior)
                         [Twice-Fanged Serpent](https://eso-sets.com/set/twice-fanged-serpent)
@@ -145,6 +149,7 @@ class Trial {
                         trialname = `Maw Of Lorkhaj`;
                         location = `Located In Reaper's March`;
                         motifstyle = `[Dro-m'Athra](https://elderscrolls.fandom.com/wiki/Dro-m%27Athra_Style)`;
+                        color = `0x9f2df7`;
                         imgName = `mawoflorkhaj.png`;
                         gearsets = `[Lunar Bastion](https://eso-sets.com/set/lunar-bastion)
                         [Moondancer](https://eso-sets.com/set/moondancer)
@@ -164,6 +169,7 @@ class Trial {
                         trialname = `Halls Of Fabrication`;
                         location = `Located In Vvardenfell`;
                         motifstyle = `[Refabricated](https://elderscrollsonline.wiki.fextralife.com/Refabricated+Style)`;
+                        color = `0x9f2df7`;
                         imgName = `hallsoffabrication.jpg`;
                         gearsets = `[Automated Defense](https://eso-sets.com/set/automated-defense)
                         [Inventor's Guard](https://eso-sets.com/set/inventors-guard)
@@ -185,6 +191,7 @@ class Trial {
                         trialname = `Asylum Sanctorium`;
                         location = `Located In Clockwork City`;
                         motifstyle = `NONE`;
+                        color = `0x9f2df7`;
                         imgName = `asylumsanctorium.jpg`;
                         gearsets = `[Chaotic Whirlwind](https://eso-sets.com/set/chaotic-whirlwind)  [[Perfected]](https://eso-sets.com/set/chaotic-whirlwind-perfected-)
                         [Concentrated Force](https://eso-sets.com/set/concentrated-force-imperfect-)  [[Perfected]](https://eso-sets.com/set/concentrated-force-perfected-)
@@ -209,6 +216,7 @@ class Trial {
                         trialname = `Cloudrest`;
                         location = `Located In Summerset`;
                         motifstyle = `[Welkynar](https://elderscrollsonline.wiki.fextralife.com/Welkynar+Style)`;
+                        color = `0xeec929`;
                         imgName = `cloudrest.jpg`;
                         gearsets = `[Aegis of Galenwe](https://eso-sets.com/set/aegis-of-galenwe)  [[Perfected]](https://eso-sets.com/set/perfect-aegis-of-galenwe)
                         [Arms of Relequen](https://eso-sets.com/set/arms-of-relequen)  [[Perfected]](https://eso-sets.com/set/perfect-arms-of-relequen)
@@ -228,6 +236,7 @@ class Trial {
                         trialname = `Sunspire`;
                         location = `Located In Northern Elswyr`;
                         motifstyle = `[Sunspire](https://elderscrollsonline.wiki.fextralife.com/Sunspire+Style)`;
+                        color = `0xeec929`;
                         imgName = `sunspire.png`;
                         gearsets = `[Claw of Yolnahkriin](https://eso-sets.com/set/claw-of-yolnahkriin)  [[Perfected]](https://eso-sets.com/set/perfected-claw-of-yolnahkriin)
                         [Tooth of Lokkestiiz](https://eso-sets.com/set/tooth-of-lokkestiiz)  [[Perfected]](https://eso-sets.com/set/perfected-tooth-of-lokkestiiz)
@@ -248,6 +257,7 @@ class Trial {
                         trialname = `Kyne's Aegis`;
                         location = `Located In Western Skyrim`;
                         motifstyle = `[Sea Giant](https://en.uesp.net/wiki/Online:Sea_Giant_Style)`;
+                        color = `0xeec929`;
                         imgName = `kynesaegis.jpg`;
                         gearsets = `[Kyne's Wind](https://eso-sets.com/set/kynes-wind)  [[Perfected]](https://eso-sets.com/set/perfect-kynes-wind)
                         [Roaring Opportunist](https://eso-sets.com/set/roaring-opportunist)  [[Perfected]](https://eso-sets.com/set/perfect-roaring-opportunist)
@@ -266,12 +276,13 @@ class Trial {
                 let imgPath = `../src/images/${imgName}`;
                 let embed = new Discord.RichEmbed()
                     .setTitle(`Trial: ${trialname}`)
+                    .setColor(color)
                     .setDescription(`${location}${dlcrequired}`)
                     .setFooter(client.user.username, iconClient)
                     .setTimestamp()
                     .setThumbnail(thumbnail)
-                    .addField("Gear Sets", gearsets, true)
-                    .addField("Motif Style", motifstyle, true)
+                    .addField("Motif Style", motifstyle)
+                    .addField("Gear Sets", gearsets)
                     .addField("CP Distribution For Main Tank / Off Tank", cpsetupT)
                     .addField("CP Distribution For Healers", cpsetupH, true)
                     .addField("CP Distribution For Damage Dealers", cpsetupDPS, true)
