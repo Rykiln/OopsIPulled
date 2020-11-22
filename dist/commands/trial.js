@@ -32,7 +32,8 @@ class Trial {
                 `HRC - Hel Ra Citadel`,
                 `MOL - Maw Of Lorkhaj`,
                 `SO - Sanctum Ophidia`,
-                `SS - Sunspire`
+                `SS - Sunspire`,
+                `KA - Kyne's Aegis`
             ];
             if (!source) {
                 let embed_noSource = new Discord.RichEmbed()
@@ -64,8 +65,8 @@ class Trial {
                 let motifstyle = `Coming Soon`;
                 let cpsetupDPS = `Coming Soon`;
                 let cpsetupH = `Coming Soon`;
-                let cpsetupMT = `Coming Soon`;
-                let cpsetupOT = `Coming Soon`;
+                let cpsetupT = `Coming Soon`;
+                let imgName = "undaunted.info.png";
                 let thumbnail = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ab371d58-f694-4953-a2e5-c79acedd9f56/d9j5i6k-e1a85b7d-1621-4e5b-b5cc-4ddea16325db.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FiMzcxZDU4LWY2OTQtNDk1My1hMmU1LWM3OWFjZWRkOWY1NlwvZDlqNWk2ay1lMWE4NWI3ZC0xNjIxLTRlNWItYjVjYy00ZGRlYTE2MzI1ZGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.FJwVnTTzBzntxq-t9Lqo8SsyUS0OiGpcwmI99uTul3k"
                 let dlcrequired = ` `;
                 switch (source) {
@@ -78,7 +79,7 @@ class Trial {
                         trialname = `Aetherian Archive`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
-                        thumbnail = `../src/images/aetherianarchive.jpg`;
+                        imgName = "aetherianarchive.jpg";
                         gearsets = `[Defending Warrior](https://eso-sets.com/set/defending-warrior)
                         [Healing Mage](https://eso-sets.com/set/healing-mage)
                         [Quick Serpent](https://eso-sets.com/set/quick-serpent)
@@ -87,7 +88,7 @@ class Trial {
                         [Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
                         cpsetupDPS = `72 Ironclad\n68 Spellshield\n64 Elemental Defender\n66 Thick Skinned`;
                         cpsetupH = `72 Ironclad\n68 Spellshield\n64 Elemental Defender\n66 Thick Skinned`;
-                        cpsetupMT = `81 / 81 Ironclad\n44 / 56 Hardy\n56 / 56 Elemental Defender\n66 / 40 Thick Skinned\n24 / 0 Heavy Armor Focus\n0 / 37 Medium Armor Focus`;
+                        cpsetupT = `81 / 81 Ironclad\n44 / 56 Hardy\n56 / 56 Elemental Defender\n66 / 40 Thick Skinned\n24 / 0 Heavy Armor Focus\n0 / 37 Medium Armor Focus`;
                         break;
                     case "hrc":
                     case "nhrc":
@@ -100,7 +101,7 @@ class Trial {
                         trialname = `Hel Ra Citadel`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
-                        thumbnail = `../src/images/helracitadel.jpg`;
+                        imgName = `helracitadel.jpg`;
                         gearsets = `[Destructive Mage](https://eso-sets.com/set/destructive-mage)
                         [Poisonous Serpent](https://eso-sets.com/set/poisonous-serpent)
                         [Berserking Warrior](https://eso-sets.com/set/berserking-warrior)
@@ -109,7 +110,7 @@ class Trial {
                         [Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
                         cpsetupDPS = `81 Ironclad\n16 Spellshield\n56 Hardy\n56 Elemental Defender\n61 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n16 Light Armor Focus\n56 Hardy\n56 Elemental Defender\n61 Thick Skinned`;
-                        cpsetupMT = `81 Ironclad\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned\n16 Heavy Armor Focus`;
+                        cpsetupT = `81 Ironclad\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned\n16 Heavy Armor Focus`;
                         break;
                     case "so":
                     case "nso":
@@ -122,7 +123,7 @@ class Trial {
                         trialname = `Sanctum Ophidia`;
                         location = `Located In Craglorn`;
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
-                        thumbnail = `../src/images/sanctumophidia.png`;
+                        imgName = `sanctumophidia.png`;
                         gearsets = `[Immortal Warrior](https://eso-sets.com/set/immortal-warrior)
                         [Twice-Fanged Serpent](https://eso-sets.com/set/twice-fanged-serpent)
                         [Wise Mage](https://eso-sets.com/set/wise-mage)
@@ -131,7 +132,7 @@ class Trial {
                         [Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
                         cpsetupDPS = `72 Ironclad\n25 Light/Medium Armor Focus\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned`;
                         cpsetupH = `72 Ironclad\n25 Light Armor Focus\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned`;
-                        cpsetupMT = `81 Ironclad\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned\n16 Quick Recovery`;
+                        cpsetupT = `81 Ironclad\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned\n16 Quick Recovery`;
                         break;
                     case "mol":
                     case "nmol":
@@ -144,7 +145,7 @@ class Trial {
                         trialname = `Maw Of Lorkhaj`;
                         location = `Located In Reaper's March`;
                         motifstyle = `[Dro-m'Athra](https://elderscrolls.fandom.com/wiki/Dro-m%27Athra_Style)`;
-                        thumbnail = `../src/images/mawoflorkhaj.png`;
+                        imgName = `mawoflorkhaj.png`;
                         gearsets = `[Lunar Bastion](https://eso-sets.com/set/lunar-bastion)
                         [Moondancer](https://eso-sets.com/set/moondancer)
                         [Roar Of Alkosh](https://eso-sets.com/set/roar-of-alkosh)
@@ -152,7 +153,7 @@ class Trial {
                         dlcrequired = ` (Thieves Guild DLC Required)`;
                         cpsetupDPS = `72 Ironclad\n49 Spellshield\n19 Hardy\n64 Elemental Defender\n66 Thick Skinned`;
                         cpsetupH = `72 Ironclad\n49 Spellshield\n19 Hardy\n64 Elemental Defender\n66 Thick Skinned`;
-                        cpsetupMT = `81 Ironclad\n3 / 16 Spellshield\n37 / 43 Hardy\n64 Elemental Defender\n66 Thick Skinned\n19 / 0 Quick Recovery`;
+                        cpsetupT = `81 Ironclad\n3 / 16 Spellshield\n37 / 43 Hardy\n64 Elemental Defender\n66 Thick Skinned\n19 / 0 Quick Recovery`;
                         break;
                     case "hof":
                     case "nhof":
@@ -163,7 +164,7 @@ class Trial {
                         trialname = `Halls Of Fabrication`;
                         location = `Located In Vvardenfell`;
                         motifstyle = `[Refabricated](https://elderscrollsonline.wiki.fextralife.com/Refabricated+Style)`;
-                        thumbnail = `../src/images/hallsoffabrication.jpg`;
+                        imgName = `hallsoffabrication.jpg`;
                         gearsets = `[Automated Defense](https://eso-sets.com/set/automated-defense)
                         [Inventor's Guard](https://eso-sets.com/set/inventors-guard)
                         [Master Architect](https://eso-sets.com/set/master-architect)
@@ -171,7 +172,7 @@ class Trial {
                         dlcrequired = ` (Morrowind DLC Required)`;
                         cpsetupDPS = `81 Ironclad\n10 Light/Medium Armor Focus\n49 Hardy\n49 Elemental Defender\n81 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n10 Light Armor Focus\n49 Hardy\n49 Elemental Defender\n81 Thick Skinned`;
-                        cpsetupMT = `81 Ironclad\n56 Hardy\n56 Elemental Defender\n66 Thick Skinned\n11 Heavy Armor Focus`;
+                        cpsetupT = `81 Ironclad\n56 Hardy\n56 Elemental Defender\n66 Thick Skinned\n11 Heavy Armor Focus`;
                         break;
                     case "as":
                     case "nas":
@@ -184,7 +185,7 @@ class Trial {
                         trialname = `Asylum Sanctorium`;
                         location = `Located In Clockwork City`;
                         motifstyle = `NONE`;
-                        thumbnail = `../src/images/asylumsanctorium.jpg`;
+                        imgName = `asylumsanctorium.jpg`;
                         gearsets = `[Chaotic Whirlwind](https://eso-sets.com/set/chaotic-whirlwind)  [[Perfected]](https://eso-sets.com/set/chaotic-whirlwind-perfected-)
                         [Concentrated Force](https://eso-sets.com/set/concentrated-force-imperfect-)  [[Perfected]](https://eso-sets.com/set/concentrated-force-perfected-)
                         [Defensive Position](https://eso-sets.com/set/defensive-position)  [[Perfected]](https://eso-sets.com/set/defensive-position-perfected-)
@@ -194,7 +195,7 @@ class Trial {
                         dlcrequired = `- Clockwork City DLC`;
                         cpsetupDPS = `81 Ironclad\n81 Spellshield\n64 Elemental Defender\n44 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n27 Spellshield\n37 Hardy\n64 Elemental Defender\n61 Thick Skinned`;
-                        cpsetupMT = `81 Ironclad\n56 / 37 Hardy\n56 / 64 Elemental Defender\n51 / 44 Thick Skinned\n26 / 1 Heavy Armor Focus\n0 / 43 Quick Recovery`;
+                        cpsetupT = `81 Ironclad\n56 / 37 Hardy\n56 / 64 Elemental Defender\n51 / 44 Thick Skinned\n26 / 1 Heavy Armor Focus\n0 / 43 Quick Recovery`;
                         break;
                     case "cr":
                     case "ncr":
@@ -208,7 +209,7 @@ class Trial {
                         trialname = `Cloudrest`;
                         location = `Located In Summerset`;
                         motifstyle = `[Welkynar](https://elderscrollsonline.wiki.fextralife.com/Welkynar+Style)`;
-                        thumbnail = `../src/images/cloudrest.jpg`;
+                        imgName = `cloudrest.jpg`;
                         gearsets = `[Aegis of Galenwe](https://eso-sets.com/set/aegis-of-galenwe)  [[Perfected]](https://eso-sets.com/set/perfect-aegis-of-galenwe)
                         [Arms of Relequen](https://eso-sets.com/set/arms-of-relequen)  [[Perfected]](https://eso-sets.com/set/perfect-arms-of-relequen)
                         [Mantle of Siroria](https://eso-sets.com/set/mantle-of-siroria)  [[Perfected]](https://eso-sets.com/set/perfect-mantle-of-siroria)
@@ -216,7 +217,7 @@ class Trial {
                         dlcrequired = ` (Summerset DLC Required)`;
                         cpsetupDPS = `66 Ironclad\n51 Spellshield\n64 Elemental Defender\n66 Thick Skinned\n23 Quick Recovery`;
                         cpsetupH = `66 Ironclad\n55 Spellshield\n64 Elemental Defender\n66 Thick Skinned\n19 Quick Recovery`;
-                        cpsetupMT = `81 / 81 Ironclad\n1 / 0 Spellshield\n64 Elemental Defender\n81 / 66 Thick Skinned\n43 / 43 Quick Recovery\n0 / 16 Heavy Armor Focus`;
+                        cpsetupT = `81 / 81 Ironclad\n1 / 0 Spellshield\n64 Elemental Defender\n81 / 66 Thick Skinned\n43 / 43 Quick Recovery\n0 / 16 Heavy Armor Focus`;
                         break;
                     case "ss":
                     case "nss":
@@ -227,7 +228,7 @@ class Trial {
                         trialname = `Sunspire`;
                         location = `Located In Northern Elswyr`;
                         motifstyle = `[Sunspire](https://elderscrollsonline.wiki.fextralife.com/Sunspire+Style)`;
-                        thumbnail = `../src/images/sunspire.png`;
+                        imgName = `sunspire.png`;
                         gearsets = `[Claw of Yolnahkriin](https://eso-sets.com/set/claw-of-yolnahkriin)  [[Perfected]](https://eso-sets.com/set/perfected-claw-of-yolnahkriin)
                         [Tooth of Lokkestiiz](https://eso-sets.com/set/tooth-of-lokkestiiz)  [[Perfected]](https://eso-sets.com/set/perfected-tooth-of-lokkestiiz)
                         [False God's Devotion](https://eso-sets.com/set/false-gods-devotion)  [[Perfected]](https://eso-sets.com/set/perfected-false-gods-devotion)
@@ -235,7 +236,7 @@ class Trial {
                         dlcrequired = ` (Elswyr DLC Required)`;
                         cpsetupDPS = `81 Ironclad\n42 Spellshield\n56 Elemental Defender\n72 Thick Skinned\n19 Quick Recovery`;
                         cpsetupH = `81 Ironclad\n42 Spellshield\n56 Elemental Defender\n72 Thick Skinned\n19 Quick Recovery`;
-                        cpsetupMT = `81 Ironclad\n43 Hardy\n49 Elemental Defender\n81 Thick Skinned\n16 Heavy Armor Focus`;
+                        cpsetupT = `81 Ironclad\n43 Hardy\n49 Elemental Defender\n81 Thick Skinned\n16 Heavy Armor Focus`;
                         break;
                     case "ka":
                     case "nka":
@@ -247,7 +248,7 @@ class Trial {
                         trialname = `Kyne's Aegis`;
                         location = `Located In Western Skyrim`;
                         motifstyle = `[Sea Giant](https://en.uesp.net/wiki/Online:Sea_Giant_Style)`;
-                        thumbnail = `../src/images/kynesaegis.jpg`;
+                        imgName = `kynesaegis.jpg`;
                         gearsets = `[Kyne's Wind](https://eso-sets.com/set/kynes-wind)  [[Perfected]](https://eso-sets.com/set/perfect-kynes-wind)
                         [Roaring Opportunist](https://eso-sets.com/set/roaring-opportunist)  [[Perfected]](https://eso-sets.com/set/perfect-roaring-opportunist)
                         [Vrol's Command](https://eso-sets.com/set/vrols-command)  [[Perfected]](https://eso-sets.com/set/perfect-vrols-command)
@@ -255,25 +256,30 @@ class Trial {
                         dlcrequired = ` (Greymoor DLC Required)`;
                         cpsetupDPS = `73 Ironclad\n54 Spellshield\n27 Hardy\n64 Elemental Defender\n37 Thick Skinned\n15 Quick Recovery`;
                         cpsetupH = `73 Ironclad\n54 Spellshield\n27 Hardy\n64 Elemental Defender\n37 Thick Skinned\n15 Quick Recovery`;
-                        cpsetupMT = `81 Ironclad\n64 Hardy\n37 Elemental Defender\n68 Thick Skinned\n11 Quick Recovery\n11 Heavy Armor Focus`;
+                        cpsetupT = `81 Ironclad\n64 Hardy\n37 Elemental Defender\n68 Thick Skinned\n11 Quick Recovery\n11 Heavy Armor Focus`;
                         break;
                     default:
                         trialname = `Coming Soon`;
                         gearsets = `Coming Soon`;
                         break;
                 }
+                let imgPath = `../src/images/${imgName}`;
                 let embed = new Discord.RichEmbed()
                     .setTitle(`Trial: ${trialname}`)
                     .setDescription(`${location}${dlcrequired}`)
                     .setFooter(client.user.username, iconClient)
                     .setTimestamp()
+                    .setThumbnail(thumbnail)
                     .addField("Gear Sets", gearsets, true)
                     .addField("Motif Style", motifstyle, true)
-                    .addField("CP Distribution For Main Tank / Off Tank", cpsetupMT)
+                    .addField("CP Distribution For Main Tank / Off Tank", cpsetupT)
                     .addField("CP Distribution For Healers", cpsetupH, true)
-                    .addField("CP Distribution For Damage Dealers", cpsetupDPS, true);
-                msgObject.channel.send({files: [thumbnail]})
-                    .then(msg => {msgObject.channel.send(embed)})
+                    .addField("CP Distribution For Damage Dealers", cpsetupDPS, true)
+                    .attachFile(imgPath)
+                    .setImage(`attachment://${imgName}`);
+                msgObject.channel.send(embed)
+                    // msgObject.channel.send({files: [thumbnail]})
+                //     .then(msg => {msgObject.channel.send(embed)})
                     .catch(console.error);
             }
         });
