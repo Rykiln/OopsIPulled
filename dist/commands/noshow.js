@@ -36,7 +36,8 @@ class NoShow {
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 .addField(`Guild Member`, mentionedMember)
-                .addField(`Event`, eventname);
+                .addField(`Event`, eventname)
+                .addField(`Warned By`, warnedby);
             channelNoShow.send(embed)
                .catch(console.error);
             const fs = require("fs");
