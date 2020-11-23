@@ -288,6 +288,7 @@ class Trial {
                     .addField("CP Distribution For Damage Dealers", cpsetupDPS, true)
                     .attachFile(imgPath)
                     .setImage(`attachment://${imgName}`);
+                msgObject.delete(10000);
                 msgObject.channel.send(embed)
                     // msgObject.channel.send({files: [thumbnail]})
                 //     .then(msg => {msgObject.channel.send(embed)})
