@@ -173,7 +173,7 @@ class Trial {
                         color = `0x9f2df7`;
                         imgName = `asylumsanctorium.jpg`;
                         gearsets = `[Chaotic Whirlwind](https://eso-sets.com/set/chaotic-whirlwind)  [[Perfected]](https://eso-sets.com/set/chaotic-whirlwind-perfected-)\n[Concentrated Force](https://eso-sets.com/set/concentrated-force-imperfect-)  [[Perfected]](https://eso-sets.com/set/concentrated-force-perfected-)\n[Defensive Position](https://eso-sets.com/set/defensive-position)  [[Perfected]](https://eso-sets.com/set/defensive-position-perfected-)\n[Disciplined Slash](https://eso-sets.com/set/disciplined-slash)  [[Perfected]](https://eso-sets.com/set/disciplined-slash-perfected-)\n[Piercing Spray](https://eso-sets.com/set/piercing-spray-imperfected-)  [[Perfected]](https://eso-sets.com/set/piercing-spray-perfected-)\n[Timeless Blessing](https://eso-sets.com/set/timeless-blessing)  [[Perfected]](https://eso-sets.com/set/timeless-blessing-perfected-)`;
-                        dlcrequired = `- Clockwork City DLC`;
+                        dlcrequired = ` (Clockwork City DLC)`;
                         cpsetupDPS = `81 Ironclad\n81 Spellshield\n64 Elemental Defender\n44 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n27 Spellshield\n37 Hardy\n64 Elemental Defender\n61 Thick Skinned`;
                         cpsetupT = `81 Ironclad\n56 / 37 Hardy\n56 / 64 Elemental Defender\n51 / 44 Thick Skinned\n26 / 1 Heavy Armor Focus\n0 / 43 Quick Recovery`;
