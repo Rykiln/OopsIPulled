@@ -82,12 +82,7 @@ class Trial {
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
                         color = `0x3991ff`;
                         imgName = "aetherianarchive.jpg";
-                        gearsets = `[Defending Warrior](https://eso-sets.com/set/defending-warrior)
-                        [Healing Mage](https://eso-sets.com/set/healing-mage)
-                        [Quick Serpent](https://eso-sets.com/set/quick-serpent)
-                        [Eternal Warrior](https://eso-sets.com/set/eternal-warrior)
-                        [Infalliable Mage](https://eso-sets.com/set/infallible-mage)
-                        [Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
+                        gearsets = `[Defending Warrior](https://eso-sets.com/set/defending-warrior)\n[Healing Mage](https://eso-sets.com/set/healing-mage)\n[Quick Serpent](https://eso-sets.com/set/quick-serpent)\n[Eternal Warrior](https://eso-sets.com/set/eternal-warrior)\n[Infalliable Mage](https://eso-sets.com/set/infallible-mage)\n[Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
                         cpsetupDPS = `72 Ironclad\n68 Spellshield\n64 Elemental Defender\n66 Thick Skinned`;
                         cpsetupH = `72 Ironclad\n68 Spellshield\n64 Elemental Defender\n66 Thick Skinned`;
                         cpsetupT = `81 / 81 Ironclad\n44 / 56 Hardy\n56 / 56 Elemental Defender\n66 / 40 Thick Skinned\n24 / 0 Heavy Armor Focus\n0 / 37 Medium Armor Focus`;
@@ -105,12 +100,7 @@ class Trial {
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
                         color = `0x3991ff`;
                         imgName = `helracitadel.jpg`;
-                        gearsets = `[Destructive Mage](https://eso-sets.com/set/destructive-mage)
-                        [Poisonous Serpent](https://eso-sets.com/set/poisonous-serpent)
-                        [Berserking Warrior](https://eso-sets.com/set/berserking-warrior)
-                        [Eternal Warrior](https://eso-sets.com/set/eternal-warrior)
-                        [Infalliable Mage](https://eso-sets.com/set/infallible-mage)
-                        [Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
+                        gearsets = `[Destructive Mage](https://eso-sets.com/set/destructive-mage)\n[Poisonous Serpent](https://eso-sets.com/set/poisonous-serpent)\n[Berserking Warrior](https://eso-sets.com/set/berserking-warrior)\n[Eternal Warrior](https://eso-sets.com/set/eternal-warrior)\n[Infalliable Mage](https://eso-sets.com/set/infallible-mage)\n[Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
                         cpsetupDPS = `81 Ironclad\n16 Spellshield\n56 Hardy\n56 Elemental Defender\n61 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n16 Light Armor Focus\n56 Hardy\n56 Elemental Defender\n61 Thick Skinned`;
                         cpsetupT = `81 Ironclad\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned\n16 Heavy Armor Focus`;
@@ -128,12 +118,7 @@ class Trial {
                         motifstyle = `[Celestial](https://elderscrollsonline.wiki.fextralife.com/Celestial+Style)`;
                         color = `0x3991ff`;
                         imgName = `sanctumophidia.png`;
-                        gearsets = `[Immortal Warrior](https://eso-sets.com/set/immortal-warrior)
-                        [Twice-Fanged Serpent](https://eso-sets.com/set/twice-fanged-serpent)
-                        [Wise Mage](https://eso-sets.com/set/wise-mage)
-                        [Eternal Warrior](https://eso-sets.com/set/eternal-warrior)
-                        [Infalliable Mage](https://eso-sets.com/set/infallible-mage)
-                        [Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
+                        gearsets = `[Immortal Warrior](https://eso-sets.com/set/immortal-warrior)\n[Twice-Fanged Serpent](https://eso-sets.com/set/twice-fanged-serpent)\n[Wise Mage](https://eso-sets.com/set/wise-mage)\n[Eternal Warrior](https://eso-sets.com/set/eternal-warrior)\n[Infalliable Mage](https://eso-sets.com/set/infallible-mage)\n[Vicious Serpent](https://eso-sets.com/set/vicious-serpent)`;
                         cpsetupDPS = `72 Ironclad\n25 Light/Medium Armor Focus\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned`;
                         cpsetupH = `72 Ironclad\n25 Light Armor Focus\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned`;
                         cpsetupT = `81 Ironclad\n64 Hardy\n43 Elemental Defender\n66 Thick Skinned\n16 Quick Recovery`;
@@ -151,10 +136,7 @@ class Trial {
                         motifstyle = `[Dro-m'Athra](https://elderscrolls.fandom.com/wiki/Dro-m%27Athra_Style)`;
                         color = `0x9f2df7`;
                         imgName = `mawoflorkhaj.png`;
-                        gearsets = `[Lunar Bastion](https://eso-sets.com/set/lunar-bastion)
-                        [Moondancer](https://eso-sets.com/set/moondancer)
-                        [Roar Of Alkosh](https://eso-sets.com/set/roar-of-alkosh)
-                        [Twilight Remedy](https://eso-sets.com/set/twilight-remedy)`;
+                        gearsets = `[Lunar Bastion](https://eso-sets.com/set/lunar-bastion)\n[Moondancer](https://eso-sets.com/set/moondancer)\n[Roar Of Alkosh](https://eso-sets.com/set/roar-of-alkosh)\n[Twilight Remedy](https://eso-sets.com/set/twilight-remedy)`;
                         dlcrequired = ` (Thieves Guild DLC Required)`;
                         cpsetupDPS = `72 Ironclad\n49 Spellshield\n19 Hardy\n64 Elemental Defender\n66 Thick Skinned`;
                         cpsetupH = `72 Ironclad\n49 Spellshield\n19 Hardy\n64 Elemental Defender\n66 Thick Skinned`;
@@ -171,10 +153,7 @@ class Trial {
                         motifstyle = `[Refabricated](https://elderscrollsonline.wiki.fextralife.com/Refabricated+Style)`;
                         color = `0x9f2df7`;
                         imgName = `hallsoffabrication.jpg`;
-                        gearsets = `[Automated Defense](https://eso-sets.com/set/automated-defense)
-                        [Inventor's Guard](https://eso-sets.com/set/inventors-guard)
-                        [Master Architect](https://eso-sets.com/set/master-architect)
-                        [War Machine](https://eso-sets.com/set/war-machine)`;
+                        gearsets = `[Automated Defense](https://eso-sets.com/set/automated-defense)\n[Inventor's Guard](https://eso-sets.com/set/inventors-guard)\n[Master Architect](https://eso-sets.com/set/master-architect)\n[War Machine](https://eso-sets.com/set/war-machine)`;
                         dlcrequired = ` (Morrowind DLC Required)`;
                         cpsetupDPS = `81 Ironclad\n10 Light/Medium Armor Focus\n49 Hardy\n49 Elemental Defender\n81 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n10 Light Armor Focus\n49 Hardy\n49 Elemental Defender\n81 Thick Skinned`;
@@ -193,12 +172,7 @@ class Trial {
                         motifstyle = `NONE`;
                         color = `0x9f2df7`;
                         imgName = `asylumsanctorium.jpg`;
-                        gearsets = `[Chaotic Whirlwind](https://eso-sets.com/set/chaotic-whirlwind)  [[Perfected]](https://eso-sets.com/set/chaotic-whirlwind-perfected-)
-                        [Concentrated Force](https://eso-sets.com/set/concentrated-force-imperfect-)  [[Perfected]](https://eso-sets.com/set/concentrated-force-perfected-)
-                        [Defensive Position](https://eso-sets.com/set/defensive-position)  [[Perfected]](https://eso-sets.com/set/defensive-position-perfected-)
-                        [Disciplined Slash](https://eso-sets.com/set/disciplined-slash)  [[Perfected]](https://eso-sets.com/set/disciplined-slash-perfected-)
-                        [Piercing Spray](https://eso-sets.com/set/piercing-spray-imperfected-)  [[Perfected]](https://eso-sets.com/set/piercing-spray-perfected-)
-                        [Timeless Blessing](https://eso-sets.com/set/timeless-blessing)  [[Perfected]](https://eso-sets.com/set/timeless-blessing-perfected-)`;
+                        gearsets = `[Chaotic Whirlwind](https://eso-sets.com/set/chaotic-whirlwind)  [[Perfected]](https://eso-sets.com/set/chaotic-whirlwind-perfected-)\n[Concentrated Force](https://eso-sets.com/set/concentrated-force-imperfect-)  [[Perfected]](https://eso-sets.com/set/concentrated-force-perfected-)\n[Defensive Position](https://eso-sets.com/set/defensive-position)  [[Perfected]](https://eso-sets.com/set/defensive-position-perfected-)\n[Disciplined Slash](https://eso-sets.com/set/disciplined-slash)  [[Perfected]](https://eso-sets.com/set/disciplined-slash-perfected-)\n[Piercing Spray](https://eso-sets.com/set/piercing-spray-imperfected-)  [[Perfected]](https://eso-sets.com/set/piercing-spray-perfected-)\n[Timeless Blessing](https://eso-sets.com/set/timeless-blessing)  [[Perfected]](https://eso-sets.com/set/timeless-blessing-perfected-)`;
                         dlcrequired = `- Clockwork City DLC`;
                         cpsetupDPS = `81 Ironclad\n81 Spellshield\n64 Elemental Defender\n44 Thick Skinned`;
                         cpsetupH = `81 Ironclad\n27 Spellshield\n37 Hardy\n64 Elemental Defender\n61 Thick Skinned`;
@@ -218,10 +192,7 @@ class Trial {
                         motifstyle = `[Welkynar](https://elderscrollsonline.wiki.fextralife.com/Welkynar+Style)`;
                         color = `0xeec929`;
                         imgName = `cloudrest.jpg`;
-                        gearsets = `[Aegis of Galenwe](https://eso-sets.com/set/aegis-of-galenwe)  [[Perfected]](https://eso-sets.com/set/perfect-aegis-of-galenwe)
-                        [Arms of Relequen](https://eso-sets.com/set/arms-of-relequen)  [[Perfected]](https://eso-sets.com/set/perfect-arms-of-relequen)
-                        [Mantle of Siroria](https://eso-sets.com/set/mantle-of-siroria)  [[Perfected]](https://eso-sets.com/set/perfect-mantle-of-siroria)
-                        [Vestment of Olorime](https://eso-sets.com/set/vestment-of-olorime)  [[Perfected]](https://eso-sets.com/set/perfect-vestment-of-olorime)`;
+                        gearsets = `[Aegis of Galenwe](https://eso-sets.com/set/aegis-of-galenwe)  [[Perfected]](https://eso-sets.com/set/perfect-aegis-of-galenwe)\n[Arms of Relequen](https://eso-sets.com/set/arms-of-relequen)  [[Perfected]](https://eso-sets.com/set/perfect-arms-of-relequen)\n[Mantle of Siroria](https://eso-sets.com/set/mantle-of-siroria)  [[Perfected]](https://eso-sets.com/set/perfect-mantle-of-siroria)\n[Vestment of Olorime](https://eso-sets.com/set/vestment-of-olorime)  [[Perfected]](https://eso-sets.com/set/perfect-vestment-of-olorime)`;
                         dlcrequired = ` (Summerset DLC Required)`;
                         cpsetupDPS = `66 Ironclad\n51 Spellshield\n64 Elemental Defender\n66 Thick Skinned\n23 Quick Recovery`;
                         cpsetupH = `66 Ironclad\n55 Spellshield\n64 Elemental Defender\n66 Thick Skinned\n19 Quick Recovery`;
@@ -238,10 +209,7 @@ class Trial {
                         motifstyle = `[Sunspire](https://elderscrollsonline.wiki.fextralife.com/Sunspire+Style)`;
                         color = `0xeec929`;
                         imgName = `sunspire.png`;
-                        gearsets = `[Claw of Yolnahkriin](https://eso-sets.com/set/claw-of-yolnahkriin)  [[Perfected]](https://eso-sets.com/set/perfected-claw-of-yolnahkriin)
-                        [Tooth of Lokkestiiz](https://eso-sets.com/set/tooth-of-lokkestiiz)  [[Perfected]](https://eso-sets.com/set/perfected-tooth-of-lokkestiiz)
-                        [False God's Devotion](https://eso-sets.com/set/false-gods-devotion)  [[Perfected]](https://eso-sets.com/set/perfected-false-gods-devotion)
-                        [Eye of Nahviintaas](https://eso-sets.com/set/eye-of-nahviintaas)  [[Perfected]](https://eso-sets.com/set/perfected-eye-of-nahviintaas)`;
+                        gearsets = `[Claw of Yolnahkriin](https://eso-sets.com/set/claw-of-yolnahkriin)  [[Perfected]](https://eso-sets.com/set/perfected-claw-of-yolnahkriin)\n[Tooth of Lokkestiiz](https://eso-sets.com/set/tooth-of-lokkestiiz)  [[Perfected]](https://eso-sets.com/set/perfected-tooth-of-lokkestiiz)\n[False God's Devotion](https://eso-sets.com/set/false-gods-devotion)  [[Perfected]](https://eso-sets.com/set/perfected-false-gods-devotion)\n[Eye of Nahviintaas](https://eso-sets.com/set/eye-of-nahviintaas)  [[Perfected]](https://eso-sets.com/set/perfected-eye-of-nahviintaas)`;
                         dlcrequired = ` (Elswyr DLC Required)`;
                         cpsetupDPS = `81 Ironclad\n42 Spellshield\n56 Elemental Defender\n72 Thick Skinned\n19 Quick Recovery`;
                         cpsetupH = `81 Ironclad\n42 Spellshield\n56 Elemental Defender\n72 Thick Skinned\n19 Quick Recovery`;
@@ -259,10 +227,7 @@ class Trial {
                         motifstyle = `[Sea Giant](https://en.uesp.net/wiki/Online:Sea_Giant_Style)`;
                         color = `0xeec929`;
                         imgName = `kynesaegis.jpg`;
-                        gearsets = `[Kyne's Wind](https://eso-sets.com/set/kynes-wind)  [[Perfected]](https://eso-sets.com/set/perfect-kynes-wind)
-                        [Roaring Opportunist](https://eso-sets.com/set/roaring-opportunist)  [[Perfected]](https://eso-sets.com/set/perfect-roaring-opportunist)
-                        [Vrol's Command](https://eso-sets.com/set/vrols-command)  [[Perfected]](https://eso-sets.com/set/perfect-vrols-command)
-                        [Yandir's Might](https://eso-sets.com/set/yandirs-might)  [[Perfected]](https://eso-sets.com/set/perfect-yandirs-might)`;
+                        gearsets = `[Kyne's Wind](https://eso-sets.com/set/kynes-wind)  [[Perfected]](https://eso-sets.com/set/perfect-kynes-wind)\n[Roaring Opportunist](https://eso-sets.com/set/roaring-opportunist)  [[Perfected]](https://eso-sets.com/set/perfect-roaring-opportunist)\n[Vrol's Command](https://eso-sets.com/set/vrols-command)  [[Perfected]](https://eso-sets.com/set/perfect-vrols-command)\n[Yandir's Might](https://eso-sets.com/set/yandirs-might)  [[Perfected]](https://eso-sets.com/set/perfect-yandirs-might)`;
                         dlcrequired = ` (Greymoor DLC Required)`;
                         cpsetupDPS = `73 Ironclad\n54 Spellshield\n27 Hardy\n64 Elemental Defender\n37 Thick Skinned\n15 Quick Recovery`;
                         cpsetupH = `73 Ironclad\n54 Spellshield\n27 Hardy\n64 Elemental Defender\n37 Thick Skinned\n15 Quick Recovery`;
@@ -286,12 +251,11 @@ class Trial {
                     .addField("CP Distribution For Main Tank / Off Tank", cpsetupT)
                     .addField("CP Distribution For Healers", cpsetupH, true)
                     .addField("CP Distribution For Damage Dealers", cpsetupDPS, true)
+                    .addField(`CP Information Source`, `[ESO-U.com/ChampionPoints](https://eso-u.com/champion-points)`)
                     .attachFile(imgPath)
                     .setImage(`attachment://${imgName}`);
                 msgObject.delete(10000);
                 msgObject.channel.send(embed)
-                    // msgObject.channel.send({files: [thumbnail]})
-                //     .then(msg => {msgObject.channel.send(embed)})
                     .catch(console.error);
             }
         });
