@@ -1,7 +1,15 @@
 "use strict";
 
+// Split array into subarrays of max size n
+// Usage: someArray.grouped(n)
+Object.defineProperty(Array.prototype, 'grouped', {
+    value: function(n) {
+        return Array.from(Array(Math.ceil(this.length/n)), (_, i) => this.slice(i*n, i*n+n));
+    }
+});
+
 const Discord = require("discord.js");
-const ESOUPresets = require("../cpcalculator/ESOUPresets").default;
+const CpDistributions = require("../cpcalculator/CpDistributions").default;
 
 const TRIALS_BY_ABBREVIATION = {
     "aa": "Aetherian Archive",
@@ -18,6 +26,26 @@ const TRIALS_BY_ABBREVIATION = {
     "ss": "Sunspire",
     "vh": "Vateshran Hollows"
 }
+
+const ABILITIES = [
+    "Ironclad",
+    "Medium Armor Focus",
+    "Spell Shield",
+    "Elemental Defender",
+    "Hardy",
+    "Light Armor Focus",
+    "Thick Skinned",
+    "Heavy Armor Focus",
+    "Quick Recovery",
+    "Bashing Focus",
+    "Sprinter",
+    "Warlord",
+    "Arcanist",
+    "Mooncalf",
+    "Tenacity",
+    "Shadow Ward",
+    "Tumbling"
+]
 
 class CP {
     constructor() {
@@ -63,14 +91,33 @@ class CP {
             msgObject.author.send(invalidInputResponse)
                 .catch(console.error);
         } else {
-            const presets = ESOUPresets[trial];
+            const cpBuilds = CpDistributions[trial];
             const cpResponse = new Discord.RichEmbed()
                 .setTitle(TRIALS_BY_ABBREVIATION[trial])
                 .setColor("FFFF00")
                 .setFooter(client.user.username, client.user.displayAvatarURL)
                 .setTimestamp();
-            for (const preset of presets) {
-                cpResponse.addField(preset.name, preset.calculateCp(cpLevel), true);
+
+            // Discord allows up to 3 inline fields in a RichEmbed before wrapping to the next line, so we display CP in a table with up to 3 columns
+            // The first column contains CP ability names, while the second and optional third columns contain CP distributions for up to 2 roles
+            for (const groupedBuilds of cpBuilds.grouped(2)) {
+                const build1 = groupedBuilds[0];
+                const build2 = groupedBuilds[1];
+                const cpDistribution1 = build1.calculateCp(cpLevel);
+                const cpDistribution2 = build2 ? build2.calculateCp(cpLevel) : {}; // Depending on how many builds are defined for a trial, build2 may not exist
+
+                // Only list abilities that are present in at least one calculated CP distribution to avoid including rows of zeroes in the table
+                const abilitiesInBuilds = Object.keys({...cpDistribution1, ...cpDistribution2});
+                const abilitiesToDisplay = ABILITIES.filter(ability => abilitiesInBuilds.includes(ability));
+                
+                cpResponse
+                    .addField('Ability', abilitiesToDisplay.join("\n"), true)
+                    .addField(build1.name, this.formatCp(cpDistribution1, abilitiesToDisplay), true);
+                if (build2) {
+                    cpResponse.addField(build2.name, this.formatCp(cpDistribution2, abilitiesToDisplay), true);
+                }
+                
+                cpResponse.addBlankField();
             }
             msgObject.author.send(cpResponse)
                 .catch(console.error);
@@ -137,6 +184,10 @@ class CP {
             default:
                 return null;
         }
+    }
+
+    formatCp(cpBuild, abilities) {
+        return abilities.map(ability => cpBuild[ability] || 0).join("\n");
     }
 }
 

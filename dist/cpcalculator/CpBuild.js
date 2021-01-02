@@ -12,9 +12,10 @@ class CpBuild {
     calculateCp(currentCp) {
         const redCp = this.calculateRedCp(currentCp);
         const greenCp = this.calculateGreenCp(currentCp);
-        return `${this.formatCpTree(redCp)}
-
-        ${this.formatCpTree(greenCp)}`;
+        return {
+            ...redCp,
+            ...greenCp
+        };
     }
 
     calculateRedCp(currentCp) {
@@ -141,13 +142,6 @@ class CpBuild {
             // CP is between jump points, so return the previous jump point index
             return jumpPoints.findIndex(jumpPoint => jumpPoint > cp) - 1;
         }
-    }
-
-    formatCpTree(tree) {
-        return Object.entries(tree)
-            .filter(([_, cp]) => cp > 0)
-            .map(([ability, cp]) => `${ability}: ${cp}`)
-            .join(",\n");
     }
 }
 

@@ -110,23 +110,6 @@ exports.default = {
             })
         ),
         new CpBuild(
-            "Healer",
-            new CpTree({
-                "Ironclad": 81,
-                "Spell Shield": 27,
-                "Elemental Defender": 64,
-                "Hardy": 37,
-                "Thick Skinned": 61
-            }),
-            new CpTree({
-                "Sprinter": 35,
-                "Arcanist": 64,
-                "Tenacity": 64,
-                "Shadow Ward": 41,
-                "Tumbling": 66
-            })
-        ),
-        new CpBuild(
             "Mag DPS",
             new CpTree({
                 "Ironclad": 81,
@@ -158,6 +141,23 @@ exports.default = {
                 "Tenacity": 43,
                 "Shadow Ward": 72,
                 "Tumbling": 40
+            })
+        ),
+        new CpBuild(
+            "Healer",
+            new CpTree({
+                "Ironclad": 81,
+                "Spell Shield": 27,
+                "Elemental Defender": 64,
+                "Hardy": 37,
+                "Thick Skinned": 61
+            }),
+            new CpTree({
+                "Sprinter": 35,
+                "Arcanist": 64,
+                "Tenacity": 64,
+                "Shadow Ward": 41,
+                "Tumbling": 66
             })
         )
     ],
@@ -274,24 +274,6 @@ exports.default = {
             })
         ),
         new CpBuild(
-            "Healer",
-            new CpTree({
-                "Ironclad": 66,
-                "Spell Shield": 55,
-                "Elemental Defender": 64,
-                "Thick Skinned": 66,
-                "Quick Recovery": 19
-            }),
-            new CpTree({
-                "Sprinter": 33,
-                "Warlord": 56,
-                "Arcanist": 64,
-                "Tenacity": 10,
-                "Shadow Ward": 51,
-                "Tumbling": 56
-            })
-        ),
-        new CpBuild(
             "Mag DPS",
             new CpTree({
                 "Ironclad": 66,
@@ -325,6 +307,24 @@ exports.default = {
                 "Tenacity": 43,
                 "Shadow Ward": 11,
                 "Tumbling": 61
+            })
+        ),
+        new CpBuild(
+            "Healer",
+            new CpTree({
+                "Ironclad": 66,
+                "Spell Shield": 55,
+                "Elemental Defender": 64,
+                "Thick Skinned": 66,
+                "Quick Recovery": 19
+            }),
+            new CpTree({
+                "Sprinter": 33,
+                "Warlord": 56,
+                "Arcanist": 64,
+                "Tenacity": 10,
+                "Shadow Ward": 51,
+                "Tumbling": 56
             })
         )
     ],
@@ -443,24 +443,6 @@ exports.default = {
             })
         ),
         new CpBuild(
-            "Healer",
-            new CpTree({
-                "Ironclad": 81,
-                "Elemental Defender": 49,
-                "Hardy": 49,
-                "Light Armor Focus": 10,
-                "Thick Skinned": 81
-            }),
-            new CpTree({
-                "Sprinter": 28,
-                "Warlord": 37,
-                "Arcanist": 64,
-                "Tenacity": 19,
-                "Shadow Ward": 61,
-                "Tumbling": 61
-            })
-        ),
-        new CpBuild(
             "Mag DPS",
             new CpTree({
                 "Ironclad": 81,
@@ -491,6 +473,24 @@ exports.default = {
                 "Sprinter": 28,
                 "Warlord": 37,
                 "Mooncalf": 64,
+                "Tenacity": 19,
+                "Shadow Ward": 61,
+                "Tumbling": 61
+            })
+        ),
+        new CpBuild(
+            "Healer",
+            new CpTree({
+                "Ironclad": 81,
+                "Elemental Defender": 49,
+                "Hardy": 49,
+                "Light Armor Focus": 10,
+                "Thick Skinned": 81
+            }),
+            new CpTree({
+                "Sprinter": 28,
+                "Warlord": 37,
+                "Arcanist": 64,
                 "Tenacity": 19,
                 "Shadow Ward": 61,
                 "Tumbling": 61
@@ -726,24 +726,6 @@ exports.default = {
             })
         ),
         new CpBuild(
-            "Healer",
-            new CpTree({
-                "Ironclad": 73,
-                "Spell Shield": 48,
-                "Elemental Defender": 64,
-                "Hardy": 19,
-                "Thick Skinned": 66
-            }),
-            new CpTree({
-                "Sprinter": 29,
-                "Warlord": 51,
-                "Arcanist": 64,
-                "Tenacity": 19,
-                "Shadow Ward": 51,
-                "Tumbling": 56
-            })
-        ),
-        new CpBuild(
             "Mag DPS",
             new CpTree({
                 "Ironclad": 73,
@@ -774,6 +756,24 @@ exports.default = {
                 "Sprinter": 29,
                 "Warlord": 51,
                 "Mooncalf": 64,
+                "Tenacity": 19,
+                "Shadow Ward": 51,
+                "Tumbling": 56
+            })
+        ),
+        new CpBuild(
+            "Healer",
+            new CpTree({
+                "Ironclad": 73,
+                "Spell Shield": 48,
+                "Elemental Defender": 64,
+                "Hardy": 19,
+                "Thick Skinned": 66
+            }),
+            new CpTree({
+                "Sprinter": 29,
+                "Warlord": 51,
+                "Arcanist": 64,
                 "Tenacity": 19,
                 "Shadow Ward": 51,
                 "Tumbling": 56
@@ -836,7 +836,7 @@ exports.default = {
             })
         ),
         new CpBuild(
-            "Mag DPS",
+            "Stam DPS",
             new CpTree({
                 "Ironclad": 73,
                 "Medium Armor Focus": 24,
