@@ -45,15 +45,29 @@ class CpBuild {
     }
 
     calculateCpForTree(tree, availableCp) {
-        let cpInBuild = tree.getCpCount();
+        let cpInBuild = tree.getCpRequired();
         availableCp = Math.min(availableCp, cpInBuild);
 
+        // Some abilities should be prioritized (Arcanist for healers and mag DPS, Mooncalf for stam DPS)
+        // To support this, we first compute a CP distribution for a build consisting of just prioritized abilities
+        // After that, we compute a CP distribution for the remaining abilities, then return the merged results
+        const cpForPriorityAbilities = this.calculateCpForAbilities(tree.getPriorityAbilities(), tree.getCpRequiredForPriorityAbilities(), availableCp);
+        const cpSpent = Object.values(cpForPriorityAbilities)
+            .reduce((acc, cpValue) => acc + cpValue, 0);
+        const cpForNonPriorityAbilities = this.calculateCpForAbilities(tree.getNonPriorityAbilities(), tree.getCpRequiredForNonPriorityAbilities(), availableCp - cpSpent);
+        return {
+            ...cpForPriorityAbilities,
+            ...cpForNonPriorityAbilities
+        };
+    }
+
+    calculateCpForAbilities(abilities, cpInBuild, availableCp) {
         const calculatedCp = {};
         const jumpPointIndexes = {};
 
         // Initialize calculatedCp and jumpPointIndexes with values in CP810 build
-        for (const ability in tree.abilities) {
-            const abilityCp = tree.abilities[ability];
+        for (const ability in abilities) {
+            const abilityCp = abilities[ability];
             // Only include abilities that are in the build
             if (abilityCp > 0) {
                 calculatedCp[ability] = abilityCp;
@@ -90,7 +104,7 @@ class CpBuild {
                 const cpSpent = calculatedCp[ability];
                 const diff = nextJumpPoint - cpSpent;
 
-                if (nextJumpPoint <= tree.abilities[ability] && cpInBuild + diff <= availableCp) {
+                if (nextJumpPoint <= abilities[ability] && cpInBuild + diff <= availableCp) {
                     calculatedCp[ability] = nextJumpPoint;
                     jumpPointIndexes[ability] = nextJumpPointIndex;
                     cpInBuild += diff;
@@ -110,7 +124,7 @@ class CpBuild {
 
             for (const ability in calculatedCp) {
                 const cpSpent = calculatedCp[ability];
-                if (cpSpent < tree.abilities[ability] && CpAbilities[ability].jumpPoints === null) {
+                if (cpSpent < abilities[ability] && CpAbilities[ability].jumpPoints === null) {
                     calculatedCp[ability] = calculatedCp[ability] + 1;
                     cpInBuild += 1;
                     spentPointsThisIteration = true;
@@ -127,7 +141,9 @@ class CpBuild {
             }
         }
 
-        return calculatedCp;
+        // Filter out abilities that have had their point allocations reduced to 0
+        return Object.fromEntries(
+            Object.entries(calculatedCp).filter(([_, cpValue]) => cpValue > 0));
     }
 
     getJumpPoints(ability) {

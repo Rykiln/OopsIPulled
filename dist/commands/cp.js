@@ -93,7 +93,7 @@ class CP {
         } else {
             const cpBuilds = CpDistributions[trial];
             const cpResponse = new Discord.RichEmbed()
-                .setTitle(TRIALS_BY_ABBREVIATION[trial])
+                .setTitle(`${TRIALS_BY_ABBREVIATION[trial]} - CP${cpLevel}`)
                 .setColor("FFFF00")
                 .setFooter(client.user.username, client.user.displayAvatarURL)
                 .setTimestamp();
@@ -116,7 +116,7 @@ class CP {
                 if (build2) {
                     cpResponse.addField(build2.name, this.formatCp(cpDistribution2, abilitiesToDisplay), true);
                 }
-                
+
                 cpResponse.addBlankField();
             }
             msgObject.author.send(cpResponse)
