@@ -21,6 +21,11 @@ class NoShow {
     }
     runCommand(args, msgObject, client) {
         return __awaiter(this, void 0, void 0, function* () {
+            if(!msgObject.member.hasPermissions("BAN_MEMBERS")){
+                msgObject.delete();
+                msgObject.reply(`You do not have permissions to use this command.`).then(r => r.delete(5000));
+                return ;
+            }
             let iconGuild = msgObject.guild.iconURL;
             let iconClient = client.user.displayAvatarURL;
             let mentionedMember = msgObject.mentions.users.first();

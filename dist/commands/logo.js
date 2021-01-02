@@ -26,17 +26,25 @@ class Logo {
             let embed = new Discord.RichEmbed()
                 .setTitle(`${msgObject.guild.name} Guild Logo`)
                 .setDescription(`Please feel free to use this logo when live streaming or recording content related to Elder Scrolls Online to represent the guild.`)
-                .setColor("#000099")
+                .setColor("0x7ac8fb")
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
-                .setImage(`attachment://logo.oops.png`)
+                //.setThumbnail(iconClient)
+                .setThumbnail(`attachment://oops.icon.gif`)
+                .setImage(`attachment://oops.logo.gif`)
                 //.addField(`Illustrator`, `Rykiln`, true)
                 //.addField(`Copyright`, `©2018`, true)
                 //.addField(`Description`, `Guild Initials on fire, with Meridia's Beacon and Dawnbreaker`, true);
+            msgObject.delete();
             msgObject.channel.send({ embed, files: [{
-                attachment: `../src/images/logo.oops.png`,
-                name: `logo.oops.png`
-            }] })
+                attachment: `../src/images/oops.logo.gif`,
+                name: `oops.logo.gif`
+            },
+            {
+                attachment: `../src/images/oops.icon.gif`,
+                name: `oops.icon.gif`
+            }
+        ] })
                 .catch(console.error);
         });
     }

@@ -36,24 +36,6 @@
         "warnedby": "QuantumLoopX"
     },
     {
-        "Member": "Tony M",
-        "ID": "332245964750454790",
-        "event": "vhrc-26-sept-3pm-est",
-        "warnedby": "QuantumLoopX"
-    },
-    {
-        "Member": "Tony M",
-        "ID": "332245964750454790",
-        "event": "coffer-run-26-sep-6pm-sat",
-        "warnedby": "QuantumLoopX"
-    },
-    {
-        "Member": "Tony M",
-        "ID": "332245964750454790",
-        "event": "coffer-run-26-sep-6pm-sat",
-        "warnedby": "MattBlaze"
-    },
-    {
         "Member": "riley reid",
         "ID": "382255296216694788",
         "event": "plunder-farm-vhrc-sun-11-oct-6pm-est",
@@ -106,5 +88,95 @@
         "ID": "665087442977816586",
         "event": "vss-sat-21st-10pm",
         "warnedby": "QuantumLoopX"
+    },
+    {
+        "Member": "LukewarmTater",
+        "ID": "401224405411168257",
+        "event": "🔒-leader-chat",
+        "warnedby": "LukewarmTater"
+    },
+    {
+        "Member": "fioskal",
+        "ID": "165188516127571978",
+        "event": "vhof-hm-sat-3p-est",
+        "warnedby": "Square_Dude"
+    },
+    {
+        "Member": "Lineste",
+        "ID": "161133203443154945",
+        "event": "vss-scorepush-1015pm-est",
+        "warnedby": "Lineste"
+    },
+    {
+        "Member": "ShahKing",
+        "ID": "198957333190017027",
+        "event": "vss-icehm-sat-3p-est",
+        "warnedby": "Square_Dude"
+    },
+    {
+        "Member": "Veluccia",
+        "ID": "199630612016005120",
+        "event": "vcrag-rdy-set-goooo",
+        "warnedby": "QuantumLoopX"
+    },
+    {
+        "Member": "AbstractWorld",
+        "ID": "114394012957278211",
+        "event": "vcrag-rdy-set-goooo",
+        "warnedby": "QuantumLoopX"
+    },
+    {
+        "Member": "Mars2345",
+        "ID": "505266989493911552",
+        "event": "bait-nss-sun-6pm-est",
+        "warnedby": "SafariBlaze"
+    },
+    {
+        "Member": "Kreator",
+        "ID": "675385553973149696",
+        "event": "vcr0-sun-dec13-4pm-est",
+        "warnedby": "kacoggins"
+    },
+    {
+        "Member": "Kreator",
+        "ID": "675385553973149696",
+        "event": "bait-nss-sun-6pm-est",
+        "warnedby": "SafariBlaze"
+    },
+    {
+        "Member": "Rattleshadow",
+        "ID": "265565063744716800",
+        "event": "bait-nss-sun-6pm-est",
+        "warnedby": "SafariBlaze"
+    },
+    {
+        "Member": "thekingofrice",
+        "ID": "216479492313448448",
+        "event": "vka-tues-15th-11pm-est",
+        "warnedby": "Your Neighbourhood Polak"
+    },
+    {
+        "Member": "Trickk",
+        "ID": "359807614223384577",
+        "event": "vhof-thurs-dec17-10pm-est",
+        "warnedby": "kacoggins"
+    },
+    {
+        "Member": "Ant",
+        "ID": "208378072477466625",
+        "event": "vas1-fri-dec18-7pm-est",
+        "warnedby": "Quackmobile"
+    },
+    {
+        "Member": "Ant",
+        "ID": "208378072477466625",
+        "event": "vas0-sun-dec20-5pm-est",
+        "warnedby": "kacoggins"
+    },
+    {
+        "Member": "arjhay0290",
+        "ID": "151575986268405760",
+        "event": "vcr1-sun-dec27th-11pmest",
+        "warnedby": "LukewarmTater"
     }
 ]

@@ -17,23 +17,28 @@ client.on("ready", () => {
     console.log(`Oops I Pulled Bot Is Now Online!`);
     client.user.setActivity("Oops I Pulled | .help", { type: "PLAYING" });
 });
-client.on("guildMemberAdd", (member) => __awaiter(this, void 0, void 0, function* () {
+client.on("guildMemberAdd", member => {
+    let imgName = "oops.logo.gif";
+    let imgPath = `../src/images/${imgName}`;
     let embedWelcome = new Discord.RichEmbed ()
-        .setTitle(`Welcome ${member.user.username} to ${member.guild.name}!`)
+        .setTitle(`${member.user.username}, Welcome To ${member.guild.name}!`)
         .setColor(0x7ac8fb)
-        .setDescription(`We are glad to have you as part of our awesome team and growing community.
-            \nPlease head over to [#🎉-welcome](https://discordapp.com/channels/694306288250781699/728692333280886884/728693715794788373) to learn more about us. After reading, react to accept our server rules with 🔔 or 🚫 to specify whether you want to recieve pings or not; it will give you a role that unlocks access to more of our channels.
-            \nIf you're interested in joining our in-game guild, go to [#🚪-need-guild-invite](https://discordapp.com/channels/694306288250781699/725415873929674782/751946917121884251).
-            \nPlease also set your discord nickname to match your ESO Account Name (not character name).`)
+        .setDescription(`We are glad to have you as part of our awesome team and growing community.`)
         .setFooter(client.user.username)
         .setTimestamp()
-    member.send(embedWelcome);
-    console.log(`(${member.user.username}) joined ${member.guild.name}.`);
-}));
-client.on("guildMemberRemove", (member) => __awaiter(this, void 0, void 0, function* () {
-    console.log(`(${member.user.username}) left ${member.guild.name}.`)
-        .catch(console.error);
-}));
+        .setThumbnail(`attachment://${imgName}`)
+        .attachFile(imgPath)
+        .addField(`Learn More About Us`, `Please head over to our [#🎉-welcome](https://discordapp.com/channels/694306288250781699/728692333280886884/728693715794788373) channel. After reading, react to accept our server rules with 🔔 or 🚫 to specify whether you want to recieve pings or not; it will give you a role that unlocks access to more of our channels.`)
+        .addField(`Join The Guild In Game`, `Go to [#🚪-need-guild-invite](https://discordapp.com/channels/694306288250781699/725415873929674782/751946917121884251). to request and invitation.`)
+        .addField(`Let Us Know Who You Are`, `Please set your discord nickname to match your ESO Account Name (Not Character Name)`);
+        // .setImage(`attachment://${imgName}`);
+    member.send(embedWelcome)
+        .catch(console.log(`Error: Failed to send embed`));
+    console.log(`[${member.user.username}] has joined [${member.guild.name}].`);
+});
+client.on("guildMemberRemove", member => {
+    console.log(`(${member.user.username}) left ${member.guild.name}.`);
+});
 client.on("message", msg => {
     if (msg.author.bot) {
         return;

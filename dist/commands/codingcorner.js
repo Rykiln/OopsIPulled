@@ -31,7 +31,7 @@ class CodingCorner {
                 .setTitle(`Do you speak Binary - 01101110 01100101 01110010 01100100?`)
                 .setDescription(`Or any other programing language for that matter. This role is self-assignable, and can be removed at any time by coming back to this page. This role gives access to our Coding Corner channel where we talk about writing Discord Bots, ESO Addons, or other programming related projects.`)
                 .setColor(0x7ac8fb)
-                .setThumbnail(iconGuild)
+                .setThumbnail(`https://cdn-images-1.medium.com/max/800/1*raWO3dhM4jMjf9VY-kZzNg.png`)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 .addField(`How To Join Coding Corner`,"React to the 🔟 emoji below to give yourself the Programmer role.");

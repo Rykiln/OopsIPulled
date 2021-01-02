@@ -37,7 +37,7 @@ class rolelegendary {
                 .setDescription(roles)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
-                .addField(`Damage Dealers`, `90K Magicka DPS\n95K Stamina DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)`, true)
+                .addField(`Damage Dealers`, `90K Magicka DPS\n95K Stamina DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses`, true)
                 .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Blackrose Restoration Staff](https://eso-sets.com/set/perfect-menders-ward)`, true)
                 .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Master's Sword and Board](https://eso-sets.com/set/perfected-puncturing-remedy)\n[Swarm Mother](https://eso-sets.com/set/swarm-mother)`, true)
                 .addBlankField()

@@ -28,10 +28,10 @@ class CrownSeller {
             let membercount = msgObject.guild.roles.find(role => role.name === "Potato").members.map(m => m.user).length;
             let guestcount = msgObject.guild.members.filter(member => !member.user.bot).size - membercount;
             let embed = new Discord.RichEmbed()
-                .setTitle(`Money Burning A Whole In Your Pocket?`)
+                .setTitle(`Money Burning A Hole In Your Pocket?`)
                 .setDescription(`Why not sell some crowns?. This role is self-assignable, and can be removed at any time by coming back to this page. This allows people to ping you when they are wanting to buy crowns from you.`)
                 .setColor(0x7ac8fb)
-                .setThumbnail(iconGuild)
+                .setThumbnail(`https://img.game.co.uk/hub/images/ElderScrollsOnline/_Ultra/The-Elder-Scrolls-Online-Tamriel-Unlimited-Crowns.png`)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 .addField(`How To Become A Crown Seller`,"React to the 💎 emoji below to give yourself the Crown Seller role.");
