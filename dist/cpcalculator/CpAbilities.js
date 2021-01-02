@@ -12,7 +12,7 @@ const JUMP_POINTS = {
     // to scale more evenly compared to abilities with jump points
     NON_PERCENTAGE_JUMP_POINTS: Array.from({length: 25}, (_, i) => i * 4),
     FIFTEEN_PERCENT_JUMP_POINTS: [4, 7, 11, 15, 19, 23, 27, 32, 37, 43, 49, 56, 64, 75, 100],
-    TWENTY_FIVE_PERCENT_JUMP_POINTS: [3, 5, 7, 9, 11, 13, 16, 18, 20, 23, 26, 28, 31, 34, 37, 40, 44, 48, 52, 56, 61, 66, 72, 81, 100],
+    TWENTY_FIVE_PERCENT_JUMP_POINTS: [3, 5, 7, 9, 11, 13, 16, 18, 20, 23, 26, 28, 31, 34, 37, 40, 44, 48, 52, 56, 61, 66, 73, 81, 100],
     THIRTY_FIVE_PERCENT_JUMP_POINTS: [2, 3, 5, 6, 8, 9, 11, 13, 14, 16, 18, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 42, 44, 47, 50, 53, 56, 59, 63, 67, 72, 77, 84, 100]
 };
 

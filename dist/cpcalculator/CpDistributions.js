@@ -183,11 +183,11 @@ exports.default = {
         new CpBuild(
             "Healer",
             new CpTree({
-                "Ironclad": 72,
+                "Ironclad": 73,
                 "Spell Shield": 16,
                 "Elemental Defender": 56,
                 "Hardy": 56,
-                "Light Armor Focus": 9,
+                "Light Armor Focus": 8,
                 "Thick Skinned": 61
             }),
             new CpTree({
@@ -202,11 +202,11 @@ exports.default = {
         new CpBuild(
             "Mag DPS",
             new CpTree({
-                "Ironclad": 72,
+                "Ironclad": 73,
                 "Spell Shield": 16,
                 "Elemental Defender": 56,
                 "Hardy": 56,
-                "Light Armor Focus": 9,
+                "Light Armor Focus": 8,
                 "Thick Skinned": 61
             }),
             new CpTree({
@@ -221,8 +221,8 @@ exports.default = {
         new CpBuild(
             "Stam DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Medium Armor Focus": 9,
+                "Ironclad": 73,
+                "Medium Armor Focus": 8,
                 "Spell Shield": 16,
                 "Elemental Defender": 56,
                 "Hardy": 56,
@@ -593,8 +593,8 @@ exports.default = {
         new CpBuild(
             "Healer",
             new CpTree({
-                "Ironclad": 72,
-                "Spell Shield": 55,
+                "Ironclad": 73,
+                "Spell Shield": 54,
                 "Elemental Defender": 64,
                 "Hardy": 27,
                 "Thick Skinned": 37,
@@ -611,8 +611,8 @@ exports.default = {
         new CpBuild(
             "Mag DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Spell Shield": 55,
+                "Ironclad": 73,
+                "Spell Shield": 54,
                 "Elemental Defender": 64,
                 "Hardy": 27,
                 "Thick Skinned": 37,
@@ -629,8 +629,8 @@ exports.default = {
         new CpBuild(
             "Stam DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Spell Shield": 55,
+                "Ironclad": 73,
+                "Spell Shield": 54,
                 "Elemental Defender": 64,
                 "Hardy": 27,
                 "Thick Skinned": 37,
@@ -649,11 +649,11 @@ exports.default = {
         new CpBuild(
             "Mag DPS",
             new CpTree({
-                "Ironclad": 72,
+                "Ironclad": 73,
                 "Spell Shield": 13,
                 "Elemental Defender": 56,
                 "Hardy": 56,
-                "Light Armor Focus": 21,
+                "Light Armor Focus": 20,
                 "Thick Skinned": 52
             }),
             new CpTree({
@@ -669,8 +669,8 @@ exports.default = {
         new CpBuild(
             "Stam DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Medium Armor Focus": 21,
+                "Ironclad": 73,
+                "Medium Armor Focus": 20,
                 "Spell Shield": 13,
                 "Elemental Defender": 56,
                 "Hardy": 56,
@@ -728,8 +728,8 @@ exports.default = {
         new CpBuild(
             "Mag DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Spell Shield": 49,
+                "Ironclad": 73,
+                "Spell Shield": 48,
                 "Elemental Defender": 64,
                 "Hardy": 19,
                 "Thick Skinned": 66
@@ -746,8 +746,8 @@ exports.default = {
         new CpBuild(
             "Stam DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Spell Shield": 49,
+                "Ironclad": 73,
+                "Spell Shield": 48,
                 "Elemental Defender": 64,
                 "Hardy": 19,
                 "Thick Skinned": 66
@@ -764,8 +764,8 @@ exports.default = {
         new CpBuild(
             "Healer",
             new CpTree({
-                "Ironclad": 72,
-                "Spell Shield": 49,
+                "Ironclad": 73,
+                "Spell Shield": 48,
                 "Elemental Defender": 64,
                 "Hardy": 19,
                 "Thick Skinned": 66
@@ -802,10 +802,10 @@ exports.default = {
         new CpBuild(
             "Healer",
             new CpTree({
-                "Ironclad": 72,
+                "Ironclad": 73,
                 "Elemental Defender": 43,
                 "Hardy": 64,
-                "Light Armor Focus": 25,
+                "Light Armor Focus": 24,
                 "Thick Skinned": 66
             }),
             new CpTree({
@@ -820,10 +820,10 @@ exports.default = {
         new CpBuild(
             "Mag DPS",
             new CpTree({
-                "Ironclad": 72,
+                "Ironclad": 73,
                 "Elemental Defender": 43,
                 "Hardy": 64,
-                "Light Armor Focus": 25,
+                "Light Armor Focus": 24,
                 "Thick Skinned": 66
             }),
             new CpTree({
@@ -838,8 +838,8 @@ exports.default = {
         new CpBuild(
             "Stam DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Medium Armor Focus": 25,
+                "Ironclad": 73,
+                "Medium Armor Focus": 24,
                 "Elemental Defender": 43,
                 "Hardy": 64,
                 "Thick Skinned": 66
@@ -931,11 +931,11 @@ exports.default = {
         new CpBuild(
             "Mag DPS",
             new CpTree({
-                "Ironclad": 72,
+                "Ironclad": 73,
                 "Spell Shield": 13,
                 "Elemental Defender": 56,
                 "Hardy": 56,
-                "Light Armor Focus": 21,
+                "Light Armor Focus": 20,
                 "Thick Skinned": 52
             }),
             new CpTree({
@@ -951,8 +951,8 @@ exports.default = {
         new CpBuild(
             "Stam DPS",
             new CpTree({
-                "Ironclad": 72,
-                "Medium Armor Focus": 21,
+                "Ironclad": 73,
+                "Medium Armor Focus": 20,
                 "Spell Shield": 13,
                 "Elemental Defender": 56,
                 "Hardy": 56,
