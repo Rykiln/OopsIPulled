@@ -123,7 +123,7 @@ class CP {
                 .catch(console.error);
         }
 
-        msgObject.delete()
+        msgObject.delete(10000)
             .catch(console.error);
     }
 
