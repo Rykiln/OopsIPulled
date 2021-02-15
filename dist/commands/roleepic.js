@@ -38,7 +38,7 @@ class roleepic {
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 .addField(`Damage Dealers`, `80K Magikca DPS\n90K Stamina DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses`, true)
-                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Force Overflow](https://eso-sets.com/set/force-overflow)\n[Martial Knowledge](https://eso-sets.com/set/way-of-martial-knowledge)\n[Z'en's Redress](https://eso-sets.com/set/zens-redress) (Pair w/Martial Knowledge)`, true)
+                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Martial Knowledge](https://eso-sets.com/set/way-of-martial-knowledge)\n[Z'en's Redress](https://eso-sets.com/set/zens-redress) (Pair w/Martial Knowledge)`, true)
                 .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Dragon’s Defilement](https://eso-sets.com/set/dragons-defilement)\n[Powerful Assault](https://eso-sets.com/set/powerful-assault)\n[Lady Thorn](https://eso-sets.com/set/lady-thorn)`, true)
             msgObject.delete();
             msgObject.channel.send({files: [`../src/images/Epic.png`]}).then(msg => {msgObject.channel.send(embed)})

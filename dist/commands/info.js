@@ -56,7 +56,6 @@ class Info {
                             .addField("Account Name", usrMember.user.username, true)
                             .addField("Discord ID", usrMember.user.tag, true)
                             .addField("You Joined The Guild", usrMember.joinedAt)
-                            
                             .addField("Warnings", loggedwarnings)
                             .addField(`Events`, loggedevent, true)
                             .addField(`Warned By`, warnedby, true);

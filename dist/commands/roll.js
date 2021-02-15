@@ -54,12 +54,15 @@ class Roll {
             diceResult = diceTotal + diceModifier;
             let embed = new Discord.RichEmbed()
                 .setColor(`#baf2ef`)
-                .setTitle(`${roller} Rolled ${diceResult}`)
+                .setAuthor(msgObject.author.username, msgObject.author.avatarURL)
+                .setTitle(`Rolled ${diceResult}`)
+                .setURL(msgObject.author.avatarURL)
                 .setThumbnail(`https://bestanimations.com/Games/Dice/rolling-dice-gif-3.gif`)
                 .setFooter(client.user.username, iconClient)
-                .addField(`Dice`, `[${rolls.join("], [")}]`)
-                .addField(`Modifier`, `+${diceModifier}`, true)
-                .addField(`Actual Roll`, args, true);
+                .addField(`Typed Roll: ${args}`, `Nat: || [${rolls.join("], [")}] ||`);
+                // .addField(`Dice`, `[${rolls.join("], [")}]`)
+                // .addField(`Modifier`, `+${diceModifier}`, true)
+                
             msgObject.channel.send(embed)
                 .catch(console.error);
         });

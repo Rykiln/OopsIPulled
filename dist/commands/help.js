@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class Commands {
+class Help {
     constructor() {
-        this._command = "commands";
+        this._command = "help";
     }
     help() {
         return "This Displays This Commands Menu";
@@ -13,9 +13,9 @@ class Commands {
     runCommand(args, msgObject, client) {
         for (const commandClass of commands) {
             try {
-                if (!commandClass.isThisCommand(command)) {
-                    continue;
-                }
+                // if (!commandClass.isThisCommand(command)) {
+                //     continue;
+                // }
                 msgObject.channel.send(commandClass.help());
             }
             catch (exception) {
@@ -24,5 +24,5 @@ class Commands {
         }
     }
 }
-exports.default = Commands;
+exports.default = Help;
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29tbWFuZHMuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvY29tbWFuZHMvY29tbWFuZHMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFHQSxNQUFxQixRQUFRO0lBQTdCO1FBQ3FCLGFBQVEsR0FBRyxVQUFVLENBQUE7SUErQjFDLENBQUM7SUE3QkcsSUFBSTtRQUNBLE9BQU8sa0NBQWtDLENBQUE7SUFDN0MsQ0FBQztJQUVELGFBQWEsQ0FBQyxPQUFlO1FBQ3pCLE9BQU8sT0FBTyxLQUFLLElBQUksQ0FBQyxRQUFRLENBQUM7SUFDckMsQ0FBQztJQUVELFVBQVUsQ0FBQyxJQUFjLEVBQUUsU0FBMEIsRUFBRSxNQUFzQjtRQUV6RSxLQUFLLE1BQU0sWUFBWSxJQUFJLFFBQVEsRUFBRTtZQUVqQyxJQUFJO2dCQUVBLElBQUksQ0FBQyxZQUFZLENBQUMsYUFBYSxDQUFDLE9BQU8sQ0FBQyxFQUFFO29CQUV0QyxTQUFTO2lCQUNaO2dCQUVELFNBQVMsQ0FBQyxPQUFPLENBQUMsSUFBSSxDQUFDLFlBQVksQ0FBQyxJQUFJLEVBQUUsQ0FBQyxDQUFDO2FBQy9DO1lBQ0QsT0FBTyxTQUFTLEVBQUU7Z0JBRWQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxTQUFTLENBQUMsQ0FBQzthQUMxQjtTQUNKO0lBQ0wsQ0FBQztDQUdKO0FBaENELDJCQWdDQyJ9

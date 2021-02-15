@@ -22,7 +22,7 @@ class Purge {
         return __awaiter(this, void 0, void 0, function* () {
             msgObject.delete()
                 .catch(console.error);
-            if (!msgObject.member.hasPermission("MANAGE_MESSAGES")) {
+            if (!msgObject.member.hasPermission("MANAGE_ROLES")) {
                 msgObject.channel.send(`Sorry ${msgObject.author}, but this command is only for Admins.`)
                     .catch(console.error)
                     .then(msg => {

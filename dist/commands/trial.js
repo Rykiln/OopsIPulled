@@ -256,6 +256,7 @@ class Trial {
                     .setImage(`attachment://${imgName}`);
                 msgObject.delete(10000);
                 msgObject.channel.send(embed)
+                    .then(m => m.pin())
                     .catch(console.error);
             }
         });
