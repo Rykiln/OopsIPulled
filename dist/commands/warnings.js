@@ -14,8 +14,8 @@ class Warnings {
     runCommand(args, msgObject, client) {
         const fs = require("fs");
         const Guild = msgObject.Guild
-        // let iconGuild = msgObject.guild.iconURL;
-        let iconClient = client.user.displayAvatarURL;
+        let iconGuild = msgObject.guild.iconURL;
+        // let iconClient = client.user.displayAvatarURL;
         // let mentionedMember = msgObject.mentions.users.first();
         // let mentionedMemberName = mentionedMember.username;
         // let mentionedMemberID = mentionedMember.id
@@ -54,13 +54,16 @@ class Warnings {
                 let embed = new Discord.RichEmbed()
                     .setTitle(`Guild Member No-Show Warnings Issued`)
                     .setColor(0xFF9900)
-                    .setThumbnail(iconClient)
-                    .setFooter(client.user.username, iconClient)
+                    .setThumbnail(`attachment://oops.icon.gif`)
+                    .setFooter(client.user.username, iconGuild)
                     .setTimestamp()
                     .addField(`Member`, d, true)
                     .addField(`Nickname`, Nick, true)
                     .addField(`Warnings`, Counts, true);
-                msgObject.channel.send(embed)
+                msgObject.channel.send({embed, files: [{
+                    attachment: `../src/images/oops.icon.gif`,
+                    name: `oops.icon.gif`
+                }] })
                     .catch(console.error);
                 }); 
             });

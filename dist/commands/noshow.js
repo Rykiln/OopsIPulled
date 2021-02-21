@@ -56,6 +56,8 @@ class NoShow {
                     ID: (mentionedMemberID),
                     event: (eventname),
                     warnedby: (warnedby),
+                    reason: (`No-Show`),
+                    date: (Date()),
                 };
                 noshows.push(newObject);
                 fs.writeFile ("./noshow.json", JSON.stringify (noshows, null, 4), err => {

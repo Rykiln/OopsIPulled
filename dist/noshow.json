@@ -1,35 +1,5 @@
 [
     {
-        "Member": "Benzii",
-        "ID": "230094408693972992",
-        "event": "vka-wed-19-aug-10pm",
-        "warnedby": "Lineste"
-    },
-    {
-        "Member": "Trickk",
-        "ID": "359807614223384577",
-        "event": "vka-farm-sun-30-2pm-est",
-        "warnedby": "Lineste"
-    },
-    {
-        "Member": "TheJackal",
-        "ID": "152292483882024960",
-        "event": "minnows-chat",
-        "warnedby": "MattBlaze"
-    },
-    {
-        "Member": "Moridessa 🐼",
-        "ID": "152443152819683328",
-        "event": "minnows-chat",
-        "warnedby": "MattBlaze"
-    },
-    {
-        "Member": "waltermelon",
-        "ID": "222181920748994561",
-        "event": "vka-mon-7-sept-1pm-est",
-        "warnedby": "Lineste"
-    },
-    {
         "Member": "Veluccia",
         "ID": "199630612016005120",
         "event": "vhrc-26-sept-3pm-est",
@@ -46,12 +16,6 @@
         "ID": "198957333190017027",
         "event": "vss-farm-oct-12-10pm-est",
         "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "Skoomadealingwizard",
-        "ID": "665087442977816586",
-        "event": "vss-training-sun-18-oct-8pm-est",
-        "warnedby": "QuantumLoopX"
     },
     {
         "Member": "Krul",
@@ -84,12 +48,6 @@
         "warnedby": "Your Neighbourhood Polak"
     },
     {
-        "Member": "Skoomadealingwizard",
-        "ID": "665087442977816586",
-        "event": "vss-sat-21st-10pm",
-        "warnedby": "QuantumLoopX"
-    },
-    {
         "Member": "LukewarmTater",
         "ID": "401224405411168257",
         "event": "🔒-leader-chat",
@@ -100,12 +58,6 @@
         "ID": "165188516127571978",
         "event": "vhof-hm-sat-3p-est",
         "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "Lineste",
-        "ID": "161133203443154945",
-        "event": "vss-scorepush-1015pm-est",
-        "warnedby": "Lineste"
     },
     {
         "Member": "ShahKing",
@@ -126,12 +78,6 @@
         "warnedby": "QuantumLoopX"
     },
     {
-        "Member": "Mars2345",
-        "ID": "505266989493911552",
-        "event": "bait-nss-sun-6pm-est",
-        "warnedby": "SafariBlaze"
-    },
-    {
         "Member": "Kreator",
         "ID": "675385553973149696",
         "event": "vcr0-sun-dec13-4pm-est",
@@ -140,12 +86,6 @@
     {
         "Member": "Kreator",
         "ID": "675385553973149696",
-        "event": "bait-nss-sun-6pm-est",
-        "warnedby": "SafariBlaze"
-    },
-    {
-        "Member": "Rattleshadow",
-        "ID": "265565063744716800",
         "event": "bait-nss-sun-6pm-est",
         "warnedby": "SafariBlaze"
     },
@@ -162,45 +102,15 @@
         "warnedby": "kacoggins"
     },
     {
-        "Member": "Ant",
-        "ID": "208378072477466625",
-        "event": "vas1-fri-dec18-7pm-est",
-        "warnedby": "Quackmobile"
-    },
-    {
-        "Member": "Ant",
-        "ID": "208378072477466625",
-        "event": "vas0-sun-dec20-5pm-est",
-        "warnedby": "kacoggins"
-    },
-    {
         "Member": "arjhay0290",
         "ID": "151575986268405760",
         "event": "vcr1-sun-dec27th-11pmest",
         "warnedby": "LukewarmTater"
     },
     {
-        "Member": "Lineste",
-        "ID": "161133203443154945",
-        "event": "💢-all-caps",
-        "warnedby": "LukewarmTater"
-    },
-    {
-        "Member": "Korealer",
-        "ID": "125671686925320192",
-        "event": "vcr1-training-fri-8th-1130pm",
-        "warnedby": "Lineste"
-    },
-    {
         "Member": "Katz",
         "ID": "288871620116873217",
         "event": "vka-thurs-jan-14th-8est",
-        "warnedby": "Your Neighbourhood Polak"
-    },
-    {
-        "Member": "Your Neighbourhood Polak",
-        "ID": "148879319823810560",
-        "event": "vka-10pm-est-today",
         "warnedby": "Your Neighbourhood Polak"
     },
     {
@@ -238,5 +148,11 @@
         "ID": "448240335932489728",
         "event": "guild-house",
         "warnedby": "Rykiln"
+    },
+    {
+        "Member": "LukewarmTater",
+        "ID": "401224405411168257",
+        "event": "asap-vka-11pm-est",
+        "warnedby": "QQKimchi"
     }
 ]
