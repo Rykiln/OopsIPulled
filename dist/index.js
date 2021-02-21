@@ -57,6 +57,7 @@ function handleCommand(msg) {
                 if (!commandClass.isThisCommand(command)) {
                     continue;
                 }
+                // yield commandClass.help(args, msg, client);
                 yield commandClass.runCommand(args, msg, client);
             }
             catch (exception) {
