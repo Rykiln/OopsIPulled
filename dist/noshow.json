@@ -1,113 +1,5 @@
 [
     {
-        "Member": "Veluccia",
-        "ID": "199630612016005120",
-        "event": "vhrc-26-sept-3pm-est",
-        "warnedby": "QuantumLoopX"
-    },
-    {
-        "Member": "riley reid",
-        "ID": "382255296216694788",
-        "event": "plunder-farm-vhrc-sun-11-oct-6pm-est",
-        "warnedby": "MattBlaze"
-    },
-    {
-        "Member": "ShahKing",
-        "ID": "198957333190017027",
-        "event": "vss-farm-oct-12-10pm-est",
-        "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "Krul",
-        "ID": "697707174130090044",
-        "event": "vcr1-training-mon-19-oct-10p-est",
-        "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "EzpZ",
-        "ID": "140969081804161025",
-        "event": "ncr3-farm-31-oct-10pm-est",
-        "warnedby": "kacoggins"
-    },
-    {
-        "Member": "Krul",
-        "ID": "697707174130090044",
-        "event": "ntrial-collection-book-farm",
-        "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "Krizzell",
-        "ID": "341970365746249740",
-        "event": "coffer-run-sat-7-nov-6pm",
-        "warnedby": "MattBlaze"
-    },
-    {
-        "Member": "solariaus",
-        "ID": "245002350823997441",
-        "event": "vcr1-sat-nov-7th-9pm",
-        "warnedby": "Your Neighbourhood Polak"
-    },
-    {
-        "Member": "LukewarmTater",
-        "ID": "401224405411168257",
-        "event": "🔒-leader-chat",
-        "warnedby": "LukewarmTater"
-    },
-    {
-        "Member": "fioskal",
-        "ID": "165188516127571978",
-        "event": "vhof-hm-sat-3p-est",
-        "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "ShahKing",
-        "ID": "198957333190017027",
-        "event": "vss-icehm-sat-3p-est",
-        "warnedby": "Square_Dude"
-    },
-    {
-        "Member": "Veluccia",
-        "ID": "199630612016005120",
-        "event": "vcrag-rdy-set-goooo",
-        "warnedby": "QuantumLoopX"
-    },
-    {
-        "Member": "AbstractWorld",
-        "ID": "114394012957278211",
-        "event": "vcrag-rdy-set-goooo",
-        "warnedby": "QuantumLoopX"
-    },
-    {
-        "Member": "Kreator",
-        "ID": "675385553973149696",
-        "event": "vcr0-sun-dec13-4pm-est",
-        "warnedby": "kacoggins"
-    },
-    {
-        "Member": "Kreator",
-        "ID": "675385553973149696",
-        "event": "bait-nss-sun-6pm-est",
-        "warnedby": "SafariBlaze"
-    },
-    {
-        "Member": "thekingofrice",
-        "ID": "216479492313448448",
-        "event": "vka-tues-15th-11pm-est",
-        "warnedby": "Your Neighbourhood Polak"
-    },
-    {
-        "Member": "Trickk",
-        "ID": "359807614223384577",
-        "event": "vhof-thurs-dec17-10pm-est",
-        "warnedby": "kacoggins"
-    },
-    {
-        "Member": "arjhay0290",
-        "ID": "151575986268405760",
-        "event": "vcr1-sun-dec27th-11pmest",
-        "warnedby": "LukewarmTater"
-    },
-    {
         "Member": "Katz",
         "ID": "288871620116873217",
         "event": "vka-thurs-jan-14th-8est",
@@ -116,12 +8,6 @@
     {
         "Member": "Korealer",
         "ID": "125671686925320192",
-        "event": "vcr2-thurs-21st-7pm-est",
-        "warnedby": "Your Neighbourhood Polak"
-    },
-    {
-        "Member": "Krizzell",
-        "ID": "341970365746249740",
         "event": "vcr2-thurs-21st-7pm-est",
         "warnedby": "Your Neighbourhood Polak"
     },
@@ -144,15 +30,11 @@
         "warnedby": "QuantumLoopX"
     },
     {
-        "Member": "ValyrianEmpress",
-        "ID": "448240335932489728",
-        "event": "guild-house",
-        "warnedby": "Rykiln"
-    },
-    {
-        "Member": "LukewarmTater",
-        "ID": "401224405411168257",
-        "event": "asap-vka-11pm-est",
-        "warnedby": "QQKimchi"
+        "Member": "Pandemoniac1339",
+        "ID": "266786030592589825",
+        "event": "vcr0-sat-8pm-est-feb20",
+        "warnedby": "kacoggins",
+        "reason": "No-Show",
+        "date": "Sat Feb 20 2021 20:54:38 GMT-0600 (Central Standard Time)"
     }
 ]
