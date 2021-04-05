@@ -14,7 +14,8 @@ const client = new Discord.Client();
 let commands = [];
 loadCommands(`${__dirname}/commands`);
 client.on("ready", () => {
-    console.log(`Oops I Pulled Bot Is Now Online!`);
+    console.log(`${client.user.username} Bot Is Now Online!`);
+    console.log(`This bot is a Tier ${client.guilds.get(`694306288250781699`).premiumTier} server with ${client.guilds.get(`694306288250781699`).premiumSubscriptionCount} boosts`);
     client.user.setActivity("Oops I Pulled | .help", { type: "PLAYING" });
 });
 client.on("guildMemberAdd", member => {

@@ -34,12 +34,14 @@ class roleepic {
             let embed = new Discord.RichEmbed()
                 .setTitle(`Trial Role: Epic`)
                 .setColor(0x9f2df7)
-                .setDescription(roles)
+                .setDescription(`${roles}\nThese are additional sets that start allowing groups to optimize in more situations, including large trash pulls between bosses.`)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 .addField(`Damage Dealers`, `80K Magikca DPS\n90K Stamina DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses`, true)
-                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Martial Knowledge](https://eso-sets.com/set/way-of-martial-knowledge)\n[Z'en's Redress](https://eso-sets.com/set/zens-redress) (Pair w/Martial Knowledge)`, true)
-                .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Dragon’s Defilement](https://eso-sets.com/set/dragons-defilement)\n[Powerful Assault](https://eso-sets.com/set/powerful-assault)\n[Lady Thorn](https://eso-sets.com/set/lady-thorn)`, true)
+                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Martial Knowledge](https://eso-sets.com/set/way-of-martial-knowledge)\n[Z'en's Redress](https://eso-sets.com/set/zens-redress) (Pair w/Martial Knowledge)\n[Blackrose Prison Restoration Staff](https://eso-sets.com/set/menders-ward)`, true)
+                .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Dragon’s Defilement](https://eso-sets.com/set/dragons-defilement)\n[Frozen Watcher](https://eso-sets.com/set/frozen-watcher)\n[Roar of Alkosh](https://eso-sets.com/set/roar-of-alkosh)\n[Lady Thorn](https://eso-sets.com/set/lady-thorn)`, true)
+                .addBlankField()
+                .addField(`Trial Completions`, `Must have clears on each of the following trials:\n\n - vHOF\n - vAS+1 (Both)\n - vMOL\n - vCR+1 (Any)\n - vSS\n - vKA\n\nLogs are not required for epic, please post screenshots of your achievements to show these clears. If you have already posted them in #vet-trial-clears, you do not have to post them again.`)
             msgObject.delete();
             msgObject.channel.send({files: [`../src/images/Epic.png`]}).then(msg => {msgObject.channel.send(embed)})
                 .catch(console.error);
@@ -47,4 +49,9 @@ class roleepic {
     }
 }
 exports.default = roleepic;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiel90ZW1wbGF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYW5kcy96X3RlbXBsYXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxzQ0FBc0M7QUFHdEMsTUFBcUIsV0FBVztJQUFoQztRQUNxQixhQUFRLEdBQUcsYUFBYSxDQUFBO0lBZTdDLENBQUM7SUFiRyxJQUFJO1FBQ0EsT0FBTyx1Q0FBdUMsQ0FBQTtJQUNsRCxDQUFDO0lBRUQsYUFBYSxDQUFDLE9BQWU7UUFDekIsT0FBTyxPQUFPLEtBQUssSUFBSSxDQUFDLFFBQVEsQ0FBQztJQUNyQyxDQUFDO0lBRUssVUFBVSxDQUFDLElBQWMsRUFBRSxTQUEwQixFQUFFLE1BQXNCOztZQUMvRSxJQUFJLFNBQVMsR0FBRyxTQUFTLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQztZQUMzQyxJQUFJLFVBQVUsR0FBRyxNQUFNLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDO1lBQzlDLElBQUksS0FBSyxHQUFHLElBQUksT0FBTyxDQUFDLFNBQVMsRUFBRSxDQUFBO1FBQ3BDLENBQUM7S0FBQTtDQUNKO0FBaEJELDhCQWdCQyJ9
+
+// Change Log
+// ---------------- 2021 March 08 ----------------
+// Removed From Tanks Powerful Assault
+// Added To Healers Blackrose Prison Restoration Staff
+// Added To Tanks Frozen Watcher, Roar of Alkosh

@@ -33,12 +33,12 @@ class rolesuperior {
             let embed = new Discord.RichEmbed()
                 .setTitle(`Trial Role: Superior`)
                 .setColor(0x3991ff)
-                .setDescription(roles)
+                .setDescription(`${roles}\nThese sets, skills, and damage requirements allow for more group optimization than fine sets, but also require more understanding of how and when to perform certain actions to cause the gear to activate.`)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 .addField(`Damage Dealers`, `65K DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses`, true)
-                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Vestments of Olorime](https://eso-sets.com/set/perfect-vestment-of-olorime) (Pair w/Hollowfang)\n[Roaring Opportunist](https://eso-sets.com/set/perfect-roaring-opportunist) (Pair w/Jorvuld's Guidance)\n[Master’s Restoration Staff](https://eso-sets.com/set/grand-rejuvenation)\n[Symphony of Blades](https://eso-sets.com/set/symphony-of-blades)\n[Troll King](https://eso-sets.com/set/the-troll-king)`, true)
-                .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Worm's Raiment](https://eso-sets.com/set/the-worms-raiment)\n[Roar of Alkosh](https://eso-sets.com/set/roar-of-alkosh)\n[Earthgore](https://eso-sets.com/set/earthgore)\n[Tremorscale](https://eso-sets.com/set/tremorscale)`, true)
+                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Vestments of Olorime](https://eso-sets.com/set/perfect-vestment-of-olorime) (Pair w/Hollowfang)\n[Roaring Opportunist](https://eso-sets.com/set/perfect-roaring-opportunist) (Pair w/Jorvuld's Guidance)\n[Jorvuld's Guideance](https://eso-sets.com/set/jorvulds-guidance)\n[Symphony of Blades](https://eso-sets.com/set/symphony-of-blades)\n[Troll King](https://eso-sets.com/set/the-troll-king)`, true)
+                .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Powerful Assault](https://eso-sets.com/set/powerful-assault)\n[Aegis of Galenwe](https://eso-sets.com/set/aegis-of-galenwe)\n[Drake's Rush](https://eso-sets.com/set/drakes-rush)`, true)
             msgObject.delete();
             msgObject.channel.send({files: [`../src/images/Superior.png`]}).then(msg => {msgObject.channel.send(embed)})
                 .catch(console.error);
@@ -46,4 +46,10 @@ class rolesuperior {
     }
 }
 exports.default = rolesuperior;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiel90ZW1wbGF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYW5kcy96X3RlbXBsYXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxzQ0FBc0M7QUFHdEMsTUFBcUIsV0FBVztJQUFoQztRQUNxQixhQUFRLEdBQUcsYUFBYSxDQUFBO0lBZTdDLENBQUM7SUFiRyxJQUFJO1FBQ0EsT0FBTyx1Q0FBdUMsQ0FBQTtJQUNsRCxDQUFDO0lBRUQsYUFBYSxDQUFDLE9BQWU7UUFDekIsT0FBTyxPQUFPLEtBQUssSUFBSSxDQUFDLFFBQVEsQ0FBQztJQUNyQyxDQUFDO0lBRUssVUFBVSxDQUFDLElBQWMsRUFBRSxTQUEwQixFQUFFLE1BQXNCOztZQUMvRSxJQUFJLFNBQVMsR0FBRyxTQUFTLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQztZQUMzQyxJQUFJLFVBQVUsR0FBRyxNQUFNLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDO1lBQzlDLElBQUksS0FBSyxHQUFHLElBQUksT0FBTyxDQUFDLFNBQVMsRUFBRSxDQUFBO1FBQ3BDLENBQUM7S0FBQTtDQUNKO0FBaEJELDhCQWdCQyJ9
+
+// Change Log 
+// ---------------- 2021 March 08 ----------------
+// Removed From Healers Master's Restoration Staff
+// Removed From Tanks Worm's Raiment, Roar of Alkosh, Earthgore, Tremorscale
+// Added To Healers Jorvuld's Guidance
+// Added To Tanks Powerful Assault, Aegis of Galenwe, Drake's Rush

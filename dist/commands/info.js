@@ -52,7 +52,7 @@ class Info {
                             .setFooter(client.user.username, iconClient)
                             .setTimestamp()
                             .addField("Server Nickname", nick, true)
-                            .addField("Your Guild Rank", usrMember.roles.get(rankId), true)
+                            .addField("Guild Rank", usrMember.roles.get(rankId), true)
                             .addField("Account Name", usrMember.user.username, true)
                             .addField("Discord ID", usrMember.user.tag, true)
                             .addField("You Joined The Guild", usrMember.joinedAt)

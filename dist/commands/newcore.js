@@ -20,8 +20,10 @@ class NewCore {
         let coreName = args.join(` `);
         let coreRoleName = `Core - ${coreName}`
         let coreNameFormatted = coreName.replace(" ","-").toLowerCase();
-        let coreChannelName = `💢-${coreNameFormatted}`
-        let coreApplyChannel = `apply-${coreNameFormatted}`
+        let coreChannelName = `💢｜${coreNameFormatted}`
+        let coreApplyChannel = `apply｜${coreNameFormatted}`
+        let CreatedRolePosition = msgObject.guild.roles.get(`765672268286001213`).position +1;
+        console.log(`Created Role Position = ${CreatedRolePosition}`);
         if(!msgObject.member.hasPermission(`MANAGE_ROLES`)){
             msgObject.reply(`Sorry ${msgObject.member}, but you do not have the access required to use this command.`)
             return
@@ -30,14 +32,15 @@ class NewCore {
             await msgObject.guild.createRole({
                 name: coreRoleName,
                 hoist: false,
-                mentionable: true
+                mentionable: true,
+                position: CreatedRolePosition
             }).then(async r => {
                 // Adds Message Author As The First Member Of The Newly Created Role
                 RL.addRole(r);
             });
         
         // Retrieve Created Role Information
-            let CreatedCoreRole = msgObject.guild.roles.find(`name`, coreRoleName)            
+            let CreatedCoreRole = msgObject.guild.roles.find(`name`, coreRoleName);
 
         // Create Core Channel And Set Parent Permissions As Default And Then Add The New Role With Permission Overwrites
             await msgObject.guild.createChannel(coreChannelName, `text`).then(async c => {

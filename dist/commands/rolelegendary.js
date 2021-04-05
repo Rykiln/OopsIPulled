@@ -34,14 +34,14 @@ class rolelegendary {
             let embed = new Discord.RichEmbed()
                 .setTitle(`Trial Role: Legendary`)
                 .setColor(0xeec929)
-                .setDescription(roles)
+                .setDescription(`${roles} By Legendary, it is expected that someone knows their role and class very well and will voluntarily obtain any additional sets that will benefit them in even the most niche situations. At this level, we are looking for mastery of your character, and awareness in trials.`)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
-                .addField(`Damage Dealers`, `90K Magicka DPS\n95K Stamina DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses`, true)
-                .addField(`Healers`, `${roleprevioushealer} Requirements And...\n[Blackrose Restoration Staff](https://eso-sets.com/set/perfect-menders-ward)`, true)
-                .addField(`Tanks`, `${roleprevioustank} Requirements And...\n[Master's Sword and Board](https://eso-sets.com/set/perfected-puncturing-remedy)\n[Swarm Mother](https://eso-sets.com/set/swarm-mother)`, true)
+                .addField(`Damage Dealers`, `90K Magicka DPS\n95K Stamina DPS\nNo [Simmering Frenzy](https://eso-skillbook.com/skill/simmering-frenzy)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses\nNo Melee Weapon Mag Parses`, true)
+                .addField(`Healers`, `${roleprevioushealer} Requirements`, true)
+                .addField(`Tanks`, `${roleprevioustank} Requirements`, true)
                 .addBlankField()
-                .addField(`Trial Performance-Log Review`, `When applying for Legendary roles, you will be expected to provide trial logs to be reviewed by the guild officers. These logs will be used to determine several factors that cannot be determined by a dummy parse or gear alone. Acceptable trials for log sumbissions include:\n\n - vMOL (or HM)\n - vHOF (or HM)\n - vCR+2 (or HM)\n - vSS (or any HM)\n - vKA (or any HM)\n\nBelow are the criteria we're looking at for each role.`)
+                .addField(`Trial Performance-Log Review`, `When applying for Legendary roles, you will be expected to provide trial logs to be reviewed by the guild officers. These logs will be used to determine several factors that cannot be determined by a dummy parse or gear alone. Acceptable trials for log sumbissions include:\n\n - vMOL (or HM) If backyard runner, log must be from your perspective\n - vHOF (or HM)\n - vAS HM\n - vCR+2 (or HM) If portals, log must be from your perspective\n - vSS (or HM) If portals, log must be from your perspective\n - vKA (or HM)\n\nBelow are the criteria we're looking at for each role.`)
                 .addBlankField()
                 .addField(`Damage Dealers`, `TRIAL Single Target Damage\nSurvivability\nExtra Duties (Backyard Runner, Portals, etc)`, true)
                 .addField(`Healers`, `Survivability\nEle Drain uptime\nCombat Prayer \nMajor Courage\nClass specific buffs/debuffs\nGear set usage/uptime`, true)
@@ -53,4 +53,6 @@ class rolelegendary {
     }
 }
 exports.default = rolelegendary;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiel90ZW1wbGF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYW5kcy96X3RlbXBsYXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxzQ0FBc0M7QUFHdEMsTUFBcUIsV0FBVztJQUFoQztRQUNxQixhQUFRLEdBQUcsYUFBYSxDQUFBO0lBZTdDLENBQUM7SUFiRyxJQUFJO1FBQ0EsT0FBTyx1Q0FBdUMsQ0FBQTtJQUNsRCxDQUFDO0lBRUQsYUFBYSxDQUFDLE9BQWU7UUFDekIsT0FBTyxPQUFPLEtBQUssSUFBSSxDQUFDLFFBQVEsQ0FBQztJQUNyQyxDQUFDO0lBRUssVUFBVSxDQUFDLElBQWMsRUFBRSxTQUEwQixFQUFFLE1BQXNCOztZQUMvRSxJQUFJLFNBQVMsR0FBRyxTQUFTLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQztZQUMzQyxJQUFJLFVBQVUsR0FBRyxNQUFNLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDO1lBQzlDLElBQUksS0FBSyxHQUFHLElBQUksT0FBTyxDQUFDLFNBQVMsRUFBRSxDQUFBO1FBQ3BDLENBQUM7S0FBQTtDQUNKO0FBaEJELDhCQWdCQyJ9
+
+//  Change Log
+// ---------------- 2021 March 08 ----------------

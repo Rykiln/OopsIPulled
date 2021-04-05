@@ -21,6 +21,14 @@ class NoShow {
     }
     runCommand(args, msgObject, client) {
         return __awaiter(this, void 0, void 0, function* () {
+            
+            // Disallow Square_Dude from using this command
+            // if(msgObject.member.id === "197217128628092928"){
+            //     msgObject.delete();
+            //     msgObject.reply(`Aww, that's cute..... The kids are playing again. If this is a real no-show, please get an adult to use this command for you`).then(r => r.delete(5000));
+            //     channelNoShow.send(`${msgObject.author} has attempted to use the .noshow command and was denied`);
+            //     return;
+            // }
             if(!msgObject.member.hasPermissions("BAN_MEMBERS")){
                 msgObject.delete();
                 msgObject.reply(`You do not have permissions to use this command.`).then(r => r.delete(5000));

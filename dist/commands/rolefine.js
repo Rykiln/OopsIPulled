@@ -31,14 +31,14 @@ class rolefine {
             let embed = new Discord.RichEmbed()
                 .setTitle(`Trial Role: Fine`)
                 .setColor(0x2cc50d)
-                .setDescription(roles)
+                .setDescription(`${roles}\These are the minimum requirements for joining veteran trials. The gear sets, skills, and damage are needed to be a contributing member of a coordinated trial group.`)
                 .setFooter(client.user.username, iconClient)
                 .setTimestamp()
                 // .attachFiles([`../src/images/fine_fire.png`])
                 // .setImage(`attachment://fine_fire.png`)
                 .addField(`Damage Dealers`, `50K DPS\nNo [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)\nNo [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)\nNo [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)\nNo Werewolf Parses`, true)
-                .addField(`Healers`, `[Spell Power Cure](https://eso-sets.com/set/spell-power-cure) (Pair w/Hollowfang)\n[Jorvuld's Guidance](https://eso-sets.com/set/jorvulds-guidance)\n[Worm’s Raiment](https://eso-sets.com/set/the-worms-raiment)\n[Hollowfang Thirst](https://eso-sets.com/set/hollowfang-thirst) (Pair w/SPC)\n[Sentinel of Rkugamz](https://eso-sets.com/set/sentinel-of-rkugamz)\n[Bogdan the Nightflame](https://eso-sets.com/set/nightflame)`, true)
-                .addField(`Tanks`, `[Claw of Yolnahkrin](https://eso-sets.com/set/claw-of-yolnahkriin)\n[Aegis of Galenwe](https://eso-sets.com/set/aegis-of-galenwe)\n[Torug's Pact](https://eso-sets.com/set/torugs-pact)\n[Ebon Armory](https://eso-sets.com/set/ebon-armory)\n[Bloodspawn](https://eso-sets.com/set/bloodspawn)\n[Engine Guardian](https://eso-sets.com/set/engine-guardian)`, true)
+                .addField(`Healers`, `[Spell Power Cure](https://eso-sets.com/set/spell-power-cure) (Pair w/Hollowfang)\n[Hollowfang Thirst](https://eso-sets.com/set/hollowfang-thirst) (Pair w/SPC)\n[Sentinel of Rkugamz](https://eso-sets.com/set/sentinel-of-rkugamz)\n[Bogdan the Nightflame](https://eso-sets.com/set/nightflame)\n[Master's Restoration Staff](https://eso-sets.com/set/grand-rejuvenation)`, true)
+                .addField(`Tanks`, `[Claw of Yolnahkrin](https://eso-sets.com/set/claw-of-yolnahkriin)\n[Ebon Armory](https://eso-sets.com/set/ebon-armory)\n[Worm's Raiment](https://eso-sets.com/set/the-worms-raiment)\n[Earthgore](https://eso-sets.com/set/earthgore)\n[Lord Warden](https://eso-sets.com/set/lord-warden)`, true)
             msgObject.delete();
             msgObject.channel.send({files: [`../src/images/fine_fire.png`]}).then(msg => {msgObject.channel.send(embed)})
                 .catch(console.error);
@@ -46,4 +46,9 @@ class rolefine {
     }
 }
 exports.default = rolefine;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiel90ZW1wbGF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb21tYW5kcy96X3RlbXBsYXRlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxzQ0FBc0M7QUFHdEMsTUFBcUIsV0FBVztJQUFoQztRQUNxQixhQUFRLEdBQUcsYUFBYSxDQUFBO0lBZTdDLENBQUM7SUFiRyxJQUFJO1FBQ0EsT0FBTyx1Q0FBdUMsQ0FBQTtJQUNsRCxDQUFDO0lBRUQsYUFBYSxDQUFDLE9BQWU7UUFDekIsT0FBTyxPQUFPLEtBQUssSUFBSSxDQUFDLFFBQVEsQ0FBQztJQUNyQyxDQUFDO0lBRUssVUFBVSxDQUFDLElBQWMsRUFBRSxTQUEwQixFQUFFLE1BQXNCOztZQUMvRSxJQUFJLFNBQVMsR0FBRyxTQUFTLENBQUMsS0FBSyxDQUFDLE9BQU8sQ0FBQztZQUMzQyxJQUFJLFVBQVUsR0FBRyxNQUFNLENBQUMsSUFBSSxDQUFDLGdCQUFnQixDQUFDO1lBQzlDLElBQUksS0FBSyxHQUFHLElBQUksT0FBTyxDQUFDLFNBQVMsRUFBRSxDQUFBO1FBQ3BDLENBQUM7S0FBQTtDQUNKO0FBaEJELDhCQWdCQyJ9
+// Change Log
+// ---------------- 2021 March 08 ----------------
+// Removed from Healers Jorvuld's Guidance, Worm’s Raiment
+// Removed from Tanks Aegis of Galenwe, Torug's Pact, Bloodspawn, Engine Guardian
+// Added to Healers Master's Restoration Staff
+// Added to Tanks Worm's Raiment, Earthgore, Lord Warden
