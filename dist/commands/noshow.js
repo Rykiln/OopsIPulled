@@ -29,7 +29,7 @@ class NoShow {
             //     channelNoShow.send(`${msgObject.author} has attempted to use the .noshow command and was denied`);
             //     return;
             // }
-            if(!msgObject.member.hasPermissions("BAN_MEMBERS")){
+            if(!msgObject.member.hasPermission("BAN_MEMBERS")){
                 msgObject.delete();
                 msgObject.reply(`You do not have permissions to use this command.`).then(r => r.delete(5000));
                 return ;
