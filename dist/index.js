@@ -84,3 +84,4 @@ function loadCommands(commandsPath) {
     }
 }
 client.login(ConfigFile.config.token);
+// 
