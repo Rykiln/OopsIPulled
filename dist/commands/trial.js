@@ -233,6 +233,18 @@ class Trial {
                         cpsetupH = `73 Ironclad\n54 Spellshield\n27 Hardy\n64 Elemental Defender\n37 Thick Skinned\n15 Quick Recovery`;
                         cpsetupT = `81 Ironclad\n64 Hardy\n37 Elemental Defender\n68 Thick Skinned\n11 Quick Recovery\n11 Heavy Armor Focus`;
                         break;
+                    case "rg":
+                    case "nrg":
+                    case "vrg":
+                    case "rockgrove":
+                    case "rock grove":
+                        trialname = `Rockgrove`;
+                        location = `Located In Blackwood`;
+                        motifstyle = `#N/A`;
+                        img = `https://www.nme.com/wp-content/uploads/2021/01/TESO-Blackwood.jpg`;
+                        gearsets = `[Saxhleel Champion](https://eso-sets.com/set/saxhleel-champion)  [[Perfected]](https://eso-sets.com/set/perfected-saxhleel-champion)\n[Sul-Xan's Torment](https://eso-sets.com/set/sul-xans-torment)  [[Perfected]](https://eso-sets.com/set/perfected-sul-xans-torment)\n[Bahsei's Mania](https://eso-sets.com/set/bahseis-mania)  [[Perfected]](https://eso-sets.com/set/perfected-bahseis-mania)\n[Stone-Talker's Oath](https://eso-sets.com/set/stone-talkers-oath)  [[Perfected]](https://eso-sets.com/set/perfected-stone-talkers-oath)`;
+                        dlcrequired = ` (Blackwood DLC Required)`;
+                        break;
                     default:
                         trialname = `Coming Soon`;
                         gearsets = `Coming Soon`;
