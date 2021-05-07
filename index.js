@@ -44,7 +44,7 @@ client.on(`guildMemberAdd`, member => {
     console.log(`++ [${member.user.username}] has joined [${member.guild.name}].`);
     // Send Welcome DM To New Members On Joining
     const embed = new Discord.MessageEmbed()
-        .setTitle(`${member.user.usernam}, Welcome To ${member.guild.name}!`)
+        .setTitle(`${member.user.username}, Welcome To ${member.guild.name}!`)
         .setColor(0x7ac8fb)
         .setDescription(`We are glad to have you as part of our awesome team and growing community.`)
         .setFooter(client.user.username, client.user.displayAvatarURL())
