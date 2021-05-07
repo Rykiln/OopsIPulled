@@ -42,6 +42,25 @@ client.once(`ready`, () => {
 // Client Guild Member Join
 client.on(`guildMemberAdd`, member => {
     console.log(`++ [${member.user.username}] has joined [${member.guild.name}].`);
+    // Send Welcome DM To New Members On Joining
+    const embed = new Discord.MessageEmbed()
+        .setTitle(`${member.user.usernam}, Welcome To ${member.guild.name}!`)
+        .setColor(0x7ac8fb)
+        .setDescription(`We are glad to have you as part of our awesome team and growing community.`)
+        .setFooter(client.user.username, client.user.displayAvatarURL())
+        .setTimestamp()
+        .setThumbnail(client.user.displayAvatarURL())
+        .addField(`Learn More About Us`, `Please Head over to our [🎉｜welcome](https://discord.com/channels/694306288250781699/728692333280886884/830317590756065310) channel. After reading, react to accept our server rules using with 🔔 or 🚫 to specify whether you want to recieve pings or not; it will give you a role that unlocks access to more of our channels.`)
+        .addField(`Join The Guild In Game`, `Go to [🚪｜need-guild-invite](https://discord.com/channels/694306288250781699/725415873929674782/751946917121884251) to request an invitation to the guild.`)
+        .addField(`Let Us Know Who You Are`, `Please set your discord nickname to match your ESO Account Name (Not Character Name)`);
+    member.send(embed);
+    // Add Default Role Separators To New Members On Joining
+    member.roles.add(`765672991668568165`); // Member Ranks Separator
+    member.roles.add(`765673271987273768`); // Proficiencies Separator
+    member.roles.add(`765673105041391648`); // Clears Separator
+    member.roles.add(`765672268286001213`); // Cores Separator
+    member.roles.add(`765674102014476309`); // Streaming Separator
+    member.roles.add(`765672632137023549`); // Self-Assignable Separator
 });
 
 // Client Guild Member Leave
