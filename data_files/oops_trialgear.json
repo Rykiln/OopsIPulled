@@ -1,0 +1,203 @@
+[
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Spell Power Cure",
+		"ESOSETSURL": "https://eso-sets.com/set/spell-power-cure",
+		"PairRequirements": "(Pair w/ Hollowfang)"
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Hollowfang Thirst",
+		"ESOSETSURL": "https://eso-sets.com/set/hollowfang-thirst",
+		"PairRequirements": "(Pair w/ Spell Power Cure)"
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Sentinel of Rkugamz",
+		"ESOSETSURL": "https://eso-sets.com/set/sentinel-of-rkugamz",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Bogdan the Nightflame",
+		"ESOSETSURL": "https://eso-sets.com/set/nightflame",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Master's Restoration Staff",
+		"ESOSETSURL": "https://eso-sets.com/set/grand-rejuvenation",
+		"PairRequirements": ""
+	}
+	,
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Claw of Yolnahkriin",
+		"ESOSETSURL": "https://eso-sets.com/set/claw-of-yolnahkriin",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Ebon Armory",
+		"ESOSETSURL": "https://eso-sets.com/set/ebon-armory",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Worm's Raiment",
+		"ESOSETSURL": "https://eso-sets.com/set/the-worms-raiment",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Earthgore",
+		"ESOSETSURL": "https://eso-sets.com/set/earthgore",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Fine",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Lord Warden",
+		"ESOSETSURL": "https://eso-sets.com/set/lord-warden",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Vestments of Olorime",
+		"ESOSETSURL": "https://eso-sets.com/set/perfect-vestment-of-olorime",
+		"PairRequirements": "(Pair w/ Hollowfang)"
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Roaring Opportunist",
+		"ESOSETSURL": "https://eso-sets.com/set/perfect-roaring-opportunist",
+		"PairRequirements": "(Pair w/ Jorvuld)"
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Jorvuld's Guidance",
+		"ESOSETSURL": "https://eso-sets.com/set/jorvulds-guidance",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Symphony of Blades",
+		"ESOSETSURL": "https://eso-sets.com/set/symphony-of-blades",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Healer",
+		"SetName": "Troll King",
+		"ESOSETSURL": "https://eso-sets.com/set/the-troll-king",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Powerful Assault",
+		"ESOSETSURL": "https://eso-sets.com/set/powerful-assault",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Aegis of Galenwe",
+		"ESOSETSURL": "https://eso-sets.com/set/aegis-of-galenwe",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "840370194437505024",
+		"Role": "Tank",
+		"SetName": "Drake's Rush",
+		"ESOSETSURL": "https://eso-sets.com/set/drakes-rush",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Healer",
+		"SetName": "Martial Knowledge",
+		"ESOSETSURL": "https://eso-sets.com/set/way-of-martial-knowledge",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Healer",
+		"SetName": "Z'en's Redress",
+		"ESOSETSURL": "https://eso-sets.com/set/zens-redress",
+		"PairRequirements": "(Pair w/ Martial Knowledge)"
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Healer",
+		"SetName": "Blackrose Prison Restoration Staff",
+		"ESOSETSURL": "https://eso-sets.com/set/menders-ward",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Tank",
+		"SetName": "Dragon's Defilement",
+		"ESOSETSURL": "https://eso-sets.com/set/dragons-defilement",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Tank",
+		"SetName": "Frozen Watcher",
+		"ESOSETSURL": "https://eso-sets.com/set/frozen-watcher",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Tank",
+		"SetName": "Roar of Alkosh",
+		"ESOSETSURL": "https://eso-sets.com/set/roar-of-alkosh",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "840370208957923339",
+		"Role": "Tank",
+		"SetName": "Lady Thorn",
+		"ESOSETSURL": "https://eso-sets.com/set/lady-thorn",
+		"PairRequirements": ""
+	}
+]
