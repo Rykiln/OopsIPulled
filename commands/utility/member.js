@@ -18,7 +18,7 @@ module.exports = {
 
                 // Retrieve JSON Data For Warning and No-Show Information
                 const fs = require(`fs`);
-                fs.readFile(process.env.TNS_JSON_WARNINGS, function(err, data){
+                fs.readFile(process.env.OOPS_JSON_WARNINGS, function(err, data){
                     if (err) throw err;
 
                     const warns = JSON.parse(data);
