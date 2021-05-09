@@ -128,5 +128,6 @@ client.on(`message`, msgObject => {
     }
 });
 
-// Initialize Client
+// Initialize Clients
 client.login(Token);
+require(`./api/twitch.js`)(client, GuildID)
