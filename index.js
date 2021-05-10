@@ -36,6 +36,10 @@ for (const folder of commandFolders) {
 client.once(`ready`, () => {
     console.log(`${client.user.username} Bot Is Now Online!`);
     console.log(`This bot is a Tier ${client.guilds.resolve(GuildID).premiumTier} server with ${client.guilds.resolve(GuildID).premiumSubscriptionCount} boosts!`);
+    console.log(`Twitch API Request interval is set to ${process.env.OOPS_TWITCH_REFRESH} seconds.`)
+    console.log(Date());
+    console.log(`========================================`);
+    console.log();
     client.user.setActivity(`${client.user.username} | .help`, { type: "PLAYING" });
 });
 
@@ -74,7 +78,9 @@ client.on(`message`, msgObject => {
 
     const args = msgObject.content.slice(Prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
-
+    console.log(`[${msgObject.author.username}] used Command [${commandName}] in Channel [${msgObject.channel.name}]`);
+    console.log(`With Args : [${args}]`);
+    console.log();
     // Check Command Names and Command Aliases. Ignore Commands That Don't Exist
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
