@@ -78,14 +78,15 @@ client.on(`message`, msgObject => {
 
     const args = msgObject.content.slice(Prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
-    console.log(`[${msgObject.author.username}] used Command [${commandName}] in Channel [${msgObject.channel.name}]`);
-    console.log(`With Args : [${args}]`);
-    console.log();
+    
     // Check Command Names and Command Aliases. Ignore Commands That Don't Exist
     const command = client.commands.get(commandName)
         || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
     if (!command) return;
+    console.log(`[${msgObject.author.username}] used Command [${commandName}] in Channel [${msgObject.channel.name}]`);
+    console.log(`With Args : [${args}]`);
+    console.log();
 
     // Return Error if User does not have the correct permissions
     if (command.permissions) {
