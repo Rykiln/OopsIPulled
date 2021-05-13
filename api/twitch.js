@@ -57,7 +57,7 @@ module.exports = (client, guildID) => {setInterval(() => {
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_CHAT);
                     break;
                 case `Among Us`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_AMONGUS);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_AMONGUS);
                     break;
                 case `Assassin's Creed`:
                 case `Assassin's Creed II`:
@@ -76,17 +76,17 @@ module.exports = (client, guildID) => {setInterval(() => {
                 case `Assassin's Creed: Origins`:
                 case `Assassin's Creed: Odyssey`:
                 case `Assassin's Creed: Rebellion`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_ASSASSINSCREED);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_ASSASSINSCREED);
                     break;
                 case `Black Desert Online`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_BLACKDESERT);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_BLACKDESERT);
                     break;
                 case `Cyberpunk 2077`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_CYBERPUNK);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_CYBERPUNK);
                     break;
                 case `Destiny`:
                 case `Destiny 2`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_DESTINY);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_DESTINY);
                     break;
                 case `Fallout`:
                 case `Fallout 2`:
@@ -95,7 +95,7 @@ module.exports = (client, guildID) => {setInterval(() => {
                 case `Fallout 4`:
                 case `Fallout Shelter`:
                 case `Fallout 76`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_FALLOUT);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_FALLOUT);
                     break;
                 case `Final Fantasy`:
                 case `Final Fantasy II`:
@@ -114,40 +114,40 @@ module.exports = (client, guildID) => {setInterval(() => {
                 case `Final Fantasy XIII-2`:
                 case `Final Fantasy XIV Online`:
                 case `Final Fantasy XV`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_FINALFANTASY);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_FINALFANTASY);
                     break;
                 case `Genshin Impact`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GENSHINIMPACT);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_GENSHINIMPACT);
                     break;
                 case `Horizon Zero Dawn`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_HORIZONZERODAWN);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_HORIZONZERODAWN);
                     break;
                 case `League of Legends`:
                 case `League of Legends: Wild Rift`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_LEAGUEOFLEGENDS);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_LEAGUEOFLEGENDS);
                     break;
                 case `Red Dead Redemption`:
                 case `Red Dead Redemption 2`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_REDDEADREDEMPTION);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_REDDEADREDEMPTION);
                     break;
                 case `The Witcher`:
                 case `The Witcher: Adventure Game`:
                 case `The Witcher 2: Assassin's of Kings`:
                 case `The Witcher 3: Wild Hunt`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_THEWITCHER);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_THEWITCHER);
                     break;
                 case `World of Warcraft`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_WORLDOFWARCRAFT);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_WORLDOFWARCRAFT);
                     break;
                 case `Subnautica`:
                 case `Subnautica: Below Zero`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_SUBNAUTICAL);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_SUBNAUTICAL);
                     break;
                 case `Valheim`:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_VALHEIM);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_VALHEIM);
                     break;
                 default:
-                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_OTHER);
+                    dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_OTHER);
                     break;
             }
 
