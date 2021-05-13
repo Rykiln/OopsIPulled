@@ -7,7 +7,7 @@ module.exports = {
 	guildOnly: true, 																					// [Optional] When True - Prevents Command from being used in a Direct Message With The Bot Account
 	cooldown: 5, 																						// [Optional] See https://discordjs.guide/command-handling/adding-features.html#cooldowns
 	execute(msgObject, args, client) {
-		const BoostRoleID = process.env.OOPS_BOOSTROLE
+		const BoostRoleID = process.env.OOPS_ROLE_SERVERBOOSTER
 		const BoostColor = msgObject.guild.roles.cache.get(BoostRoleID).color;
 		const Boosters = msgObject.guild.roles.cache.get(BoostRoleID).members.map(m => m.user.tag);
 		const embed = new Discord.MessageEmbed()
