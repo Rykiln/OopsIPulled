@@ -3,7 +3,11 @@
 // Environment Variables and API Calls
 require(`dotenv`).config();
 const Discord = require("discord.js");
-const client = new Discord.Client();
+// const client = new Discord.Client();
+// const client = new Discord.Client({ ws: { intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_BANS', 'GUILD_EMOJIS', 'GUILD_INTEGRATIONS', 'GUILD_WEBHOOKS', 'GUILD_INVITES', 'GUILD_VOICE_STATES', 'GUILD_PRESENCES', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS', 'GUILD_MESSAGE_TYPING', 'DIRECT_MESSAGES', 'DIRECT_MESSAGE_REACTIONS', 'DIRECT_MESSAGE_TYPING'] } })
+// const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) } })
+const client = new Discord.Client({ intents: new Discord.Intents(Discord.Intents.ALL) })
+
 const fs = require(`fs`);
 const BotStatusLive = true;
 if (BotStatusLive) {
@@ -41,6 +45,7 @@ client.once(`ready`, () => {
     console.log(`========================================`);
     console.log();
     client.user.setActivity(`${client.user.username} | .help`, { type: "PLAYING" });
+    // console.log(client.guilds.resolve(`406551139061071902`).members.resolve(`376178762569744384`))
 });
 
 // Client Guild Member Join
@@ -49,6 +54,7 @@ client.on(`guildMemberAdd`, member => {
     // Send Welcome DM To New Members On Joining
     const embed = new Discord.MessageEmbed()
         .setTitle(`${member.user.username}, Welcome To ${member.guild.name}!`)
+        .setURL(`https://discord.gg/oops-i-pulled`)
         .setColor(0x7ac8fb)
         .setDescription(`We are glad to have you as part of our awesome team and growing community.`)
         .setFooter(client.user.username, client.user.displayAvatarURL())
@@ -58,13 +64,37 @@ client.on(`guildMemberAdd`, member => {
         .addField(`Join The Guild In Game`, `Go to [🚪｜need-guild-invite](https://discord.com/channels/694306288250781699/725415873929674782/751946917121884251) to request an invitation to the guild.`)
         .addField(`Let Us Know Who You Are`, `Please set your discord nickname to match your ESO Account Name (Not Character Name)`);
     member.send(embed);
-    // Add Default Role Separators To New Members On Joining
-    member.roles.add(`765672991668568165`); // Member Ranks Separator
-    member.roles.add(`765673271987273768`); // Proficiencies Separator
-    member.roles.add(`765673105041391648`); // Clears Separator
-    member.roles.add(`765672268286001213`); // Cores Separator
-    member.roles.add(`765674102014476309`); // Streaming Separator
-    member.roles.add(`765672632137023549`); // Self-Assignable Separator
+});
+
+client.on(`guildMemberUpdate`, (oldMember, newMember) => {
+    if(oldMember.pending === true && newMember.pending === false){
+        `++ ++ [${newMember.username} has accepted the guild rules.]`
+        // Define Default Role
+        const roleDefault = process.env.OOPS_ROLE_DEFAULT;
+        // Define Role Separators 
+        const roleSeparatorMemberRanks = process.env.OOPS_ROLE_SEPARATOR_MEMBERRANKS;
+        const roleSeparatorProficiencies = process.env.OOPS_ROLE_SEPARATOR_PROFICIENCIES;
+        const roleSeparatorClears = process.env.OOPS_ROLE_SEPARATOR_CLEARS;
+        const roleSeparatorCores = process.env.OOPS_ROLE_SEPARATOR_CORES;
+        const roleSeparatorStreaming = process.env.OOPS_ROLE_SEPARATOR_STREAMING;
+        const roleSeparatorSelfAssignable = process.env.OOPS_ROLE_SEPARATOR_SELFASSIGNABLE;
+        const rolesIDArray = [roleDefault, roleSeparatorClears, roleSeparatorCores, roleSeparatorMemberRanks, roleSeparatorProficiencies, roleSeparatorSelfAssignable, roleSeparatorStreaming]
+        let rolesArray = []
+        rolesIDArray.forEach(role => {
+            newMember.roles.add(role)
+            rolesArray.push(client.guilds.resolve(GuildID).roles.resolve(role).name)
+        })
+        MemberLogChannel = client.guilds.resolve(GuildID).channels.resolve(process.env.OOPS_CHANNEL_MEMBERLOGS)
+        const embed = new Discord.MessageEmbed()
+            .setAuthor(newMember.user.tag, newMember.user.displayAvatarURL())
+            .setColor(0x00ff00)
+            .setDescription(`${newMember} has accepted the guild rules.`)
+            .setFooter(client.user.username, client.user.displayAvatarURL())
+            .setTimestamp()
+            .addField(`Name`, `${newMember.user.tag} (${newMember.user.id}) ${newMember}`)
+            .addField(`Granted Roles`, rolesArray.join(`\n`))
+        MemberLogChannel.send(embed);
+    };
 });
 
 // Client Guild Member Leave
