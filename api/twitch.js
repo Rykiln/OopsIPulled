@@ -37,113 +37,113 @@ module.exports = (client, guildID) => {setInterval(() => {
             const tGame = tStream.gameName;
             // Set Destination Channel In Discord By Game
             let dChannel;
-            switch (tGame) {
-                case `The Elder Scrolls Online`:
-                case `The Elder Scrolls Online: Collection`:
-                case `The Elder Scrolls: Arena`:
-                case `The Elder Scrolls: Blades`:
-                case `The Elder Scrolls: Legends`:
-                case `The Elder Scrolls II: Daggerfall`:
-                case `The Elder Scrolls III: Morrowind`:
-                case `The Elder Scrolls IV: Oblivion`:
-                case `The Elder Scrolls V: Skyrim`:
-                case `The Elder Scrolls V: Skyrim Special Edition`:
-                case `The Elder Scrolls VI:`:
-                case `The Elder Scrolls Travels: Oblivion`:
-                case `The Elder Scrolls Travels: Stormhold`:
-                case `The Elder Scrolls Travels: Dawnstar`:
-                case `The Elder Scrolls Travels: Shadowkey`:
-                case `The Elder Scrolls Adventures: Redguard`:
+            switch (tGame.toLowerCase()) {
+                case `the elder scrolls online`:
+                case `the elder scrolls online: collection`:
+                case `the elder scrolls: arena`:
+                case `the elder scrolls: blades`:
+                case `the elder scrolls: legends`:
+                case `the elder scrolls ii: daggerfall`:
+                case `the elder scrolls iii: morrowind`:
+                case `the elder scrolls iv: oblivion`:
+                case `the elder scrolls v: skyrim`:
+                case `the elder scrolls v: skyrim special edition`:
+                case `the elder scrolls vi:`:
+                case `the elder scrolls travels: oblivion`:
+                case `the elder scrolls travels: stormhold`:
+                case `the elder scrolls travels: dawnstar`:
+                case `the elder scrolls travels: shadowkey`:
+                case `the elder scrolls adventures: redguard`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_CHAT);
                     break;
-                case `Among Us`:
+                case `among us`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_AMONGUS);
                     break;
-                case `Assassin's Creed`:
-                case `Assassin's Creed II`:
-                case `Assassin's Creed: Brotherhood`:
-                case `Assassin's Creed: Revelations`:
-                case `Assassin's Creed III`:
-                case `Assassin's Creed III Remastered`:
-                case `Assassin's Creed III: Liberation`:
-                case `Assassin's Creed III: Liberation - Remastered`:
-                case `Assassin's Creed IV: Black Flag`:
-                case `Assassin's Creed: Liberation HD`:
-                case `Assassin's Creed: Rogue`:
-                case `Assassin's Creed: Rogue Remastered`:
-                case `Assassin's Creed: Unity`:
-                case `Assassin's Creed: Syndicate`:
-                case `Assassin's Creed: Origins`:
-                case `Assassin's Creed: Odyssey`:
-                case `Assassin's Creed: Rebellion`:
+                case `assassin's creed`:
+                case `assassin's creed ii`:
+                case `assassin's creed: brotherhood`:
+                case `assassin's creed: revelations`:
+                case `assassin's creed iii`:
+                case `assassin's creed iii remastered`:
+                case `assassin's creed iii: liberation`:
+                case `assassin's creed iii: liberation - remastered`:
+                case `assassin's creed iv: black flag`:
+                case `assassin's creed: liberation hd`:
+                case `assassin's creed: rogue`:
+                case `assassin's creed: rogue remastered`:
+                case `assassin's creed: unity`:
+                case `assassin's creed: syndicate`:
+                case `assassin's creed: origins`:
+                case `assassin's creed: odyssey`:
+                case `assassin's creed: rebellion`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_ASSASSINSCREED);
                     break;
-                case `Black Desert Online`:
+                case `black desert online`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_BLACKDESERT);
                     break;
-                case `Cyberpunk 2077`:
+                case `cyberpunk 2077`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_CYBERPUNK);
                     break;
-                case `Destiny`:
-                case `Destiny 2`:
+                case `destiny`:
+                case `destiny 2`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_DESTINY);
                     break;
-                case `Fallout`:
-                case `Fallout 2`:
-                case `Fallout 3`:
-                case `Fallout: New Vegas`:
-                case `Fallout 4`:
-                case `Fallout Shelter`:
-                case `Fallout 76`:
+                case `fallout`:
+                case `fallout 2`:
+                case `fallout 3`:
+                case `fallout: new vegas`:
+                case `fallout 4`:
+                case `fallout shelter`:
+                case `fallout 76`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_FALLOUT);
                     break;
-                case `Final Fantasy`:
-                case `Final Fantasy II`:
-                case `Final Fantasy III`:
-                case `Final Fantasy IV`:
-                case `Final Fantasy V`:
-                case `Final Fantasy VI`:
-                case `Final Fantasy VII`:
-                case `Final Fantasy VIII`:
-                case `Final Fantasy IX`:
-                case `Final Fantasy X`:
-                case `Final Fantasy X-2`:
-                case `Final Fantasy XI`:
-                case `Final Fantasy XII`:
-                case `Final Fantasy XIII`:
-                case `Final Fantasy XIII-2`:
-                case `Final Fantasy XIV Online`:
-                case `Final Fantasy XV`:
+                case `final fantasy`:
+                case `final fantasy ii`:
+                case `final fantasy iii`:
+                case `final fantasy iv`:
+                case `final fantasy v`:
+                case `final fantasy vi`:
+                case `final fantasy vii`:
+                case `final fantasy viii`:
+                case `final fantasy ix`:
+                case `final fantasy x`:
+                case `final fantasy x-2`:
+                case `final fantasy xi`:
+                case `final fantasy xii`:
+                case `final fantasy xiii`:
+                case `final fantasy xiii-2`:
+                case `final fantasy xiv online`:
+                case `final fantasy xv`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_FINALFANTASY);
                     break;
-                case `Genshin Impact`:
+                case `genshin impact`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_GENSHINIMPACT);
                     break;
-                case `Horizon Zero Dawn`:
+                case `horizon zero dawn`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_HORIZONZERODAWN);
                     break;
-                case `League of Legends`:
-                case `League of Legends: Wild Rift`:
+                case `league of legends`:
+                case `league of legends: wild rift`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_LEAGUEOFLEGENDS);
                     break;
-                case `Red Dead Redemption`:
-                case `Red Dead Redemption 2`:
+                case `red dead redemption`:
+                case `red dead redemption 2`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_REDDEADREDEMPTION);
                     break;
-                case `The Witcher`:
-                case `The Witcher: Adventure Game`:
-                case `The Witcher 2: Assassin's of Kings`:
-                case `The Witcher 3: Wild Hunt`:
+                case `the witcher`:
+                case `the witcher: adventure game`:
+                case `the witcher 2: assassin's of kings`:
+                case `the witcher 3: wild hunt`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_THEWITCHER);
                     break;
-                case `World of Warcraft`:
+                case `world of warcraft`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_WORLDOFWARCRAFT);
                     break;
-                case `Subnautica`:
-                case `Subnautica: Below Zero`:
+                case `subnautica`:
+                case `subnautica: below zero`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_SUBNAUTICAL);
                     break;
-                case `Valheim`:
+                case `valheim`:
                     dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_VALHEIM);
                     break;
                 default:
