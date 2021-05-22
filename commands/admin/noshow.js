@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 module.exports = {
 	name: 'noshow',																					// Name of this command. Required for all commands.
-	description: 'ADMIN: Notifies a member that they missed an event that they signed up for.',		// [Optional] Description of this command for the help command
+	description: 'RAID LEADER: Notifies a member that they missed an event that they signed up for.',		// [Optional] Description of this command for the help command
 	// aliases: [``, ``], 																			// [Optional] Permits additional command names to be used for this command 
 	usage: '<@member>',																				// [Optional] Displays how to use this command in the help command.
     permissions: `MANAGE_ROLES`,																	// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS
