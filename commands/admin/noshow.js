@@ -11,7 +11,7 @@ module.exports = {
 	execute(msgObject, args, client) {
 		msgObject.guild.members.fetch(msgObject.mentions.users.first())
 			.then(noshowMember => {
-				const noshowMemberName = noshowMember.username;
+				const noshowMemberTag = noshowMember.user.tag;
 				const noshowMemberID = noshowMember.id;
 
 				const eventName = msgObject.channel.name;
@@ -27,7 +27,7 @@ module.exports = {
 					let warns = JSON.parse(data);
 					console.log(warns);
 					let newObject = {
-						Member: (noshowMemberName),
+						Member: (noshowMemberTag),
 						ID: (noshowMemberID),
 						event: (eventName),
 						warnedby: (warnedBy),
