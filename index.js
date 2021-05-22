@@ -3,9 +3,6 @@
 // Environment Variables and API Calls
 require(`dotenv`).config();
 const Discord = require("discord.js");
-// const client = new Discord.Client();
-// const client = new Discord.Client({ ws: { intents: ['GUILDS', 'GUILD_MEMBERS', 'GUILD_BANS', 'GUILD_EMOJIS', 'GUILD_INTEGRATIONS', 'GUILD_WEBHOOKS', 'GUILD_INVITES', 'GUILD_VOICE_STATES', 'GUILD_PRESENCES', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS', 'GUILD_MESSAGE_TYPING', 'DIRECT_MESSAGES', 'DIRECT_MESSAGE_REACTIONS', 'DIRECT_MESSAGE_TYPING'] } })
-// const client = new Discord.Client({ ws: { intents: new Discord.Intents(Discord.Intents.ALL) } })
 const client = new Discord.Client({ intents: new Discord.Intents(Discord.Intents.ALL) })
 
 const fs = require(`fs`);
@@ -21,7 +18,7 @@ if (BotStatusLive) {
 }
 client.cooldowns = new Discord.Collection();
 
-// Guild Specific Global Variables
+// Global Variables
 const Prefix = process.env.PREFIX_DEFAULT;
 
 // Client Command List From Commands Folder Recursively
@@ -36,7 +33,7 @@ for (const folder of commandFolders) {
     }
 }
 
-// Confirmation of Client Initialization
+// Confirmation Of Client Initialization
 client.once(`ready`, () => {
     console.log(`${client.user.username} Bot Is Now Online!`);
     console.log(`This bot is a Tier ${client.guilds.resolve(GuildID).premiumTier} server with ${client.guilds.resolve(GuildID).premiumSubscriptionCount} boosts!`);
@@ -66,11 +63,13 @@ client.on(`guildMemberAdd`, member => {
     member.send(embed);
 });
 
+// Client Guild Member Update
 client.on(`guildMemberUpdate`, (oldMember, newMember) => {
     if(oldMember.pending === true && newMember.pending === false){
         `++ ++ [${newMember.username} has accepted the guild rules.]`
         // Define Default Role
-        const roleDefault = process.env.OOPS_ROLE_DEFAULT;
+        const roleDefault = process.env.OOPS_ROLE_DEFAULT; // Role: Pug NP
+        const rolePendingMembership = process.env.OOPS_ROLE_PENDINGMEMBERSHIP; // Role: Pending Potato
         // Define Role Separators 
         const roleSeparatorMemberRanks = process.env.OOPS_ROLE_SEPARATOR_MEMBERRANKS;
         const roleSeparatorProficiencies = process.env.OOPS_ROLE_SEPARATOR_PROFICIENCIES;
@@ -78,7 +77,7 @@ client.on(`guildMemberUpdate`, (oldMember, newMember) => {
         const roleSeparatorCores = process.env.OOPS_ROLE_SEPARATOR_CORES;
         const roleSeparatorStreaming = process.env.OOPS_ROLE_SEPARATOR_STREAMING;
         const roleSeparatorSelfAssignable = process.env.OOPS_ROLE_SEPARATOR_SELFASSIGNABLE;
-        const rolesIDArray = [roleDefault, roleSeparatorClears, roleSeparatorCores, roleSeparatorMemberRanks, roleSeparatorProficiencies, roleSeparatorSelfAssignable, roleSeparatorStreaming]
+        const rolesIDArray = [roleDefault, rolePendingMembership, roleSeparatorClears, roleSeparatorCores, roleSeparatorMemberRanks, roleSeparatorProficiencies, roleSeparatorSelfAssignable, roleSeparatorStreaming]
         let rolesArray = []
         rolesIDArray.forEach(role => {
             newMember.roles.add(role)
