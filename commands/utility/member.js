@@ -40,13 +40,19 @@ module.exports = {
                         array.forEach((v) => (v[`ID`] === value && events.push(v[`warnedby`])))
                         return events;
                     }
+                    function getWarnedDate(array, value){
+                        let events = []
+                        array.forEach((v) => (v[`ID`] === value && events.push(v[`date`])))
+                        return events;
+                    }
                     // Store Variables And Format As Text If Blank To Prevent Null Values In MessageEmbed
                     let loggedwarnings = getOccurence(warns, usrMember.id);
                     let loggedevent = getEvents(warns, usrMember.id);
                     let warnedby = getWarnedBy(warns, usrMember.id);
-                    if(loggedwarnings.length==0){loggedwarnings="None"};
-                    if(loggedevent.length==0){loggedevent="None"};
-                    if(warnedby.length==0){warnedby="None"};
+                    let warneddate = getWarnedDate(warns, usrMember.id);
+                    // if(loggedwarnings.length==0){loggedwarnings="None"};
+                    // if(loggedevent.length==0){loggedevent="None"};
+                    // if(warnedby.length==0){warnedby="None"};
 
                     let embed = new Discord.MessageEmbed()
                         .setColor(usrMember.displayHexColor)
@@ -54,16 +60,21 @@ module.exports = {
                         .setThumbnail(usrMember.user.displayAvatarURL())
                         .setFooter(client.user.username, client.user.displayAvatarURL())
                         .setTimestamp()
-                        .addField("Server Nickname", nick, true)
-                        .addField("Account Name", usrMember.user.username, true)
-                        .addField("Discord ID", usrMember.user.tag, true)
+                        .addFields( // Name Nickame and Tag Fields
+                            {name: "Server Nickname", value: nick, inline: true},
+                            {name: "Account Name", value: usrMember.user.username, inline: true},
+                            {name: "Discord ID", value: usrMember.user.tag, inline: true}
+                        )
                         // .addField("Your Guild Rank", usrMember.roles.get(rankId))
                         .addField(`Your Guild Rank`, usrMember.roles.highest)
                         .addField("You Joined The Guild", usrMember.joinedAt)
-                        
                         .addField(`Warnings`, loggedwarnings)
-                        .addField(`Events`, loggedevent, true)
-                        .addField(`Warned By`, warnedby, true);
+                        if(loggedwarnings > 0){
+                            embed.addFields(
+                                {name: `Events`, value: loggedevent, inline: true},
+                                {name: `Warned By`, value: warnedby, inline: true},
+                                {name: `Date`, value: warneddate, inline: true}
+                            )}
                     msgObject.channel.send(embed);
                 })
             });
