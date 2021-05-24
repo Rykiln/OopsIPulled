@@ -4,7 +4,7 @@ module.exports = {
 	description: 'RAID LEADER: Notifies a member that they missed an event that they signed up for.',		// [Optional] Description of this command for the help command
 	// aliases: [``, ``], 																			// [Optional] Permits additional command names to be used for this command 
 	usage: '<@member>',																				// [Optional] Displays how to use this command in the help command.
-    permissions: `MANAGE_ROLES`,																	// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS
+    // permissions: `MANAGE_ROLES`,																	// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS
     args: true, 																					// [Optional] When True - Requires Arguments Be Provided In Message Object
 	guildOnly: true, 																				// [Optional] When True - Prevents Command from being used in a Direct Message With The Bot Account
 	cooldown: 5, 																					// [Optional] See https://discordjs.guide/command-handling/adding-features.html#cooldowns
@@ -15,7 +15,7 @@ module.exports = {
 				const noshowMemberID = noshowMember.id;
 
 				const eventName = msgObject.channel.name;
-				const warnedBy = msgObject.author.username;
+				const warnedBy = msgObject.author;
 
 				const channelNoShow = client.channels.resolve(process.env.OOPS_CHANNEL_WARNINGS); // Oops I Pulled Warnings Warnings Channel
 				// const channelNoShow = client.channels.resolve(process.env.TEST_CHANNEL_WARNINGS); // Test Server Warnings Warnings Channel
@@ -30,12 +30,12 @@ module.exports = {
 						Member: (noshowMemberTag),
 						ID: (noshowMemberID),
 						event: (eventName),
-						warnedby: (warnedBy),
+						warnedby: (warnedBy.tag),
 						reason: (`No-Show`),
 						date: (Date()),
 					};
 					warns.push(newObject);
-					console.log(warns);
+					// console.log(warns);
 					fs.writeFile(process.env.OOPS_JSON_WARNINGS, JSON.stringify (warns, null, 4), err => {
 						if (err) throw err;
 					});
