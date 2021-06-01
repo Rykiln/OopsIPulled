@@ -15,7 +15,7 @@ module.exports = {
 				const noshowMemberID = noshowMember.id;
 
 				const eventName = msgObject.channel.name;
-				const warnedBy = msgObject.author;
+				const warnedBy = msgObject.author.username;
 
 				const channelNoShow = client.channels.resolve(process.env.OOPS_CHANNEL_WARNINGS); // Oops I Pulled Warnings Warnings Channel
 				// const channelNoShow = client.channels.resolve(process.env.TEST_CHANNEL_WARNINGS); // Test Server Warnings Warnings Channel
@@ -25,7 +25,6 @@ module.exports = {
 					if (err) throw err;
 
 					let warns = JSON.parse(data);
-					console.log(warns);
 					let newObject = {
 						Member: (noshowMemberTag),
 						ID: (noshowMemberID),
