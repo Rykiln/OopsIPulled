@@ -348,5 +348,29 @@
         "warnedby": "SafariBlaze#0001",
         "reason": "No-Show",
         "date": "Sun May 23 2021 20:50:58 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "Jardishken#8239",
+        "ID": "375016526371225601",
+        "event": "vas0-friday-28th-7pm-est",
+        "warnedby": "Commando506#3561",
+        "reason": "No-Show",
+        "date": "Fri May 28 2021 19:32:10 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "QQKimchi#0982",
+        "ID": "172889166302937088",
+        "event": "vkahm-mon-2pm-est",
+        "warnedby": "Lukewarm_Tater#8981",
+        "reason": "No-Show",
+        "date": "Mon May 31 2021 11:49:47 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "Ultra#2256",
+        "ID": "341180110810120202",
+        "event": "vkahm-mon-2pm-est",
+        "warnedby": "Your Neighbourhood Ievan Polkka#1818",
+        "reason": "No-Show",
+        "date": "Mon May 31 2021 12:52:13 GMT-0500 (Central Daylight Time)"
     }
 ]
