@@ -68,16 +68,15 @@ client.on(`guildMemberUpdate`, (oldMember, newMember) => {
     if(oldMember.pending === true && newMember.pending === false){
         `++ ++ [${newMember.username} has accepted the guild rules.]`
         // Define Default Role
-        const roleDefault = process.env.OOPS_ROLE_DEFAULT; // Role: Pug NP
-        const rolePendingMembership = process.env.OOPS_ROLE_PENDINGMEMBERSHIP; // Role: Pending Potato
+        const roleDefault = process.env.OOPS_ROLE_DEFAULT; // Role: Accepted Guild Rules
+        // const rolePendingMembership = process.env.OOPS_ROLE_PENDINGMEMBERSHIP; // Role: Pending Potato
         // Define Role Separators 
         const roleSeparatorMemberRanks = process.env.OOPS_ROLE_SEPARATOR_MEMBERRANKS;
         const roleSeparatorProficiencies = process.env.OOPS_ROLE_SEPARATOR_PROFICIENCIES;
         const roleSeparatorClears = process.env.OOPS_ROLE_SEPARATOR_CLEARS;
         const roleSeparatorCores = process.env.OOPS_ROLE_SEPARATOR_CORES;
-        const roleSeparatorStreaming = process.env.OOPS_ROLE_SEPARATOR_STREAMING;
         const roleSeparatorSelfAssignable = process.env.OOPS_ROLE_SEPARATOR_SELFASSIGNABLE;
-        const rolesIDArray = [roleDefault, rolePendingMembership, roleSeparatorClears, roleSeparatorCores, roleSeparatorMemberRanks, roleSeparatorProficiencies, roleSeparatorSelfAssignable, roleSeparatorStreaming]
+        const rolesIDArray = [roleDefault, roleSeparatorClears, roleSeparatorCores, roleSeparatorMemberRanks, roleSeparatorProficiencies, roleSeparatorSelfAssignable]
         let rolesArray = []
         rolesIDArray.forEach(role => {
             newMember.roles.add(role)
