@@ -9,19 +9,18 @@ module.exports = {
 	guildOnly: true, 													// [Optional] When True - Prevents Command from being used in a Direct Message With The Bot Account
 	cooldown: 5, 														// [Optional] See https://discordjs.guide/command-handling/adding-features.html#cooldowns
 	execute(msgObject, args, client) {
-		let strobe = client.emojis.cache.find(emoji => emoji.name === "strobe");
-		let strobeBar = `${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}`;
+		const strobe = client.emojis.cache.find(emoji => emoji.name === "strobe");
+		const strobeBar = `${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}${strobe}`;
 		// Roles: Placeholders
 		let roleDPS;
 		let roleHealer;
 		let roleTank;
 		let roleDescription;
 		let dpsThreshold;
-		let dpsDisqualifiers = [
+		const dpsDisqualifiers = [
 			`No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)`,
-			`No [Thrassians Stranglers](https://eso-sets.com/set/thrassian-stranglers)`,
-			`No [Ring of the Pale Order](https://eso-sets.com/set/ring-of-the-pale-order)`,
-			`No Werewolf Parses`
+			`No [Mythic Items](https://eso-sets.com/sets/type/mythic)`,
+			`No Transformation Ultimate Parses`
 		];
 		let howToApply = `Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots for our Officers and Raid Leaders to review.`;
 		let imgName;
@@ -38,7 +37,7 @@ module.exports = {
 					roleTank = `<@&721307639224598549>`; // Fine Tank Role
 					// Embed Attributes
 					roleDescription = `These are the minimum requirements for joining veteran trials. The gear sets, skills, and damage are needed to be a contributing member of a coordinated trial group.`;
-					dpsThreshold = `50K DPS`;
+					dpsThreshold = `60K DPS`;
 					imgName = `rank01.Fine.png`;
 					break;
 				// Superior Rank
@@ -49,7 +48,7 @@ module.exports = {
 					roleTank = `<@&721308611955130378>`; // Superior Tank Role
 					// Embed Attributes
 					roleDescription = `These sets, skills, and damage requirements allow for more group optimization than fine sets, but also require more understanding of how and when to perform certain actions to cause the gear to activate.\n\nAll <@&721310651137654834> ranks must first meet the requirements of <@&721310503015546951> for the same role.`;
-					dpsThreshold = `65K DPS`;
+					dpsThreshold = `70K DPS`;
 					imgName = `rank02.Superior.png`;
 					break;
 				// Epic Rank
@@ -60,7 +59,7 @@ module.exports = {
 					roleTank = `<@&721308461736001586>`; // Epic Tank Role
 					// Embed Attributes
 					roleDescription = `These are additional sets that start allowing groups to optimize in more situations, including large trash pulls between bosses.\n\nAll <@&721310549547417671> ranks must first meet the requirements of <@&721310651137654834> for the same role.`;
-					dpsThreshold = `80K Magicka DPS\n90K Stamina DPS`;
+					dpsThreshold = `80K Magicka DPS\n85K Stamina DPS`;
 					imgName = `rank03.Epic.png`;
 					break;
 				// Legendary Rank
@@ -105,10 +104,10 @@ module.exports = {
 					.addField(`Healers`, setsHealer, true)
 					.addField(`Tanks`, setsTank, true)
 					if(rank.id === `721310549547417671`){
-						embed.addField(`Trial Completions`,`Must have clears on a minimum of 3 of the following trials:\n\n- vHOF\n- vAS+1\n- vMOL\n- vCR+1\n- vSS\n- vKA\n\nLogs are not required for <@&721310549547417671>. Please post screenshots of your achievements to show these clears. If you have already posted them in <#728742997667217559>, you do not have to post them again.`)
+						embed.addField(`Trial Completions`,`Must have clears on a minimum of 3 of the following trials:\n\n- vHOF\n- vAS+1\n- vMOL\n- vCR+1\n- vSS\n- vKA\n- vRG\n\nLogs are not required for <@&721310549547417671>. Please post screenshots of your achievements to show these clears. If you have already posted them in <#728742997667217559>, you do not have to post them again.`)
 					}
 					if(rank.id === `721310768859054130`){
-						embed.addField(`Trial Performance-Log Review`, `When applying for <@&721310768859054130> roles, you will be expected to provide trial logs to be reviewed by the guild officers. These logs will be used to determine several factors that cannot be determined by a dummy parse or gear alone. Acceptable trials for log sumbissions include:\n\n- vMOL (or HM) If backyard runner, log must be from your perspective\n- vHOF (or HM)\n- vAS HM\n- vCR+2 (or HM) If portals, log must be from your perspective\n- vSS (or HM) If portals, log must be from your perspective\n- vKA (or HM)\n\nBelow are the criteria we're looking at for each role.`)
+						embed.addField(`Trial Performance-Log Review`, `When applying for <@&721310768859054130> roles, you will be expected to provide trial logs to be reviewed by the guild officers. These logs will be used to determine several factors that cannot be determined by a dummy parse or gear alone. Acceptable trials for log sumbissions include:\n\n- vMOL (or HM) If backyard runner, log must be from your perspective\n- vHOF (or HM)\n- vAS HM\n- vCR+2 (or HM) If portals, log must be from your perspective\n- vSS (or HM) If portals, log must be from your perspective\n- vKA (or HM)\n- vRG\n\nBelow are the criteria we're looking at for each role.`)
 						embed.addField(`Damage Dealers`, `TRIAL Single Target Damage\nSurvivability\nExtra Duties (Backyard Runner, Portals, etc.)`, true)
 						embed.addField(`Healers`, `Survivability\nEle Drain Uptime\nCombat Prayer Uptime\nMajor Courage Uptime\nClass Specific Buffs/Debuffs\nGear Set Usage/Uptime`, true)
 						embed.addField(`Tanks`, `Survivability\nFracture Uptime\nMaim Uptime\nCrusher Uptime\nClass Specific Buffs/Debuffs`, true)
