@@ -40,6 +40,7 @@ module.exports = (client, guildID) => {setInterval(() => {
             switch (tGame.toLowerCase()) {
                 case `the elder scrolls online`:
                 case `the elder scrolls online: collection`:
+                case `the elder scrolls online: blackwood`:
                 case `the elder scrolls: arena`:
                 case `the elder scrolls: blades`:
                 case `the elder scrolls: legends`:
