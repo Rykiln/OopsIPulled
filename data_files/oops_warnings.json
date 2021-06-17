@@ -372,5 +372,82 @@
         "warnedby": "Your Neighbourhood Ievan Polkka#1818",
         "reason": "No-Show",
         "date": "Mon May 31 2021 12:52:13 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "natepow(PC-NA)#0321",
+        "ID": "670194217489793034",
+        "event": "vrg-wed-2nd-6pm-edt",
+        "reason": "No-Show",
+        "date": "Wed Jun 02 2021 17:08:05 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "JesterOrNot#7555",
+        "ID": "253288301904134156",
+        "event": "vhrc-hm-wed-2-7pm-est",
+        "reason": "No-Show",
+        "date": "Wed Jun 02 2021 21:45:44 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "PhoenixNoctum#8351",
+        "ID": "393560660199342080",
+        "event": "vhrc-sunday-6th-12pm-est",
+        "reason": "No-Show",
+        "date": "Sun Jun 06 2021 11:04:24 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "Jardishken#8239",
+        "ID": "375016526371225601",
+        "event": "vhrc-sunday-6th-12pm-est",
+        "reason": "No-Show",
+        "date": "Sun Jun 06 2021 11:04:29 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "ShiNoTenshi1436#5784",
+        "ID": "686152025871745035",
+        "event": "vcr1-sunday-6th-8pm-est",
+        "reason": "No-Show",
+        "date": "Sun Jun 06 2021 21:05:47 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "Square_Dude#1251",
+        "ID": "197217128628092928",
+        "event": "vrg-thurs-10pm-10th",
+        "reason": "No-Show",
+        "date": "Thu Jun 10 2021 20:51:34 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "pwiddy#6643",
+        "ID": "437299735330684929",
+        "event": "rekt",
+        "reason": "No-Show",
+        "date": "Fri Jun 11 2021 20:00:00 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "xRe4MasTeRx#3174",
+        "ID": "211515851323473920",
+        "event": "vss-icehm-sun-7pm-13th",
+        "reason": "No-Show",
+        "date": "Sun Jun 13 2021 18:14:53 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "Screamer19#5400",
+        "ID": "673298298102218772",
+        "event": "vas-incredibly-hm-mon-8pm",
+        "reason": "No-Show",
+        "date": "Mon Jun 14 2021 19:08:03 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "Lukewarm_Tater#8981",
+        "ID": "401224405411168257",
+        "event": "vas-incredibly-hm-mon-8pm",
+        "reason": "No-Show",
+        "date": "Mon Jun 14 2021 19:16:08 GMT-0500 (Central Daylight Time)"
+    },
+    {
+        "Member": "KantoStrider#1515",
+        "ID": "716071055646785587",
+        "event": "💢｜baja-blast-off",
+        "reason": "No-Show",
+        "date": "Mon Jun 14 2021 21:02:16 GMT-0500 (Central Daylight Time)"
     }
 ]
