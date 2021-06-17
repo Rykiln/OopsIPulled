@@ -19,7 +19,7 @@ module.exports = {
 
 				const channelNoShow = client.channels.resolve(process.env.OOPS_CHANNEL_WARNINGS); // Oops I Pulled Warnings Warnings Channel
 				// const channelNoShow = client.channels.resolve(process.env.TEST_CHANNEL_WARNINGS); // Test Server Warnings Warnings Channel
-				console.log(channelNoShow.name)
+				// console.log(channelNoShow.name)
 				const fs = require(`fs`);
 				fs.readFile(process.env.OOPS_JSON_WARNINGS, function(err, data){
 					if (err) throw err;
