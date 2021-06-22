@@ -20,33 +20,40 @@ module.exports = {
 				const channelNoShow = client.channels.resolve(process.env.OOPS_CHANNEL_WARNINGS); // Oops I Pulled Warnings Warnings Channel
 				// const channelNoShow = client.channels.resolve(process.env.TEST_CHANNEL_WARNINGS); // Test Server Warnings Warnings Channel
 				// console.log(channelNoShow.name)
-				const fs = require(`fs`);
-				fs.readFile(process.env.OOPS_JSON_WARNINGS, function(err, data){
+				const fs = require('fs');
+				const _ = require('lodash');
+				fs.readFile(process.env.OOPS_JSON_WARNINGS, (err, data) => {
 					if (err) throw err;
-					const ninetyDaysAgo = new Date().setDate(new Date().getDate() - 90);
 
-					const warns = JSON.parse(data);
-					const newObject = {
-						Member: (noshowMemberTag),
-						ID: (noshowMemberID),
-						event: (eventName),
-						warnedby: (warnedBy.tag),
-						reason: (`No-Show`),
-						date: (Date()),
-					};
-					warns.push(newObject);
+					fs.readFile(process.env.OOPS_JSON_WARNINGS_OLD, (err2, oldData) => {
+						if (err2) throw err2;
 
-					const [oldWarnings, newWarnings] = warns.reduce((result, warning) => {
-						result[Date.parse(warning.date) < ninetyDaysAgo ? 0 : 1].push(warning);
-						return result;
-					}, [[], []]);
+						const currWarns = JSON.parse(data);
+						const oldWarns = JSON.parse(oldData);
+						const warns = [...oldWarns, currWarns];
 
-					// console.log(warns);
-					fs.writeFile(process.env.OOPS_JSON_WARNINGS, JSON.stringify(newWarnings, null, 4), err => {
-						if (err) throw err;
-					});
-					fs.writeFile(process.env.OOPS_JSON_WARNINGS_OLD, JSON.stringify(oldWarnings, null, 4), err => {
-						if (err) throw err;
+						const newObject = {
+							Member: (noshowMemberTag),
+							ID: (noshowMemberID),
+							event: (eventName),
+							warnedby: (warnedBy.tag),
+							reason: (`No-Show`),
+							date: (Date()),
+						};
+						warns.push(newObject);
+	
+						// Split `warns` into warnings older/newer than 90 days ago and write them to separate files.
+						const ninetyDaysAgo = new Date().setDate(new Date().getDate() - 90);
+						const [oldWarnings, newWarnings] = _.partition(warns, (warning ) => Date.parse(warning.date) < ninetyDaysAgo);
+	
+						const writeWarnings = (path, warnings) => {
+							fs.writeFile(path, JSON.stringify(warnings, null, 4), err => {
+								if (err) throw err;
+							});
+						};
+	
+						writeWarnings(process.env.OOPS_JSON_WARNINGS, newWarnings);
+						writeWarnings(process.env.OOPS_JSON_WARNINGS_OLD, oldWarnings);
 					});
 				});
 
