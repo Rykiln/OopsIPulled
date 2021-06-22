@@ -23,9 +23,10 @@ module.exports = {
 				const fs = require(`fs`);
 				fs.readFile(process.env.OOPS_JSON_WARNINGS, function(err, data){
 					if (err) throw err;
+					const ninetyDaysAgo = new Date().setDate(new Date().getDate() - 90);
 
-					let warns = JSON.parse(data);
-					let newObject = {
+					const warns = JSON.parse(data);
+					const newObject = {
 						Member: (noshowMemberTag),
 						ID: (noshowMemberID),
 						event: (eventName),
@@ -34,10 +35,21 @@ module.exports = {
 						date: (Date()),
 					};
 					warns.push(newObject);
+
+					const [oldWarnings, newWarnings] = warns.reduce((result, warning) => {
+						result[Date.parse(warning.date) < ninetyDaysAgo ? 0 : 1].push(warning);
+						return result;
+					}, [[], []]);
+
 					// console.log(warns);
-					fs.writeFile(process.env.OOPS_JSON_WARNINGS, JSON.stringify (warns, null, 4), err => {
+					fs.writeFile(process.env.OOPS_JSON_WARNINGS, JSON.stringify(newWarnings, null, 4), err => {
 						if (err) throw err;
 					});
+					fs.writeFile(process.env.OOPS_JSON_WARNINGS_OLD, JSON.stringify(oldWarnings, null, 4), err => {
+						if (err) throw err;
+					});
+				});
+
 				msgObject.delete();
 				let embed = new Discord.MessageEmbed()
 					.setTitle(`Guild Member Added To No Show List`)
@@ -59,7 +71,6 @@ module.exports = {
 
 				channelNoShow.send(embed);
 				noshowMember.send(embedDM);
-				})
-			})
+			});
 	},
 };
