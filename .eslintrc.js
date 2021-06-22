@@ -11,5 +11,8 @@ module.exports = {
     ecmaVersion: 12,
   },
   rules: {
+    'max-len': 'off',
+    'no-console': 'off',
+    'no-tabs': 'off',
   },
 };
