@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const fs = require('fs');
+const _ = require('lodash');
 
 module.exports = {
   name: 'noshow',																					// Name of this command. Required for all commands.
@@ -21,8 +23,7 @@ module.exports = {
         const channelNoShow = client.channels.resolve(process.env.OOPS_CHANNEL_WARNINGS); // Oops I Pulled Warnings Warnings Channel
         // const channelNoShow = client.channels.resolve(process.env.TEST_CHANNEL_WARNINGS); // Test Server Warnings Warnings Channel
         // console.log(channelNoShow.name)
-        const fs = require('fs');
-        const _ = require('lodash');
+
         fs.readFile(process.env.OOPS_JSON_WARNINGS, (err, data) => {
           if (err) throw err;
 
@@ -48,8 +49,8 @@ module.exports = {
             const [oldWarnings, newWarnings] = _.partition(warns, (warning) => Date.parse(warning.date) < ninetyDaysAgo);
 
             const writeWarnings = (path, warnings) => {
-              fs.writeFile(path, JSON.stringify(warnings, null, 4), (err) => {
-                if (err) throw err;
+              fs.writeFile(path, JSON.stringify(warnings, null, 4), (err3) => {
+                if (err3) throw err3;
               });
             };
 

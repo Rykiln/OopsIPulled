@@ -176,7 +176,9 @@ module.exports = (client, guildID) => {
           .addField('Current Viewers', tStreamViewers, true);
         dChannel.send(embed)
           .catch(console.error());
-      } catch { }
+      } catch (e) {
+        console.error(e);
+      }
     });
   }, interval);
 };

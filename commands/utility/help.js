@@ -8,7 +8,6 @@ module.exports = {
   usage: '[command name]',
   cooldown: 5,
   execute(msgObject, args, client) {
-    const data = [];
     const { commands } = msgObject.client;
     // Display List Of All Commands And Descriptions If No Args Are Provided
     if (!args.length) {
@@ -19,11 +18,11 @@ module.exports = {
         .setThumbnail(client.user.displayAvatarURL())
         .setTimestamp()
         .setFooter(client.user.username, client.user.displayAvatarURL());
-      for (i of commands) {
+      commands.forEach((i) => {
         const cmdName = i.map((c) => c.name);
         const cmdDescription = i.map((c) => c.description);
         helpEmbed.addField(cmdName, cmdDescription);
-      }
+      });
       msgObject.delete();
       msgObject.author.send('', { embed: helpEmbed, split: true })
         .then(() => {
@@ -41,7 +40,8 @@ module.exports = {
     const command = commands.get(name) || commands.find((c) => c.aliases && c.aliases.includes(name));
 
     if (!command) {
-      return message.reply('That\'s not a valid command!');
+      msgObject.reply('That\'s not a valid command!');
+      return;
     }
     if (!command.usage) { command.usage = ''; }
     const helpEmbed = new Discord.MessageEmbed()

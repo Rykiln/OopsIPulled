@@ -47,6 +47,8 @@ module.exports = {
         limitEmoji = 250;
         limitEmojiAnimated = 250;
         break;
+      default:
+        break;
     }
 
     // Check Channel Categories To See How Many Are Approaching Maximum Limitations
@@ -54,7 +56,7 @@ module.exports = {
       if (c.children.size >= 40) {
         serverCategoriesNearFullName.push(c.name);
         serverCategoriesNearFullSize.push(`${c.children.size} / ${limitCategorySize}`);
-        serverCategoriesNearFull++;
+        serverCategoriesNearFull += 1;
       }
     });
 

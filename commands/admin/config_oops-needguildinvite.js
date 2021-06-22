@@ -12,7 +12,7 @@ module.exports = {
   execute(msgObject, args, client) {
     // Set Embed Properties
     const OIP_CYAN = process.env.OOPS_COLOR_CYAN;
-    const ESO_Ouroboros = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ab371d58-f694-4953-a2e5-c79acedd9f56/d9j5i6k-e1a85b7d-1621-4e5b-b5cc-4ddea16325db.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYWIzNzFkNTgtZjY5NC00OTUzLWEyZTUtYzc5YWNlZGQ5ZjU2XC9kOWo1aTZrLWUxYTg1YjdkLTE2MjEtNGU1Yi1iNWNjLTRkZGVhMTYzMjVkYi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.UrDYskkNJpd9RFcmxNpkpoVppS3eKSl0cd53KUH_8-4';
+    // const ESO_OUROBOROS = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ab371d58-f694-4953-a2e5-c79acedd9f56/d9j5i6k-e1a85b7d-1621-4e5b-b5cc-4ddea16325db.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYWIzNzFkNTgtZjY5NC00OTUzLWEyZTUtYzc5YWNlZGQ5ZjU2XC9kOWo1aTZrLWUxYTg1YjdkLTE2MjEtNGU1Yi1iNWNjLTRkZGVhMTYzMjVkYi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.UrDYskkNJpd9RFcmxNpkpoVppS3eKSl0cd53KUH_8-4';
 
     // Format The Embeded Message
     const embed = new Discord.MessageEmbed()

@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-
 module.exports = {
   name: 'purge',															// Name of this command. Required for all commands.
   description: 'RAID LEADER: Deletes multiple messages at a time..',			// [Optional] Description of this command for the help command
@@ -15,7 +13,7 @@ module.exports = {
       .catch(console.error);
     // Validate User Input Was A Number
     const numberOfMessagesToDelete = Number(args[0]);
-    if (numberOfMessagesToDelete == NaN || numberOfMessagesToDelete < 1 || numberOfMessagesToDelete > 100) {
+    if (Number.isNaN(numberOfMessagesToDelete) || numberOfMessagesToDelete < 1 || numberOfMessagesToDelete > 100) {
       msgObject.channel.send(`Sorry, ${msgObject.author}, but that is not a valid number.`)
         .then((msg) => {
           msg.delete(5000)

@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const Roll = require('roll');
 
-roll = new Roll();
+const roll = new Roll();
 module.exports = {
   name: 'roll',									// Name of this command. Required for all commands.
   description: 'A Dice Rolling Command.',			// [Optional] Description of this command for the help command

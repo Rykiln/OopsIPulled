@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-
 module.exports = {
   name: 'archive',													// Name of this command. Required for all commands.
   description: 'RAID LEADER: Moves inactive channels to archive.',			// [Optional] Description of this command for the help command

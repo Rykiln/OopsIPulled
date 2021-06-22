@@ -12,7 +12,10 @@ module.exports = {
   },
   rules: {
     'max-len': 'off',
+    'no-await-in-loop': 'off',
     'no-console': 'off',
     'no-tabs': 'off',
+    'no-unused-vars': ['error', { args: 'none' }],
+    'import/no-dynamic-require': 'off',
   },
 };

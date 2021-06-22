@@ -9,6 +9,8 @@ const client = new Discord.Client({ intents: new Discord.Intents(Discord.Intents
 const fs = require('fs');
 
 const BotStatusLive = true;
+let Token;
+let GuildID;
 if (BotStatusLive) {
   // If True - Use Oops I Pulled Token and Guild ID
   Token = process.env.OOPS_TOKEN;
@@ -26,14 +28,15 @@ const Prefix = process.env.PREFIX_DEFAULT;
 // Client Command List From Commands Folder Recursively
 client.commands = new Discord.Collection();
 const commandFolders = fs.readdirSync('./commands');
-for (const folder of commandFolders) {
+commandFolders.forEach((folder) => {
   const commandFiles = fs.readdirSync(`./commands/${folder}`).filter((file) => file.endsWith('.js'));
-  for (const file of commandFiles) {
+  commandFiles.forEach((file) => {
+    // eslint-disable-next-line global-require
     const command = require(`./commands/${folder}/${file}`);
     client.commands.set(command.name, command);
     // console.log(client.commands) // Write Full List of Known Commands To Console
-  }
-}
+  });
+});
 
 // Confirmation Of Client Initialization
 client.once('ready', () => {
@@ -68,7 +71,7 @@ client.on('guildMemberAdd', (member) => {
 // Client Guild Member Update
 client.on('guildMemberUpdate', (oldMember, newMember) => {
   if (oldMember.pending === true && newMember.pending === false) {
-    `++ ++ [${newMember.username} has accepted the guild rules.]`;
+    // `++ ++ [${newMember.username} has accepted the guild rules.]`;
     // Define Default Role
     const roleDefault = process.env.OOPS_ROLE_DEFAULT; // Role: Accepted Guild Rules
     // const rolePendingMembership = process.env.OOPS_ROLE_PENDINGMEMBERSHIP; // Role: Pending Potato
@@ -84,7 +87,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
       newMember.roles.add(role);
       rolesArray.push(client.guilds.resolve(GuildID).roles.resolve(role).name);
     });
-    MemberLogChannel = client.guilds.resolve(GuildID).channels.resolve(process.env.OOPS_CHANNEL_MEMBERLOGS);
+    const MemberLogChannel = client.guilds.resolve(GuildID).channels.resolve(process.env.OOPS_CHANNEL_MEMBERLOGS);
     const embed = new Discord.MessageEmbed()
       .setAuthor(newMember.user.tag, newMember.user.displayAvatarURL())
       .setColor(0x00ff00)
@@ -122,18 +125,21 @@ client.on('message', (msgObject) => {
   if (command.permissions) {
     const authorPerms = msgObject.channel.permissionsFor(msgObject.author);
     if (!authorPerms || !authorPerms.has(command.permissions)) {
-      return msgObject.reply('You do not have the permissions to use this command!');
+      msgObject.reply('You do not have the permissions to use this command!');
+      return;
     }
   }
 
   // Return Error if GuildOnly command is Used in Direct Message
   if (command.guildOnly && msgObject.channel.type === 'dm') {
-    return msgObject.reply('I can\'t execute that command inside DMs!');
+    msgObject.reply('I can\'t execute that command inside DMs!');
+    return;
   }
 
   // Return Error if no args are given for commands that require args
   if (command.args && !args.length) {
-    return msgObject.channel.send('You didn\'t provide any arguments!');
+    msgObject.channel.send('You didn\'t provide any arguments!');
+    return;
   }
 
   // Return Error if command has a cooldown set and has been used too recently
@@ -152,7 +158,8 @@ client.on('message', (msgObject) => {
 
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
-      return msgObject.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
+      msgObject.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
+      return;
     }
   }
 
@@ -167,4 +174,4 @@ client.on('message', (msgObject) => {
 
 // Initialize Clients
 client.login(Token);
-require('./api/twitch.js')(client, GuildID);
+require('./api/twitch')(client, GuildID);

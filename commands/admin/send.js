@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-
 module.exports = {
   name: 'send',																// Name of this command. Required for all commands.
   description: 'RAID LEADER: Sends a message with the bot as the author.',	// [Optional] Description of this command for the help command
@@ -10,12 +8,12 @@ module.exports = {
   cooldown: 5, 																// [Optional] See https://discordjs.guide/command-handling/adding-features.html#cooldowns
   execute(msgObject, args, client) {
     const firstArgument = args[0].replace(/<|#|>/g, '');
-    const channel_destination = msgObject.mentions.channels.first() || msgObject.channel;
-    if (firstArgument === channel_destination.id) { // Parse Message When Channel Is Not Mentioned
-      var msg = args.slice(1).join(' ') || '';
-      channel_destination.send(msg);
+    const channelDestination = msgObject.mentions.channels.first() || msgObject.channel;
+    if (firstArgument === channelDestination.id) { // Parse Message When Channel Is Not Mentioned
+      const msg = args.slice(1).join(' ') || '';
+      channelDestination.send(msg);
     } else { // Parse Message When Channel Is Not Mentioned
-      var msg = args.join(' ') || '';
+      const msg = args.join(' ') || '';
       msgObject.channel.send(msg);
     }
     msgObject.delete();

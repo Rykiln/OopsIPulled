@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const fs = require('fs');
+const _ = require('lodash');
 
 module.exports = {
   name: 'warnings',														// Name of this command. Required for all commands.
@@ -10,8 +12,6 @@ module.exports = {
   guildOnly: true, 														// [Optional] When True - Prevents Command from being used in a Direct Message With The Bot Account
   cooldown: 5, 															// [Optional] See https://discordjs.guide/command-handling/adding-features.html#cooldowns
   execute(msgObject, args, client) {
-    const fs = require('fs');
-    const _ = require('lodash');
     const warningsFile = process.env.OOPS_JSON_WARNINGS;				// Oops I Pulled Warnings JSON File
 
     fs.readFile(warningsFile, (err, data) => {
@@ -20,28 +20,32 @@ module.exports = {
       async function getUniqueUserIds(array) {
         const Snowflake = [];
         array.forEach((v) => Snowflake.push(v.ID));
-        const UniqueSnowflake = Snowflake.filter((x, i, a) => a.indexOf(x) == i);
+        const UniqueSnowflake = Snowflake.filter((x, i, a) => a.indexOf(x) === i);
         const UniqueMembers = [];
-        for (const v of UniqueSnowflake) {
+        UniqueSnowflake.forEach(async (v) => {
           await client.users.fetch(v).then((u) => UniqueMembers.push(u));
-        }
+        });
         return UniqueMembers;
       }
 
       function getOccurence(array, value) {
         let count = 0;
-        array.forEach((v) => (v.ID === value && count++));
+        array.forEach((v) => {
+          if (v.ID === value) {
+            count += 1;
+          }
+        });
         return count;
       }
 
       getUniqueUserIds(warns).then((Members) => {
         const Nick = [];
         const Counts = [];
-        for (const m of Members) {
+        Members.forEach((m) => {
           // console.log(m)
           Nick.push(m.username);
           Counts.push(getOccurence(warns, m.id));
-        }
+        });
 
         const CHUNK_SIZE = 30;
         const chunkedMembers = _.chunk(Members, CHUNK_SIZE);

@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-
 module.exports = {
   name: 'getmembers',						// Name of this command. Required for all commands.
   description: 'Command_Description.',			// [Optional] Description of this command for the help command

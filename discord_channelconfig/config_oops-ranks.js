@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 
 module.exports = {
   name: 'config_oops-ranks',											// Name of this command. Required for all commands.
@@ -25,7 +26,7 @@ module.exports = {
     ];
     let howToApply = 'Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots for our Officers and Raid Leaders to review.';
     let imgName;
-    const channelDestination = msgObject.mentions.channels.first();
+    let channelDestination = msgObject.mentions.channels.first();
     if (!channelDestination || channelDestination === '') { channelDestination = msgObject.channel; }
     msgObject.mentions.roles.forEach((rank) => {
       // console.log(`${rank.name} : ${rank.id}`);
@@ -75,24 +76,25 @@ module.exports = {
           imgName = 'rank04.Legendary.png';
           howToApply = 'Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots and logs for our Officers and Raid Leaders to review.';
           break;
+        default:
+          break;
       }
       const roles = `${roleDPS}${roleHealer}${roleTank}\n`;
-      const fs = require('fs');
       fs.readFile(process.env.OOPS_JSON_TRIALGEAR, async (err, data) => {
         if (err) throw err;
 
         const gear = JSON.parse(data);
         // Function To Get Gear Sets For A Role
-        function getGearSets(array, rank, role) {
+        function getGearSets(array, rnk, role) {
           const sets = [];
-          array.forEach((v) => (v.RankName === rank && v.Role === role && sets.push(`[${[v.SetName]}](${v.ESOSETSURL}) ${v.PairRequirements}`)));
+          array.forEach((v) => (v.RankName === rnk && v.Role === role && sets.push(`[${[v.SetName]}](${v.ESOSETSURL}) ${v.PairRequirements}`)));
           return sets;
         }
         // Call Functions To Get Gear Sets From JSON And Replace Null Values For The Embed
         let setsTank = getGearSets(gear, rank.name, 'Tank');
-        if (!setsTank || setsTank == '') { setsTank = 'No Additional Sets Required'; }
+        if (!setsTank || setsTank === '') { setsTank = 'No Additional Sets Required'; }
         let setsHealer = getGearSets(gear, rank.name, 'Healer');
-        if (!setsHealer || setsHealer == '') { setsHealer = 'No Additional Sets Required'; }
+        if (!setsHealer || setsHealer === '') { setsHealer = 'No Additional Sets Required'; }
 
         // Format And Send Embed
         const embed = new Discord.MessageEmbed()

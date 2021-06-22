@@ -25,22 +25,22 @@ module.exports = {
     ];
     // Send Command Instructions To The User If No Args Were Provided
     if (!source) {
-      const embed_noSource = new Discord.MessageEmbed()
+      const embedNoSource = new Discord.MessageEmbed()
         .setTitle('You Must Chose A Trial')
         .setDescription('Please retype the command followed by a space, and then the abbreviations of the trial or dungeon you\'d like to know about.\nYou will receive a private message with a list of all possible abbreviations.')
         .setColor('FFFF00')
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setTimestamp()
         .addField('Example', '.drops MOL');
-      const embed_DM = new Discord.MessageEmbed()
+      const embedDM = new Discord.MessageEmbed()
         .setTitle('Trial Abbreviations')
         .setDescription(trials)
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setTimestamp()
         .addField('Command Example', '.drops MOL');
-      msgObject.channel.send(embed_noSource)
+      msgObject.channel.send(embedNoSource)
         .then((msg) => { msg.delete(20000); });
-      msgObject.author.send(embed_DM);
+      msgObject.author.send(embedDM);
       return;
     }
 

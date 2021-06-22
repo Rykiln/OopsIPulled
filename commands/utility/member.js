@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 
 module.exports = {
   name: 'member', // Name of this command. Required for all commands.
@@ -18,7 +19,6 @@ module.exports = {
         // let rankId = rolesArray.find(id => usrMember.roles.keyArray().includes(id))
 
         // Retrieve JSON Data For Warning and No-Show Information
-        const fs = require('fs');
         fs.readFile(process.env.OOPS_JSON_WARNINGS, (err, data) => {
           if (err) throw err;
 
@@ -26,7 +26,11 @@ module.exports = {
           // Function To Get A Count Of Total Warnings For The Member
           function getOccurence(array, value) {
             let count = 0;
-            array.forEach((v) => (v.ID === value && count++));
+            array.forEach((v) => {
+              if (v.ID === value) {
+                count += 1;
+              }
+            });
             return count;
           }
           // Function To Get The Names Of Channels The Member Was Marked As A No-Show In For The Member
