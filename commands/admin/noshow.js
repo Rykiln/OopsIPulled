@@ -44,9 +44,9 @@ module.exports = {
             };
             warns.push(newObject);
 
-            // Split `warns` into warnings older/newer than 90 days ago and write them to separate files.
+            // Split `warns` into warnings newer/older than 90 days ago and write them to separate files.
             const ninetyDaysAgo = new Date().setDate(new Date().getDate() - 90);
-            const [oldWarnings, newWarnings] = _.partition(warns, (warning) => Date.parse(warning.date) < ninetyDaysAgo);
+            const [newWarnings, oldWarnings] = _.partition(warns, (warning) => Date.parse(warning.date) > ninetyDaysAgo);
 
             const writeWarnings = (path, warnings) => {
               fs.writeFile(path, JSON.stringify(warnings, null, 4), (err3) => {
