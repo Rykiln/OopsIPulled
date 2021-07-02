@@ -32,7 +32,7 @@ module.exports = {
 
             const currWarns = JSON.parse(data);
             const oldWarns = JSON.parse(oldData);
-            const warns = [...oldWarns, currWarns];
+            const warns = [...oldWarns, ...currWarns];
 
             const newObject = {
               Member: (noshowMemberTag),
