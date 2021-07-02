@@ -124,7 +124,7 @@ client.on('message', (msgObject) => {
   // Return Error if User does not have the correct permissions
   if (command.permissions) {
     // const authorPerms = msgObject.channel.permissionsFor(msgObject.author);              //Checks Channel Permissions For Author
-    const authorPerms = msgObject.guild.members.resolve(msgObject.author.id).permissions;   // Checks Guild Permissions For Author
+    const authorPerms = msgObject.guild.members.resolve(msgObject.author.id).permissions; // Checks Guild Permissions For Author
     if (!authorPerms || !authorPerms.has(command.permissions)) {
       msgObject.reply('You do not have the permissions to use this command!');
       return;
