@@ -18,7 +18,7 @@ module.exports = {
         const noshowMemberID = noshowMember.id;
 
         const eventName = msgObject.channel.name;
-        const warnedBy = msgObject.author.username;
+        const warnedBy = msgObject.author;
 
         const channelNoShow = client.channels.resolve(process.env.OOPS_CHANNEL_WARNINGS); // Oops I Pulled Warnings Warnings Channel
         // const channelNoShow = client.channels.resolve(process.env.TEST_CHANNEL_WARNINGS); // Test Server Warnings Warnings Channel
@@ -68,7 +68,7 @@ module.exports = {
           .setTimestamp()
           .addField('Guild Member', noshowMember)
           .addField('Event', eventName)
-          .addField('Warned By', warnedBy);
+          .addField('Warned By', warnedBy.username);
 
         const embedDM = new Discord.MessageEmbed()
           .setTitle('We Missed You Today!')
