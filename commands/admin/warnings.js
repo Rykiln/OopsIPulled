@@ -18,9 +18,9 @@ module.exports = {
       if (err) throw err;
       const warns = JSON.parse(data);
       async function getUniqueUserIds(array) {
-        const Snowflake = [];
-        array.forEach((v) => Snowflake.push(v.ID));
-        const UniqueSnowflakes = Snowflake.filter((x, i, a) => a.indexOf(x) === i);
+        const Snowflakes = [];
+        array.forEach((v) => Snowflakes.push(v.ID));
+        const UniqueSnowflakes = [...new Set(Snowflakes)];
         const UniqueMembers = await Promise.all(UniqueSnowflakes.map(async (v) => client.users.fetch(v)));
         return UniqueMembers;
       }
