@@ -4,7 +4,7 @@ const _ = require('lodash');
 
 module.exports = {
   name: 'warnings',														// Name of this command. Required for all commands.
-  description: 'RAID LEADER: Displays a list of all member warnings.',			// [Optional] Description of this command for the help command
+  description: 'Displays A List Of All Member Warnings.',			// [Optional] Description of this command for the help command
   aliases: ['noshows'],										 			// [Optional] Permits additional command names to be used for this command
   usage: '[@member]',														// [Optional] Displays how to use this command in the help command.
   permissions: 'MANAGE_ROLES',											// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS

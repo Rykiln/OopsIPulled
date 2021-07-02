@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'info', // Name of this command. Required for all commands.
-  description: 'Displays information about this bot.',		// [Optional] Description of this command for the help command
+  description: 'Displays Info About This Bot.',		// [Optional] Description of this command for the help command
   aliases: ['client', 'bot'], // [Optional] Permits additional command names to be used for this command
   // usage: '[@mention]',		                                // [Optional] Displays how to use this command in the help command.
   args: false, // [Optional] When True - Requires Arguments Be Provided In Message Object

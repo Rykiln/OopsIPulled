@@ -1,6 +1,6 @@
 module.exports = {
-  name: 'getmembers',						// Name of this command. Required for all commands.
-  description: 'Command_Description.',			// [Optional] Description of this command for the help command
+  name: 'migratemembers',						// Name of this command. Required for all commands.
+  description: 'Copies Members From One Discord Role Into Another.',			// [Optional] Description of this command for the help command
   // aliases: ['', ``], 			// [Optional] Permits additional command names to be used for this command
   // usage: '<required_args> [optional_args]',		// [Optional] Displays how to use this command in the help command.
   permissions: 'MANAGE_ROLES',				// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS

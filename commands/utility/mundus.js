@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'mundus',																			// Name of this command. Required for all commands.
-  description: 'Displays A List Of All Mundus Stones And Where To Find Them.',			// [Optional] Description of this command for the help command
+  description: 'Displays Mundus Stone Info & Locations.',			// [Optional] Description of this command for the help command
   aliases: ['stones', 'boons'], 															// [Optional] Permits additional command names to be used for this command
   // usage: '<required_args> [optional_args]',											// [Optional] Displays how to use this command in the help command.
   // permissions: `MANAGE_ROLES`,															// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS

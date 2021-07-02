@@ -142,5 +142,404 @@
         "warnedby": "Square_Dude",
         "reason": "No-Show",
         "date": "Tue Mar 23 2021 20:48:55 GMT-0500 (Central Daylight Time)"
-    }
+    },
+    [
+        {
+            "Member": "Katz",
+            "ID": "288871620116873217",
+            "event": "vka-thurs-jan-14th-8est",
+            "warnedby": "Your Neighbourhood Polak"
+        },
+        {
+            "Member": "Korealer",
+            "ID": "125671686925320192",
+            "event": "vcr2-thurs-21st-7pm-est",
+            "warnedby": "Your Neighbourhood Polak"
+        },
+        {
+            "Member": "luda9400",
+            "ID": "345610078688116738",
+            "event": "ðŸ’¢-dd-now",
+            "warnedby": "QuantumLoopX"
+        },
+        {
+            "Member": "Kreator",
+            "ID": "675385553973149696",
+            "event": "vcr0-tues-2nd-11p-est",
+            "warnedby": "Square_Dude"
+        },
+        {
+            "Member": "thekingofrice",
+            "ID": "216479492313448448",
+            "event": "vhofhm-training-wed-03-7pm-est",
+            "warnedby": "QuantumLoopX"
+        },
+        {
+            "Member": "cryptomanian",
+            "ID": "283881686473900032",
+            "event": "vhrc-hm-2nite-10-est",
+            "warnedby": "SafariBlaze",
+            "reason": "No-Show",
+            "date": "Sat Mar 27 2021 23:18:31 GMT-0500 (Central Daylight Time)"
+        },
+        {
+            "Member": "Katz",
+            "ID": "288871620116873217",
+            "event": "vss-farm-tues-mar-30th-8pm-est",
+            "warnedby": "SafariBlaze",
+            "reason": "No-Show",
+            "date": "Tue Mar 30 2021 19:05:06 GMT-0500 (Central Daylight Time)"
+        },
+        {
+            "Member": "MidnightAmant",
+            "ID": "301950426075627521",
+            "event": "coffer-farm-wednesday-31st-6pm",
+            "warnedby": "SafariBlaze",
+            "reason": "No-Show",
+            "date": "Wed Mar 31 2021 17:05:42 GMT-0500 (Central Daylight Time)"
+        },
+        {
+            "Member": "DangerFloofs",
+            "ID": "469612889301450763",
+            "event": "coffer-farm-wednesday-31st-6pm",
+            "warnedby": "SafariBlaze",
+            "reason": "No-Show",
+            "date": "Wed Mar 31 2021 17:05:57 GMT-0500 (Central Daylight Time)"
+        },
+        [
+            {
+                "Member": "Beneziah",
+                "ID": "589498985878781953",
+                "event": "vcr1-thursday-8-930",
+                "warnedby": "Big Carl 78",
+                "reason": "No-Show",
+                "date": "Thu Apr 01 2021 23:04:11 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "sinnereal",
+                "ID": "438317346059452426",
+                "event": "vcr1-thursday-8-930",
+                "warnedby": "Big Carl 78",
+                "reason": "No-Show",
+                "date": "Thu Apr 01 2021 23:04:35 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "ChimyCheunga",
+                "ID": "386353039017246721",
+                "event": "vmol-sat-apr-3rd-8pm-est",
+                "warnedby": "TheW0nder",
+                "reason": "No-Show",
+                "date": "Sat Apr 03 2021 21:11:35 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "slipknot7801",
+                "ID": "315996897062158336",
+                "event": "among-us",
+                "warnedby": "SafariBlaze",
+                "reason": "No-Show",
+                "date": "Mon Apr 05 2021 23:28:37 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "polles5",
+                "ID": "369353932079890432",
+                "event": "vhrc-plunder-farm-mon-19-8pm-est",
+                "warnedby": "SafariBlaze",
+                "reason": "No-Show",
+                "date": "Mon Apr 19 2021 20:39:38 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "EqualEnd",
+                "ID": "650152282461175818",
+                "event": "vcrhm-t-9pmest-tonight",
+                "warnedby": "Krizzell",
+                "reason": "No-Show",
+                "date": "Thu Apr 22 2021 21:09:13 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "DarkaiNP",
+                "ID": "245141603486924801",
+                "event": "vas2-training-8pm",
+                "warnedby": "QQKimchi",
+                "reason": "No-Show",
+                "date": "Sun Apr 25 2021 19:02:28 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Wub",
+                "ID": "139585152668925952",
+                "event": "rp-with-kal-mon-11pm",
+                "warnedby": "LukewarmTater",
+                "reason": "No-Show",
+                "date": "Mon Apr 26 2021 22:13:43 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "cai",
+                "ID": "484900706529181697",
+                "event": "rp-with-kal-mon-11pm",
+                "warnedby": "LukewarmTater",
+                "reason": "No-Show",
+                "date": "Mon Apr 26 2021 22:13:50 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Eternal",
+                "ID": "386314685567205378",
+                "event": "vmol-hm-11est-mon3",
+                "warnedby": "Eruceninde",
+                "reason": "No-Show",
+                "date": "Mon May 03 2021 22:03:16 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "AlexDragonborn",
+                "ID": "378968184700534795",
+                "event": "vmol-hm-11est-mon3",
+                "warnedby": "Eruceninde",
+                "reason": "No-Show",
+                "date": "Mon May 03 2021 22:03:37 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "waltermelon",
+                "ID": "222181920748994561",
+                "event": "ðŸ’¢ï½œblockgrove",
+                "warnedby": "Your Neighbourhood Ievan Polkka",
+                "reason": "No-Show",
+                "date": "Wed May 05 2021 23:17:05 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Veluccia",
+                "ID": "199630612016005120",
+                "event": "vas1-training-wed-1159p-est",
+                "warnedby": "Square_Dude",
+                "reason": "No-Show",
+                "date": "Thu May 13 2021 00:29:01 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "illuminousflux",
+                "ID": "214200572100739072",
+                "event": "💢｜stop-drop-and-roll",
+                "warnedby": "QuantumLoopX",
+                "reason": "No-Show",
+                "date": "Thu May 13 2021 21:06:36 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Char#1451",
+                "ID": "653793968785719317",
+                "event": "vka-hm-sat-3pm-est",
+                "warnedby": "Your Neighbourhood Ievan Polkka#1818",
+                "reason": "No-Show",
+                "date": "Sat May 22 2021 14:03:47 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "MsGloria#3231",
+                "ID": "599549341786439690",
+                "event": "vka-hm-sat-3pm-est",
+                "warnedby": "Your Neighbourhood Ievan Polkka#1818",
+                "reason": "No-Show",
+                "date": "Sat May 22 2021 14:09:17 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "littlemagilla#0650",
+                "ID": "226720253772693504",
+                "event": "vka-movie-night-sat-10pm",
+                "warnedby": "Your Neighbourhood Ievan Polkka#1818",
+                "reason": "No-Show",
+                "date": "Sat May 22 2021 20:57:41 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Katz#8749",
+                "ID": "288871620116873217",
+                "event": "vcr-sun-10pm-est",
+                "warnedby": "SafariBlaze#0001",
+                "reason": "No-Show",
+                "date": "Sun May 23 2021 20:50:58 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Jardishken#8239",
+                "ID": "375016526371225601",
+                "event": "vas0-friday-28th-7pm-est",
+                "warnedby": "Commando506#3561",
+                "reason": "No-Show",
+                "date": "Fri May 28 2021 19:32:10 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "QQKimchi#0982",
+                "ID": "172889166302937088",
+                "event": "vkahm-mon-2pm-est",
+                "warnedby": "Lukewarm_Tater#8981",
+                "reason": "No-Show",
+                "date": "Mon May 31 2021 11:49:47 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Ultra#2256",
+                "ID": "341180110810120202",
+                "event": "vkahm-mon-2pm-est",
+                "warnedby": "Your Neighbourhood Ievan Polkka#1818",
+                "reason": "No-Show",
+                "date": "Mon May 31 2021 12:52:13 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "natepow(PC-NA)#0321",
+                "ID": "670194217489793034",
+                "event": "vrg-wed-2nd-6pm-edt",
+                "reason": "No-Show",
+                "date": "Wed Jun 02 2021 17:08:05 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "JesterOrNot#7555",
+                "ID": "253288301904134156",
+                "event": "vhrc-hm-wed-2-7pm-est",
+                "reason": "No-Show",
+                "date": "Wed Jun 02 2021 21:45:44 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "PhoenixNoctum#8351",
+                "ID": "393560660199342080",
+                "event": "vhrc-sunday-6th-12pm-est",
+                "reason": "No-Show",
+                "date": "Sun Jun 06 2021 11:04:24 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Jardishken#8239",
+                "ID": "375016526371225601",
+                "event": "vhrc-sunday-6th-12pm-est",
+                "reason": "No-Show",
+                "date": "Sun Jun 06 2021 11:04:29 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "ShiNoTenshi1436#5784",
+                "ID": "686152025871745035",
+                "event": "vcr1-sunday-6th-8pm-est",
+                "reason": "No-Show",
+                "date": "Sun Jun 06 2021 21:05:47 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "pwiddy#6643",
+                "ID": "437299735330684929",
+                "event": "rekt",
+                "reason": "No-Show",
+                "date": "Fri Jun 11 2021 20:00:00 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "xRe4MasTeRx#3174",
+                "ID": "211515851323473920",
+                "event": "vss-icehm-sun-7pm-13th",
+                "reason": "No-Show",
+                "date": "Sun Jun 13 2021 18:14:53 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Screamer19#5400",
+                "ID": "673298298102218772",
+                "event": "vas-incredibly-hm-mon-8pm",
+                "reason": "No-Show",
+                "date": "Mon Jun 14 2021 19:08:03 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "KantoStrider#1515",
+                "ID": "716071055646785587",
+                "event": "💢｜baja-blast-off",
+                "reason": "No-Show",
+                "date": "Mon Jun 14 2021 21:02:16 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "Arch#4425",
+                "ID": "359802915482894336",
+                "event": "vcr0-and-vcr1-thurs17-10pmest",
+                "reason": "No-Show",
+                "date": "Thu Jun 17 2021 21:02:47 GMT-0500 (Central Daylight Time)"
+            },
+            {
+                "Member": "KantoStrider#1515",
+                "ID": "716071055646785587",
+                "event": "💢｜baja-blast-off",
+                "reason": "No-Show",
+                "date": "Mon Jun 21 2021 22:54:21 GMT-0500 (Central Daylight Time)"
+            }
+        ],
+        {
+            "Member": "DemiGodAsura#6575",
+            "ID": "225038148709777408",
+            "event": "💢｜daddy-issues",
+            "reason": "No-Show",
+            "date": "Thu Jun 24 2021 19:04:06 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "DemiGodAsura#6575",
+            "ID": "225038148709777408",
+            "event": "💢｜daddy-issues",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 18:15:10 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Rykiln#0001",
+            "ID": "254467802705035264",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:42:15 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Krizzell#3416",
+            "ID": "341970365746249740",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:42:26 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Rykiln#0001",
+            "ID": "254467802705035264",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:42:50 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Rykiln#0001",
+            "ID": "254467802705035264",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:43:23 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Harvspecial#3995",
+            "ID": "561026307371171864",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:45:16 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Eruceninde#5497",
+            "ID": "107664559883452416",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:45:23 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "ComanderFlownder#7201",
+            "ID": "89030575234514944",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:45:30 GMT-0500 (Central Daylight Time)"
+        }
+    ],
+    [
+        {
+            "Member": "Rykiln#0001",
+            "ID": "254467802705035264",
+            "event": "🔒｜guild-leaders",
+            "reason": "No-Show",
+            "date": "Thu Jul 01 2021 21:45:37 GMT-0500 (Central Daylight Time)"
+        }
+    ]
 ]

@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'newcore',																												// Name of this command. Required for all commands.
-  description: 'RAID LEADER: Creates a new role, channel, and new apply channel for starting a new core progression team.',		// [Optional] Description of this command for the help command
+  description: 'Creates A New Role, Channel, & Apply Channel For A New Core.',		// [Optional] Description of this command for the help command
   aliases: ['newprogression', 'newprog', 'core', 'prog'], 																		// [Optional] Permits additional command names to be used for this command
   usage: '<Core Name>',																											// [Optional] Displays how to use this command in the help command.
   permissions: 'MANAGE_ROLES',																									// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS

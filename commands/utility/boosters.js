@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'boosters',																					// Name of this command. Required for all commands.
-  description: 'Displays a list of members who have boosted the server using Discord Nitro.',			// [Optional] Description of this command for the help command
+  description: 'Displays Members Who Have Boosted The Server.',			// [Optional] Description of this command for the help command
   aliases: ['boost', 'booster', 'nitro'], 															// [Optional] Permits additional command names to be used for this command
   args: false, // [Optional] When True - Requires Arguments Be Provided In Message Object
   guildOnly: true, 																					// [Optional] When True - Prevents Command from being used in a Direct Message With The Bot Account

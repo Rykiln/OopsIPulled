@@ -1,6 +1,6 @@
 module.exports = {
   name: 'send',																// Name of this command. Required for all commands.
-  description: 'RAID LEADER: Sends a message with the bot as the author.',	// [Optional] Description of this command for the help command
+  description: 'Sends A Message With The Bot As The Author.',	// [Optional] Description of this command for the help command
   usage: '[#channel] <message>',												// [Optional] Displays how to use this command in the help command.
   permissions: 'MANAGE_MESSAGES',												// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS
   args: true, 																// [Optional] When True - Requires Arguments Be Provided In Message Object

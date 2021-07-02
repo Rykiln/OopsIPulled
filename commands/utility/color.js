@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'color',																			// Name of this command. Required for all commands.
-  description: 'Displays a random color with it\'s Hexidecimal and RGB values.',			// [Optional] Description of this command for the help command
+  description: 'Displays A Random Color With It\'s Hex & RGB values.',			// [Optional] Description of this command for the help command
   aliases: ['colour', 'rgb'], 															// [Optional] Permits additional command names to be used for this command
   cooldown: 5, 																			// [Optional] See https://discordjs.guide/command-handling/adding-features.html#cooldowns
   execute(msgObject, args, client) {

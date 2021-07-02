@@ -1,6 +1,6 @@
 module.exports = {
   name: 'purge',															// Name of this command. Required for all commands.
-  description: 'RAID LEADER: Deletes multiple messages at a time..',			// [Optional] Description of this command for the help command
+  description: 'Deletes Multiple Messages At A Time.',			// [Optional] Description of this command for the help command
   aliases: ['clear', 'cleanup', 'wipe'], 									// [Optional] Permits additional command names to be used for this command
   usage: '[#num of messages to delete]',									// [Optional] Displays how to use this command in the help command.
   permissions: 'MANAGE_MESSAGES',											// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS

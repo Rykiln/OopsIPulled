@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports = {
   name: 'discordlimits',																							// Name of this command. Required for all commands.
-  description: 'Raid Leader: Displays Server Information In Comparison To The Maximum Discord Limitations.',			// [Optional] Description of this command for the help command
+  description: 'Displays & Compares This Server To Discord Limitations.',			// [Optional] Description of this command for the help command
   aliases: ['limitations', 'limits'], 																			// [Optional] Permits additional command names to be used for this command
   // usage: '<required_args> [optional_args]',																	// [Optional] Displays how to use this command in the help command.
   permissions: 'MANAGE_CHANNELS',																					// [Optional] Checks for default discord.js permissions. See https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS
