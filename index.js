@@ -88,6 +88,8 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
       rolesArray.push(client.guilds.resolve(GuildID).roles.resolve(role).name);
     });
     const MemberLogChannel = client.guilds.resolve(GuildID).channels.resolve(process.env.OOPS_CHANNEL_MEMBERLOGS);
+    // Send Console Log and Embed Notifications
+    console.log(`    └ [${newMember.user.tag}] has accepted the guild rules.`)
     const embed = new Discord.MessageEmbed()
       .setAuthor(newMember.user.tag, newMember.user.displayAvatarURL())
       .setColor(0x00ff00)
