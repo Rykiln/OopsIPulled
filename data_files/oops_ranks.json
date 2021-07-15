@@ -1,0 +1,206 @@
+{
+    "fine": {
+        "roleID": "721310503015546951",
+        "ddStamID": "862549547771625522",
+        "ddMagID": "862549598270128128",
+        "healerID": "862549906840354826",
+        "tankID": "862549791509446677",
+        "description": "These are the minimum requirements for joining veteran trials. The gear sets, skills, and damage are needed to be a contributing member of a coordinated trial group.",
+        "dpsThreshold": 70,
+        "dpsDisqualifiers": [
+            "No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)",
+            "No [Mythic Items](https://eso-sets.com/sets/type/mythic)",
+            "No Transformation Ultimate Parses"
+        ],
+        "image": "rank01.Fine.png",
+        "howToApply": "Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots for our Officers and Raid Leaders to review.",
+        "gearHealer": {
+            "1": {
+                "setName": "Spell Power Cure",
+                "setURL": "https://eso-sets.com/set/spell-power-cure",
+                "setRequirements": "Body and Jewelry"
+            },
+            "2": {
+                "setName": "Worm's Raiment",
+                "setURL": "https://eso-sets.com/set/the-worms-raiment",
+                "setRequirements": "Pair w/ Spell Power Cure or Olorime"
+            },
+            "3": {
+                "setName": "Sentinel of Rkugamz",
+                "setURL": "https://eso-sets.com/set/sentinel-of-rkugamz"
+            }
+            ,
+            "4": {
+                "setName": "Troll King",
+                "setURL": "https://eso-sets.com/set/the-troll-king"
+            },
+            "5": {
+                "setName": "Master's Restoration Staff",
+                "setURL": "https://eso-sets.com/set/grand-rejuvenation"
+            }
+        },
+        "gearTank": {
+            "1": {
+                "setName": "Claw of Yolnahkriin",
+                "setURL": "https://eso-sets.com/set/perfected-claw-of-yolnahkriin"
+            },
+            "2": {
+                "setName": "Worm's Raiment",
+                "setURL": "https://eso-sets.com/set/the-worms-raiment",
+                "setRequirements": "Jewelry and Weapons"
+            },
+            "3": {
+                "setName": "Encratis's Behemoth",
+                "setURL": "https://eso-sets.com/set/encratiss-behemoth"
+            }
+        }
+    },
+    "superior": {
+        "roleID": "721310651137654834",
+        "ddStamID": "862549018801209384",
+        "ddMagID": "862549143427874826",
+        "healerID": "862549432864342037",
+        "tankID": "862549272725553173",
+        "description": "These sets, skills, and damage requirements allow for more group optimization than fine sets, but also require more understanding of how and when to perform certain actions to cause the gear to activate.\n\nAll <@&721310651137654834> ranks must first meet the requirements of <@&721310503015546951> for the same role.",
+        "dpsThreshold": 80,
+        "dpsDisqualifiers": [
+            "No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)",
+            "No [Mythic Items](https://eso-sets.com/sets/type/mythic)",
+            "No Transformation Ultimate Parses"
+        ],
+        "image": "rank02.Superior.png",
+        "howToApply": "Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots for our Officers and Raid Leaders to review.",
+        "TrialCompletions": "Must have clears on a minimum of 3 of the following veteran trials:\n\n- vMOL\n- vHoF\n- vAS\n- vCR\n- vSS\n- vKA\n- vRG\n\nLogs are not required for <@&721310651137654834>. Please post screenshots of your achievements to show these clears. If you have already posted them in <#728742997667217559>, you do not have to post them again.",
+        "gearHealer": {
+            "1": {
+                "setName": "Vestments of Olorime",
+                "setURL": "https://eso-sets.com/set/perfect-vestment-of-olorime",
+                "setRequirements": "Body and Jewelry"
+            },
+            "2": {
+                "setName": "Roaring Opportunist",
+                "setURL": "https://eso-sets.com/set/perfect-roaring-opportunist",
+                "setRequirements": "Pair w/ Jorvuld"
+            },
+            "3": {
+                "setName": "Jorvuld's Guidance",
+                "setURL": "https://eso-sets.com/set/jorvulds-guidance"
+            }
+            ,
+            "4": {
+                "setName": "Symphony of Blades",
+                "setURL": "https://eso-sets.com/set/symphony-of-blades"
+            },
+            "5": {
+                "setName": "Stone-Talker's Oath",
+                "setURL": "https://eso-sets.com/set/perfected-stone-talkers-oath"
+            },
+            "6": {
+                "setName": "Encratis's Behemoth",
+                "setURL": "https://eso-sets.com/set/encratiss-behemoth"
+            },
+            "7": {
+                "setName": "Saxhleel Champion",
+                "setURL": "https://eso-sets.com/set/perfected-saxhleel-champion",
+                "setRequirements": "Jewelry and Weapons"
+            }
+        },
+        "gearTank": {
+            "1": {
+                "setName": "Powerful Assault",
+                "setURL": "https://eso-sets.com/set/powerful-assault",
+                "setRequirements": "Jewelry and Weapons"
+            },
+            "2": {
+                "setName": "Saxhleel Champion",
+                "setURL": "https://eso-sets.com/set/perfected-saxhleel-champion"
+            },
+            "3": {
+                "setName": "Elemental Catalyst",
+		        "setURL": "https://eso-sets.com/set/elemental-catalyst"
+            }
+        }
+    },
+    "epic": {
+        "roleID": "721310549547417671",
+        "ddStamID": "862548668930326548",
+        "ddMagID": "862548753122852864",
+        "healerID": "862548871966883870",
+        "tankID": "862548809933783100",
+        "description": "These are additional sets that start allowing groups to optimize in more situations, including large trash pulls between bosses.\n\nAll <@&721310549547417671> ranks must first meet the requirements of <@&721310651137654834> for the same role.",
+        "dpsThreshold": 90,
+        "dpsDisqualifiers": [
+            "No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)",
+            "No [Mythic Items](https://eso-sets.com/sets/type/mythic)",
+            "No Transformation Ultimate Parses"
+        ],
+        "image": "rank03.Epic.png",
+        "howToApply": "Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots and logs for our Officers and Raid Leaders to review.",
+        "TrialCompletions": "Must have clears on all veteran DLC trials and a minimum of 3 of the following hard mode trials:\n\n- vMOL HM\n- vHoF HM\n- vAS HM\n- vCR HM\n- vSS HM\n- vKA HM\n- vRG HM\n\nLogs are not required for <@&721310549547417671>. Please post screenshots of your achievements to show these clears. If you have already posted them in <#728742997667217559>, you do not have to post them again.",
+        "gearHealer": {
+            "1":{
+                "setName": "Blackrose Prison Restoration Staff",
+		        "setURL": "https://eso-sets.com/set/menders-ward"
+            },
+            "2":{
+                "setName": "Powerful Assault",
+		        "setURL": "https://eso-sets.com/set/powerful-assault"
+            }
+        },
+        "gearTank": {
+            "1":{
+                "setName": "Dragon's Defilement",
+		        "setURL": "https://eso-sets.com/set/dragons-defilement"
+            },
+            "2":{
+                "setName": "Frozen Watcher",
+		        "setURL": "https://eso-sets.com/set/frozen-watcher",
+                "setRequirements": "Frost Staff Required"
+            },
+            "3":{
+                "setName": "Roar of Alkosh",
+		        "setURL": "https://eso-sets.com/set/roar-of-alkosh"
+            },
+            "4":{
+                "setName": "War Machine",
+		        "setURL": "https://eso-sets.com/set/war-machine"
+            }
+        }
+    },
+    "legendary": {
+        "roleID": "721310768859054130",
+        "ddStamID": "862547915192926218",
+        "ddMagID": "862548131237724250",
+        "healerID": "862548378273710100",
+        "tankID": "862548254889213985",
+        "description": "By <@&721310768859054130>, it is expected that someone knows their role and class very well and will voluntarily obtain any additional sets that will benefit them in even the most niche situations. At this level, we are looking for mastery of your character, and awareness in trials.\n\nAll <@&721310768859054130> ranks must first meet the requirements of <@&721310549547417671> for the same role.",
+        "dpsThreshold": 95,
+        "dpsMythics": [
+            "[Harpooner's Wading Kilt](https://eso-sets.com/set/harpooners-wading-kilt) Is Allowed"
+        ],
+        "dpsDisqualifiers": [
+            "No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)",
+            "No Other [Mythic Items](https://eso-sets.com/sets/type/mythic)",
+            "No Transformation Ultimate Parses"
+        ],
+        "image": "rank04.Legendary.png",
+        "howToApply": "Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots and logs for our Officers and Raid Leaders to review.",
+        "TrialCompletions": "Must have clears on all hard mode DLC trials (excluding vRG for now)",
+        "TrialPerformanceReview": {
+            "details": "When applying for <@&721310768859054130> roles, you will be expected to provide trial logs to be reviewed by the guild officers. These logs will be used to determine several factors that cannot be determined by a dummy parse or gear alone. Acceptable trials for log sumbissions include:\n\n- vMOL HM\n- vHOF HM\n- vAS HM\n- vCR HM\n- vSS HM\n- vKA HM\n- vRG HM\n\nBelow are the criteria we're looking at for each role.",
+            "ddReview": "TRIAL Single Target Damage\nSurvivability\nExtra Duties (Backyard Runner, Portals, etc.)",
+            "healerReview": "Survivability\nCombat Prayer Uptime\nMajor Courage Uptime\nClass Specific Buffs/Debuffs\nGear Set Usage/Uptime",
+            "tankReview": "Survivability\nFracture Uptime\nMaim Uptime\nCrusher Uptime\nClass Specific Buffs/Debuffs"
+        }
+    },
+    "radiant": {
+        "roleID": "862427691038801940",
+        "ddStamID": "862546768867491860",
+        "ddMagID": "856745221487591454",
+        "healerID": "862547274382049300",
+        "tankID": "862547126873751562",
+        "description": "",
+        "image": "rank05.Radiant.png",
+        "howToApply": "Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots and logs for our Officers and Raid Leaders to review."
+    }
+}
