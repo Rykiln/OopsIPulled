@@ -5,7 +5,7 @@
 		"Role": "Healer",
 		"SetName": "Spell Power Cure",
 		"ESOSETSURL": "https://eso-sets.com/set/spell-power-cure",
-		"PairRequirements": "(Pair w/ Worm Raiment)"
+		"PairRequirements": "(Body and Jewelry)"
 	},
 	{
 		"RankName": "Fine",
@@ -13,7 +13,7 @@
 		"Role": "Healer",
 		"SetName": "Worm Raiment",
 		"ESOSETSURL": "https://eso-sets.com/set/the-worms-raiment",
-		"PairRequirements": "(Pair w/ Spell Power Cure)"
+		"PairRequirements": "(Pair w/ Spell Power Cure or Olorime)"
 	},
 	{
 		"RankName": "Fine",
@@ -27,8 +27,8 @@
 		"RankName": "Fine",
 		"RankID": "721310503015546951",
 		"Role": "Healer",
-		"SetName": "Bogdan the Nightflame",
-		"ESOSETSURL": "https://eso-sets.com/set/nightflame",
+		"SetName": "Troll King",
+		"ESOSETSURL": "https://eso-sets.com/set/the-troll-king",
 		"PairRequirements": ""
 	},
 	{
@@ -60,8 +60,8 @@
 		"RankName": "Fine",
 		"RankID": "721310503015546951",
 		"Role": "Tank",
-		"SetName": "Lord Warden",
-		"ESOSETSURL": "https://eso-sets.com/set/lord-warden",
+		"SetName": "Encratis's Behemoth",
+		"ESOSETSURL": "https://eso-sets.com/set/encratiss-behemoth",
 		"PairRequirements": ""
 	},
 	{
@@ -70,7 +70,7 @@
 		"Role": "Healer",
 		"SetName": "Vestments of Olorime",
 		"ESOSETSURL": "https://eso-sets.com/set/perfect-vestment-of-olorime",
-		"PairRequirements": "(Pair w/ Worm Cult)"
+		"PairRequirements": "(Body and Jewelry)"
 	},
 	{
 		"RankName": "Superior",
@@ -100,9 +100,25 @@
 		"RankName": "Superior",
 		"RankID": "721310651137654834",
 		"Role": "Healer",
-		"SetName": "Troll King",
-		"ESOSETSURL": "https://eso-sets.com/set/the-troll-king",
+		"SetName": "Stone-Talker's Oath",
+		"ESOSETSURL": "https://eso-sets.com/set/perfected-stone-talkers-oath",
 		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "721310651137654834",
+		"Role": "Healer",
+		"SetName": "Encratis's Behemoth",
+		"ESOSETSURL": "https://eso-sets.com/set/encratiss-behemoth",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "721310651137654834",
+		"Role": "Healer",
+		"SetName": "Saxhleel Champion",
+		"ESOSETSURL": "https://eso-sets.com/set/perfected-saxhleel-champion",
+		"PairRequirements": "Jewelry and Weapons"
 	},
 	{
 		"RankName": "Superior",
@@ -110,22 +126,22 @@
 		"Role": "Tank",
 		"SetName": "Powerful Assault",
 		"ESOSETSURL": "https://eso-sets.com/set/powerful-assault",
+		"PairRequirements": "Jewelry and Weapons"
+	},
+	{
+		"RankName": "Superior",
+		"RankID": "721310651137654834",
+		"Role": "Tank",
+		"SetName": "Saxhleel Champion",
+		"ESOSETSURL": "https://eso-sets.com/set/perfected-saxhleel-champion",
 		"PairRequirements": ""
 	},
 	{
 		"RankName": "Superior",
 		"RankID": "721310651137654834",
 		"Role": "Tank",
-		"SetName": "Aegis of Galenwe",
-		"ESOSETSURL": "https://eso-sets.com/set/aegis-of-galenwe",
-		"PairRequirements": ""
-	},
-	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
-		"Role": "Tank",
-		"SetName": "Drake's Rush",
-		"ESOSETSURL": "https://eso-sets.com/set/drakes-rush",
+		"SetName": "Elemental Catalyst",
+		"ESOSETSURL": "https://eso-sets.com/set/elemental-catalyst",
 		"PairRequirements": ""
 	},
 	{
@@ -155,6 +171,14 @@
 	{
 		"RankName": "Epic",
 		"RankID": "721310549547417671",
+		"Role": "Healer",
+		"SetName": "Powerful Assault",
+		"ESOSETSURL": "https://eso-sets.com/set/powerful-assault",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "721310549547417671",
 		"Role": "Tank",
 		"SetName": "Dragon's Defilement",
 		"ESOSETSURL": "https://eso-sets.com/set/dragons-defilement",
@@ -166,7 +190,7 @@
 		"Role": "Tank",
 		"SetName": "Frozen Watcher",
 		"ESOSETSURL": "https://eso-sets.com/set/frozen-watcher",
-		"PairRequirements": ""
+		"PairRequirements": "Frost Staff Required"
 	},
 	{
 		"RankName": "Epic",
@@ -180,40 +204,40 @@
 		"RankName": "Epic",
 		"RankID": "721310549547417671",
 		"Role": "Tank",
-		"SetName": "Elemental Catalyst",
-		"ESOSETSURL": "https://eso-sets.com/set/elemental-catalyst",
-		"PairRequirements": ""
-	},
-	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
-		"Role": "Tank",
-		"SetName": "Encratis's Behemoth",
-		"ESOSETSURL": "https://eso-sets.com/set/encratiss-behemoth",
-		"PairRequirements": ""
-	},
-	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
-		"Role": "Healer",
-		"SetName": "Encratis's Behemoth",
-		"ESOSETSURL": "https://eso-sets.com/set/encratiss-behemoth",
-		"PairRequirements": ""
-	},
-	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
-		"Role": "Tank",
-		"SetName": "Saxhleel Champion",
-		"ESOSETSURL": "https://eso-sets.com/set/perfected-saxhleel-champion",
+		"SetName": "War Machine",
+		"ESOSETSURL": "https://eso-sets.com/set/war-machine",
 		"PairRequirements": ""
 	},
 	{
 		"RankName": "Legendary",
-		"RankID": "721310651137654834",
+		"RankID": "862548378273710100",
 		"Role": "Healer",
-		"SetName": "Saxhleel Champion",
-		"ESOSETSURL": "https://eso-sets.com/set/perfected-saxhleel-champion",
+		"SetName": "No Additional Sets Required",
+		"ESOSETSURL": "",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Legendary",
+		"RankID": "862548254889213985",
+		"Role": "Tank",
+		"SetName": "No Additional Sets Required",
+		"ESOSETSURL": "",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Radiant",
+		"RankID": "862547274382049300",
+		"Role": "Healer",
+		"SetName": "No Additional Sets Required",
+		"ESOSETSURL": "",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Radiant",
+		"RankID": "862547126873751562",
+		"Role": "Tank",
+		"SetName": "No Additional Sets Required",
+		"ESOSETSURL": "",
 		"PairRequirements": ""
 	}
 ]
