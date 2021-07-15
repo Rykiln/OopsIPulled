@@ -62,7 +62,8 @@ module.exports = {
         return;
       }
       // Send Non Admin Command List To DM
-      msgObject.author.send(embedUserCommands)
+      // msgObject.author.send(embedUserCommands)
+      msgObject.author.send('', { embed: embedUserCommands, split: true })
         .then(() => {
           if (msgObject.channel.type === 'dm') return;
           msgObject.reply('The command list has been sent to your DMs');
