@@ -28,19 +28,23 @@ module.exports = {
       const embedNoSource = new Discord.MessageEmbed()
         .setTitle('You Must Chose A Trial')
         .setDescription('Please retype the command followed by a space, and then the abbreviations of the trial or dungeon you\'d like to know about.\nYou will receive a private message with a list of all possible abbreviations.')
-        .setColor('FFFF00')
+        .setColor(0xffff00)
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setTimestamp()
         .addField('Example', '.drops MOL');
       const embedDM = new Discord.MessageEmbed()
         .setTitle('Trial Abbreviations')
-        .setDescription(trials)
+        .setDescription(trials.join(`\n`))
         .setFooter(client.user.username, client.user.displayAvatarURL())
         .setTimestamp()
         .addField('Command Example', '.drops MOL');
-      msgObject.channel.send(embedNoSource)
-        .then((msg) => { msg.delete(20000); });
-      msgObject.author.send(embedDM);
+      msgObject.channel.send({embeds: [embedNoSource]})
+        .then((msg) => {
+          setTimeout(() => {
+            (msg.delete());
+          }, 20000);
+        });
+      msgObject.author.send({embeds: [embedDM]});
       return;
     }
 
@@ -198,7 +202,7 @@ module.exports = {
       .setThumbnail(thumbnail)
       .addField('Motif Style', motifstyle)
       .addField('Gear Sets', gearsets);
-    msgObject.channel.send(embed)
+    msgObject.channel.send({embeds: [embed]})
       .then((m) => m.pin());
   },
 };

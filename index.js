@@ -3,12 +3,15 @@
 // Environment Variables and API Calls
 require('dotenv').config();
 const Discord = require('discord.js');
+const { Client, Collection, Intents } = require(`discord.js`);
 
-const client = new Discord.Client({ intents: new Discord.Intents(Discord.Intents.ALL) });
+// const client = new Discord.Client({ intents: new Discord.Intents(Discord.Intents.ALL) });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] })
+// const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.ALL] })
 
 const fs = require('fs');
 
-const BotStatusLive = true;
+const BotStatusLive = false;
 let Token;
 let GuildID;
 if (BotStatusLive) {
@@ -21,6 +24,7 @@ if (BotStatusLive) {
   GuildID = process.env.TEST_GUILDID;
 }
 client.cooldowns = new Discord.Collection();
+// client.cooldowns = new Collection();
 
 // Global Variables
 const Prefix = process.env.PREFIX_DEFAULT;
@@ -65,7 +69,7 @@ client.on('guildMemberAdd', (member) => {
     .addField('Learn More About Us', 'Please Head over to our [🎉｜welcome](https://discord.com/channels/694306288250781699/728692333280886884/830317590756065310) channel. After reading, react to accept our server rules using with 🔔 or 🚫 to specify whether you want to recieve pings or not; it will give you a role that unlocks access to more of our channels.')
     .addField('Join The Guild In Game', 'Go to [🚪｜need-guild-invite](https://discord.com/channels/694306288250781699/725415873929674782/751946917121884251) to request an invitation to the guild.')
     .addField('Let Us Know Who You Are', 'Please set your discord nickname to match your ESO Account Name (Not Character Name)');
-  member.send(embed);
+  member.send({ embeds: embed });
 });
 
 // Client Guild Member Update
@@ -90,7 +94,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
     const MemberLogChannel = client.guilds.resolve(GuildID).channels.resolve(process.env.OOPS_CHANNEL_MEMBERLOGS);
     // Send Console Log and Embed Notifications
     console.log(`    └ [${newMember.user.tag}] has accepted the guild rules.`)
-    const embed = new Discord.MessageEmbed()
+    const embed = new Client.MessageEmbed()
       .setAuthor(newMember.user.tag, newMember.user.displayAvatarURL())
       .setColor(0x00ff00)
       .setDescription(`${newMember} has accepted the guild rules.`)
@@ -98,7 +102,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
       .setTimestamp()
       .addField('Name', `${newMember.user.tag} (${newMember.user.id}) ${newMember}`)
       .addField('Granted Roles', rolesArray.join('\n'));
-    MemberLogChannel.send(embed);
+    MemberLogChannel.send({ embeds: embed });
   }
 });
 
@@ -108,7 +112,7 @@ client.on('guildMemberRemove', (member) => {
 });
 
 // Client Message Handler
-client.on('message', (msgObject) => {
+client.on('messageCreate', (msgObject) => {
   if (!msgObject.content.startsWith(Prefix) || msgObject.author.bot) return; // Ignore Messages That Don't Start With The Prefix And Messages That Come From Bots
 
   const args = msgObject.content.slice(Prefix.length).trim().split(/ +/);
@@ -116,7 +120,7 @@ client.on('message', (msgObject) => {
 
   // Check Command Names and Command Aliases. Ignore Commands That Don't Exist
   const command = client.commands.get(commandName)
-        || client.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
+    || client.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
 
   if (!command) return;
   console.log(`[${msgObject.author.username}] used Command [${commandName}] in Channel [${msgObject.channel.name}]`);
@@ -127,21 +131,21 @@ client.on('message', (msgObject) => {
   if (command.permissions) {
     // const authorPerms = msgObject.channel.permissionsFor(msgObject.author);              //Checks Channel Permissions For Author
     const authorPerms = msgObject.guild.members.resolve(msgObject.author.id).permissions; // Checks Guild Permissions For Author
-    if (!authorPerms || !authorPerms.has(command.permissions)) {
-      msgObject.reply('You do not have the permissions to use this command!');
+    if (!authorPerms || !authorPerms.has(Discord.Permissions.FLAGS[command.permissions])) {
+      msgObject.reply({ content: 'You do not have the permissions to use this command!', allowedMentions: { repliedUser: true } });
       return;
     }
   }
 
   // Return Error if GuildOnly command is Used in Direct Message
-  if (command.guildOnly && msgObject.channel.type === 'dm') {
-    msgObject.reply('I can\'t execute that command inside DMs!');
+  if (command.guildOnly && msgObject.channel.type === 'DM') {
+    msgObject.reply({ content: 'I can\'t execute that command inside DMs!', allowedMentions: { repliedUser: true } });
     return;
   }
 
   // Return Error if no args are given for commands that require args
   if (command.args && !args.length) {
-    msgObject.channel.send('You didn\'t provide any arguments!');
+    msgObject.channel.send({ content: 'You didn\'t provide any arguments!' });
     return;
   }
 
@@ -161,7 +165,7 @@ client.on('message', (msgObject) => {
 
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
-      msgObject.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`);
+      msgObject.reply({ content: `Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`, allowedMentions: { repliedUser: true } });
       return;
     }
   }
@@ -171,7 +175,7 @@ client.on('message', (msgObject) => {
     command.execute(msgObject, args, client);
   } catch (error) {
     console.error(error);
-    msgObject.reply('ERROR: An Unknown Error Has Occurred');
+    msgObject.reply({ content: 'ERROR: An Unknown Error Has Occurred', allowedMentions: { repliedUser: true } });
   }
 });
 

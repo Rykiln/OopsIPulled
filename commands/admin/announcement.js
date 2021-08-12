@@ -20,12 +20,11 @@ module.exports = {
       .setFooter(client.user.username, client.user.displayAvatarURL())
       .setTimestamp()
       .setDescription(args.join(' '));
-    msgObject.delete(3000);
+    setTimeout(() => msgObject.delete(), 3000);
     console.log(channelAnnounce.name);
     console.log(notifyPing.name);
     console.log(args.join(' '));
-    channelAnnounce.send(notifyPing);
-    channelAnnounce.send(embed)
+    channelAnnounce.send({content: notifyPing, embeds: [embed]})
       .then((announcement) => announcement.pin());
   },
 };

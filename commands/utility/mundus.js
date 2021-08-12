@@ -29,6 +29,6 @@ module.exports = {
       .addField('The Thief | Increases Weapon and Spell Critical Strike ratings', "[Malabal Tor](http://esomap.uesp.net/?centeron=The+Thief&world=Malabal+Tor) | [Alik'r Desert](http://esomap.uesp.net/?centeron=The+Thief&world=Alik%27r+Desert) | [Eastmarch](http://esomap.uesp.net/?centeron=The+Thief&world=Eastmarch)")
       .addField('The Tower | Increases Maximum Stamina', '[Grahtwood](http://esomap.uesp.net/?centeron=The+Tower&world=Grahtwood) | [Deshaan](http://esomap.uesp.net/?centeron=The+Tower&world=Stormhaven) | [Deshaan](http://esomap.uesp.net/?centeron=The+Tower&world=Deshaan)')
       .addField('The Warrior | Increases Weapon Damage', "[Malabal Tor](http://esomap.uesp.net/?centeron=The+Warrior&world=Malabal+Tor) | [Alik'r Desert](http://esomap.uesp.net/?centeron=The+Warrior&world=Alik%27r+Desert) | [Eastmarch](http://esomap.uesp.net/?centeron=The+Warrior&world=Eastmarch)");
-    msgObject.channel.send(embed);
+    msgObject.channel.send({embeds: [embed]});
   },
 };

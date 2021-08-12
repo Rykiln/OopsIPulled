@@ -58,10 +58,12 @@ module.exports = {
             .setColor(0xFF9900)
             .setThumbnail(client.user.displayAvatarURL())
             .setTimestamp()
-            .addField('Member', members, true)
-            .addField('Nickname', nicknames, true)
-            .addField('Warnings', counts, true);
-          msgObject.channel.send(embed);
+            .addFields(
+              {name: 'Member', value: members.join(`\n`), inline: true},
+              {name: 'Nickname', value: nicknames.join(`\n`), inline: true},
+              {name: 'Warnings', value: counts.join(`\n`), inline: true}
+            );
+          msgObject.channel.send({embeds: [embed]});
         });
       });
     });

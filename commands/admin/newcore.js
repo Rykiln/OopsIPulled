@@ -35,8 +35,7 @@ module.exports = {
       await msgObject.guild.channels.create(coreChannelName, 'text').then(async (coreChannel) => {
         await coreChannel.setParent('760983218525962250');
         await coreChannel.lockPermissions();
-        // await coreChannel.overwritePermissions([
-        await coreChannel.updateOverwrite(createdCoreRole, {
+        await coreChannel.permissionOverwrites.edit(createdCoreRole, {
           VIEW_CHANNEL: true,
           SEND_MESSAGES: true,
           EMBED_LINKS: true,

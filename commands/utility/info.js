@@ -18,10 +18,10 @@ module.exports = {
       .setThumbnail(client.user.displayAvatarURL())
       .setFooter(client.user.username, client.user.displayAvatarURL())
       .setTimestamp()
-      .addField('Author', BotAuthor)
-      .addField('Guilds', client.guilds.cache.map((guild) => guild.name))
+      .addField('Author', BotAuthor.toString())
+      .addField('Guilds', client.guilds.cache.map((guild) => guild.name).toString())
       .addField('Copyright', Copyright);
-    msgObject.channel.send(embed)
+    msgObject.channel.send({embeds: [embed]})
       .catch(console.error);
   },
 };

@@ -60,7 +60,7 @@ module.exports = {
           // if(warnedby.length==0){warnedby="None"};
 
           const embed = new Discord.MessageEmbed()
-            .setColor(usrMember.displayHexColor)
+            .setColor(usrMember.displayHexColor.toString())
             .setTitle('Member Information')
             .setThumbnail(usrMember.user.displayAvatarURL())
             .setFooter(client.user.username, client.user.displayAvatarURL())
@@ -71,17 +71,17 @@ module.exports = {
               { name: 'Discord ID', value: usrMember.user.tag, inline: true },
             )
           // .addField("Your Guild Rank", usrMember.roles.get(rankId))
-            .addField('Your Guild Rank', usrMember.roles.highest)
-            .addField('You Joined The Guild', usrMember.joinedAt)
-            .addField('Warnings', loggedwarnings);
+            .addField('Your Guild Rank', usrMember.roles.highest.toString())
+            .addField('You Joined The Guild', usrMember.joinedAt.toString())
+            .addField('Warnings', loggedwarnings.toString());
           if (loggedwarnings > 0) {
             embed.addFields(
-              { name: 'Events', value: loggedevent, inline: true },
-              { name: 'Warned By', value: warnedby, inline: true },
-              { name: 'Date', value: warneddate, inline: true },
+              { name: 'Events', value: loggedevent.join(`\n`), inline: true },
+              { name: 'Warned By', value: warnedby.join(`\n`), inline: true },
+              { name: 'Date', value: warneddate.join(`\n`), inline: true },
             );
           }
-          msgObject.channel.send(embed);
+          msgObject.channel.send({embeds: [embed]});
         });
       });
   },

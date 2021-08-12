@@ -30,6 +30,7 @@ module.exports = (client, guildID) => {
         // await console.log(`${tUser.displayName} -- OFFLINE --`); // Console Logs Offline Users For Debugging.
           return;
         }
+        // await console.log(`${tUser.displayName} -- ONLINE --`); // Console Logs Online Users For Debugging.
         // Gets Stream And Game Data For Active Channels
         const tStream = await tUser.getStream();
         const tStreamTime = tStream.startDate.getTime();
@@ -129,6 +130,9 @@ module.exports = (client, guildID) => {
           case 'league of legends: wild rift':
             dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_LEAGUEOFLEGENDS);
             break;
+          case `new world`:
+            dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_NEWWORLD);
+            break;
           case 'red dead redemption':
           case 'red dead redemption 2':
             dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_REDDEADREDEMPTION);
@@ -171,13 +175,16 @@ module.exports = (client, guildID) => {
           .setFooter(client.user.username, client.user.displayAvatarURL())
           .setTimestamp()
           .setThumbnail(tUser.profilePictureUrl)
-          .setImage(tStreamThumbnail)
-          .addField('Game', tGame, true)
-          .addField('Current Viewers', tStreamViewers, true);
-        dChannel.send(embed)
+          // .setImage(tStreamThumbnail) // Commented to save space on chat channel.
+          .addFields(
+            {name: `Game`, value: tGame, inline: true},
+            {name: `Game`, value: tStreamViewers, inline: true}
+          )
+        dChannel.send({embeds: [embed]})
           .catch(console.error());
       } catch (e) {
-        console.error(e);
+        // console.error(e);
+        return;
       }
     });
   }, interval);

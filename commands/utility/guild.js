@@ -15,7 +15,7 @@ module.exports = {
     // let guestcount = msgObject.guild.members.filter(member => !member.user.bot).size - membercount;
     const embed = new Discord.MessageEmbed()
       .setTitle(msgObject.guild.name)
-      .setDescription('.')
+      // .setDescription('.')
       .setColor(0x000099)
       .setThumbnail(msgObject.guild.iconURL())
       .setFooter(client.user.username, msgObject.guild.iconURL())
@@ -24,7 +24,7 @@ module.exports = {
     // .addField("Discord Guests", guestcount, true)
     // .addField("Officers (Guild Admins)", officersSR.sort(), false)
     // .addField("Raid Leads (Event Leaders)", officersJR.sort(), false)
-      .addField('Created On', msgObject.guild.createdAt, true);
-    msgObject.channel.send(embed);
+      .addField('Created On', msgObject.guild.createdAt.toString(), true);
+    msgObject.channel.send({embeds: [embed]});
   },
 };

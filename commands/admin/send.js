@@ -14,7 +14,7 @@ module.exports = {
       channelDestination.send(msg);
     } else { // Parse Message When Channel Is Not Mentioned
       const msg = args.join(' ') || '';
-      msgObject.channel.send(msg);
+      msgObject.channel.send({content: msg});
     }
     msgObject.delete();
   },

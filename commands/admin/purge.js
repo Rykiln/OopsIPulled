@@ -14,9 +14,9 @@ module.exports = {
     // Validate User Input Was A Number
     const numberOfMessagesToDelete = Number(args[0]);
     if (Number.isNaN(numberOfMessagesToDelete) || numberOfMessagesToDelete < 1 || numberOfMessagesToDelete > 100) {
-      msgObject.channel.send(`Sorry, ${msgObject.author}, but that is not a valid number.`)
+      msgObject.channel.send({content: `Sorry, ${msgObject.author}, but that is not a valid number.`})
         .then((msg) => {
-          msg.delete(5000)
+          setTimeout(() => msg.delete(), 5000)
             .catch(console.error);
         });
       return;

@@ -10,7 +10,7 @@ module.exports = {
   execute(msgObject, args, client) {
     msgObject.channel.setParent(process.env.OOPS_CATEGORY_ARCHIVE).then(async (m) => {
       await m.lockPermissions();
-      msgObject.reply('This channel has been archived');
+      msgObject.reply({content: 'This channel has been archived'});
     });
   },
 };

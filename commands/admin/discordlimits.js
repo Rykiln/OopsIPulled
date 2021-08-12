@@ -94,6 +94,6 @@ module.exports = {
         { name: '\u200B', value: '\u200B', inline: true },
       );
     }
-    msgObject.channel.send(embed);
+    msgObject.channel.send({embeds: [embed]});
   },
 };

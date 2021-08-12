@@ -24,7 +24,7 @@ module.exports = {
         { name: 'RGB', value: `[ ${convertToRGB(hex)} ]`, inline: true },
         { name: 'Hexidecimal', value: `#${hex}`, inline: true },
       );
-    msgObject.channel.send(embed)
+    msgObject.channel.send({embeds: [embed]})
       .catch(console.error);
   },
 };
