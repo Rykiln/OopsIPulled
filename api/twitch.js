@@ -174,8 +174,7 @@ module.exports = (client, guildID) => {
           .setColor(twitchColor)
           .setFooter(client.user.username, client.user.displayAvatarURL())
           .setTimestamp()
-          .setThumbnail(tUser.profilePictureUrl)
-          // .setImage(tStreamThumbnail) // Commented to save space on chat channel.
+          .setThumbnail(tStreamThumbnail)
           .addFields(
             {name: `Game`, value: tGame, inline: true},
             {name: `Game`, value: tStreamViewers, inline: true}
