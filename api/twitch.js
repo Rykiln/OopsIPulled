@@ -176,8 +176,8 @@ module.exports = (client, guildID) => {
           .setTimestamp()
           .setThumbnail(tStreamThumbnail)
           .addFields(
-            {name: `Game`, value: tGame, inline: true},
-            {name: `Game`, value: tStreamViewers, inline: true}
+            {name: `Game`, value: tGame.toString(), inline: true},
+            {name: `Current Viewers`, value: tStreamViewers.toString(), inline: true}
           )
         dChannel.send({embeds: [embed]})
           .catch(console.error());
