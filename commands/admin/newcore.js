@@ -60,9 +60,9 @@ module.exports = {
             .setThumbnail(client.user.displayAvatarURL())
             .setFooter(client.user.username, client.user.displayAvatarURL())
             .setTimestamp()
-            .addField('Core Role', createdCoreRole)
-            .addField('Core Channels', `${createdCoreChannel}\n${createdApplyChannel}`);
-          await msgObject.channel.send(embed);
+            .addField('Core Role', createdCoreRole.toString())
+            .addField('Core Channels', `${createdCoreChannel.toString()}\n${createdApplyChannel.toString()}`);
+          await msgObject.channel.send({embeds: [embed]});
         });
       });
     });
