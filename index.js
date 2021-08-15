@@ -95,14 +95,14 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
     // Send Console Log and Embed Notifications
     console.log(`    └ [${newMember.user.tag}] has accepted the guild rules.`)
     const embed = new Client.MessageEmbed()
-      .setAuthor(newMember.user.tag, newMember.user.displayAvatarURL())
+      .setAuthor(newMember.user.tag.toString(), newMember.user.displayAvatarURL())
       .setColor(0x00ff00)
-      .setDescription(`${newMember} has accepted the guild rules.`)
+      .setDescription(`${newMember.toString()} has accepted the guild rules.`)
       .setFooter(client.user.username, client.user.displayAvatarURL())
       .setTimestamp()
-      .addField('Name', `${newMember.user.tag} (${newMember.user.id}) ${newMember}`)
+      .addField('Name', `${newMember.user.tag.toString()} (${newMember.user.id}) ${newMember.toString()}`)
       .addField('Granted Roles', rolesArray.join('\n'));
-    MemberLogChannel.send({ embeds: embed });
+    MemberLogChannel.send({ embeds: [embed] });
   }
 });
 
