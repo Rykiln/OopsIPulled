@@ -26,9 +26,9 @@ client.commands = new Collection();
 client.cooldowns = new Collection();
 
 // Event Handler: Listens For Defined Events Located In The Events Folder
-const eventFiles = readdirSync(`./events`).filter(file => file.endsWith(`.js`));
+const eventFiles = readdirSync(`./Events`).filter(file => file.endsWith(`.js`));
 for (const file of eventFiles) {
-  const event = require(`./events/${file}`);
+  const event = require(`./Events/${file}`);
   if (event.once) {
     client.once(event.name, (...args) => event.execute(...args, client));
   } else {
@@ -37,11 +37,11 @@ for (const file of eventFiles) {
 }
 
 // Command Handler: Listens For Messages With A Defined Command Prefix Located In The Commands Folder Recursively
-const commandFolders = readdirSync('./commands');
+const commandFolders = readdirSync('./Commands');
 commandFolders.forEach((folder) => {
-  const commandFiles = readdirSync(`./commands/${folder}`).filter((file) => file.endsWith('.js'));
+  const commandFiles = readdirSync(`./Commands/${folder}`).filter((file) => file.endsWith('.js'));
   commandFiles.forEach((file) => {
-    const command = require(`./commands/${folder}/${file}`);
+    const command = require(`./Commands/${folder}/${file}`);
     client.commands.set(command.name, command);
   });
 });
