@@ -8,7 +8,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const {readdirSync} = require(`fs`);
 
 // Client Status Boolean: Live(True)/Test(False)
-const BotStatusLive = false;
+const BotStatusLive = true;
 let Token;
 let GuildID;
 if (BotStatusLive) {
