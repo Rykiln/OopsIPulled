@@ -48,4 +48,4 @@ commandFolders.forEach((folder) => {
 
 // Initialize Clients
 client.login(Token);
-require('./Twitch/twitch')(client, GuildID);
+require('./API/twitch')(client, GuildID);
