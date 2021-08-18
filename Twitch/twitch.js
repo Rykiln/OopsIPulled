@@ -58,7 +58,7 @@ module.exports = (client, guildID) => {
           case 'the elder scrolls travels: dawnstar':
           case 'the elder scrolls travels: shadowkey':
           case 'the elder scrolls adventures: redguard':
-            dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_CHAT);
+            dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_DEFAULT);
             break;
           case 'among us':
             dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_AMONGUS);
@@ -91,6 +91,9 @@ module.exports = (client, guildID) => {
           case 'destiny':
           case 'destiny 2':
             dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_DESTINY);
+            break;
+          case `dungeons & dragons`:
+            dChannel = client.channels.cache.get(process.env.OOPS_CHANNEL_GAME_TABLETOP);
             break;
           case 'fallout':
           case 'fallout 2':
