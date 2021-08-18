@@ -2,7 +2,7 @@ module.exports = {
   name: `messageCreate`,
   once: false,
   execute(msgObject, client) {
-    const Discord = require(`discord.js`);
+    const {Collection, Permissions} = require(`discord.js`);
     const Prefix = process.env.PREFIX_DEFAULT;
     if (!msgObject.content.startsWith(Prefix) || msgObject.author.bot) return; // Ignore Messages That Don't Start With The Prefix And Messages That Come From Bots
 
@@ -22,7 +22,7 @@ module.exports = {
     if (command.permissions) {
       // const authorPerms = msgObject.channel.permissionsFor(msgObject.author);              //Checks Channel Permissions For Author
       const authorPerms = msgObject.guild.members.resolve(msgObject.author.id).permissions; // Checks Guild Permissions For Author
-      if (!authorPerms || !authorPerms.has(Discord.Permissions.FLAGS[command.permissions])) {
+      if (!authorPerms || !authorPerms.has(Permissions.FLAGS[command.permissions])) {
         msgObject.reply({ content: 'You do not have the permissions to use this command!', allowedMentions: { repliedUser: true } });
         return;
       }
@@ -44,7 +44,7 @@ module.exports = {
     const { cooldowns } = client;
 
     if (!cooldowns.has(command.name)) {
-      cooldowns.set(command.name, new Discord.Collection());
+      cooldowns.set(command.name, new Collection());
     }
 
     const now = Date.now();
