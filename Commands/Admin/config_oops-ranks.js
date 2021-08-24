@@ -21,7 +21,6 @@ module.exports = {
     let dpsThreshold;
     let dpsDisqualifiers = [
       'No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)',
-      'No [Mythic Items](https://eso-sets.com/sets/type/mythic)',
       'No Transformation Ultimate Parses'
     ];
     let howToApply = 'Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots for our Officers and Raid Leaders to review.';
@@ -32,7 +31,7 @@ module.exports = {
       // console.log(`${rank.name} : ${rank.id}`);
       switch (rank.id) {
         // Fine Rank
-        case '721310503015546951':
+        case '864649807942778890':
           // Roles
           roleDPS = '<@&862549547771625522><@&862549598270128128>'; // Fine Stamina/Magicka DPS Role
           roleHealer = '<@&862549906840354826>'; // Fine Healer Role
@@ -43,7 +42,7 @@ module.exports = {
           imgName = 'rank01.Fine.png';
           break;
         // Superior Rank
-        case '721310651137654834':
+        case '864649692759195658':
           // Roles
           roleDPS = '<@&862549018801209384><@&862549143427874826>'; // Superior Stamina/Magicka DPS Role
           roleHealer = '<@&862549432864342037>'; // Superior Healer Role
@@ -54,7 +53,7 @@ module.exports = {
           imgName = 'rank02.Superior.png';
           break;
         // Epic Rank
-        case '721310549547417671':
+        case '864649114917535771':
           // Roles
           roleDPS = '<@&862548668930326548><@&862548753122852864>'; // Epic Stamina/Magicka DPS Role
           roleHealer = '<@&862548871966883870>'; // Epic Healer Role
@@ -65,7 +64,7 @@ module.exports = {
           imgName = 'rank03.Epic.png';
           break;
         // Legendary Rank
-        case '721310768859054130':
+        case '864649036791414804':
           // Roles
           roleDPS = '<@&721303692548112405><@&773048238164934656>'; // Legendary Stamina/Magicka DPS Role
           roleHealer = '<@&721309238877618186>'; // Legendary Healer Role
@@ -74,13 +73,6 @@ module.exports = {
           roleDescription = 'By <@&721310768859054130>, it is expected that someone knows their role and class very well and will voluntarily obtain any additional sets that will benefit them in even the most niche situations. At this level, we are looking for mastery of your character, and awareness in trials.\n\nAll <@&721310768859054130> ranks must first meet the requirements of <@&721310549547417671> for the same role.';
           dpsThreshold = `95K DPS`;
           imgName = 'rank04.Legendary.png';
-          dpsDisqualifiers = [
-            `[Harpooner's Wading Kilt](https://eso-sets.com/set/harpooners-wading-kilt) is Allowed`,
-            `\u200B`,
-            'No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)',
-            'No Other [Mythic Items](https://eso-sets.com/sets/type/mythic)',
-            'No Transformation Ultimate Parses',
-          ];
           howToApply = 'Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots and logs for our Officers and Raid Leaders to review.';
           break;
         // Radiant Rank
@@ -93,13 +85,6 @@ module.exports = {
           roleDescription = '<@&862427691038801940> is intended for someone that has completed several trifecta trial achievements. At this level, we are expecting that you are proactively keeping up with the current META builds, swapping gear and skills for each boss and trash pull to optimize for maximum efficiency, and are capable of completing any content in the game.\n\nAll <@&862427691038801940> ranks must first meet the requirements of <@&721310768859054130> for the same role.';
           dpsThreshold = `95K DPS`;
           imgName = 'rank05.Radiant.png';
-          dpsDisqualifiers = [
-            `[Harpooner's Wading Kilt](https://eso-sets.com/set/harpooners-wading-kilt) is Allowed`,
-            `\u200B`,
-            'No [Blood For Blood](https://eso-skillbook.com/skill/blood-for-blood)',
-            'No Other [Mythic Items](https://eso-sets.com/sets/type/mythic)',
-            'No Transformation Ultimate Parses',
-          ];
           howToApply = 'Please use the [📩｜apply-for-ranks](https://discord.com/channels/694306288250781699/774505827113107466/802968528017162273) channel to open a request. This will create a new channel for your submit your screenshots and logs for our Officers and Raid Leaders to review.';
           break;
         default:
@@ -133,15 +118,15 @@ module.exports = {
           .addField('Healers', setsHealer, true)
           .addField('Tanks', setsTank, true);
         // If Superior
-        if (rank.id === '721310651137654834') {
+        if (rank.id === '864649692759195658') {
           embed.addField('Trial Completions', 'Must have clears on a minimum of 3 of the following veteran trials:\n\n- vMOL\n- vHOF\n- vAS\n- vCR\n- vSS\n- vKA\n- vRG\n\nLogs are not required for <@&721310651137654834>. Please post screenshots of your achievements to show these clears. If you have already posted them in <#728742997667217559>, you do not have to post them again.');
         }
         // If Epic
-        if (rank.id === '721310549547417671') {
+        if (rank.id === '864649114917535771') {
           embed.addField('Trial Completions', 'Must have clears on all veteran DLC trials and a minimum of 3 of the following hard mode trials:\n\n- vMOL HM\n- vHOF HM\n- vAS HM\n- vCR HM\n- vSS HM\n- vKA HM\n- vRG HM\n\nLogs are not required for <@&721310549547417671>. Please post screenshots of your achievements to show these clears. If you have already posted them in <#728742997667217559>, you do not have to post them again.');
         }
         // If Legendary
-        if (rank.id === '721310768859054130') {
+        if (rank.id === '864649036791414804') {
           embed.addField(`Trial Completions`, `Must have clears on all hard mode DLC trials (excluding vRG for now)`)
           embed.addField('Trial Performance-Log Review', 'When applying for <@&721310768859054130> roles, you will be expected to provide trial logs to be reviewed by the guild officers. These logs will be used to determine several factors that cannot be determined by a dummy parse or gear alone. Acceptable trials for log sumbissions include:\n\n- vMOL HM\n- vHOF HM\n- vAS HM\n- vCR HM\n- vSS HM\n- vKA HM\n- vRG HM\n\nBelow are the criteria we\'re looking at for each role.');
           embed.addField('Damage Dealers', 'TRIAL Single Target Damage\nSurvivability\nExtra Duties (Backyard Runner, Portals, etc.)', true);
