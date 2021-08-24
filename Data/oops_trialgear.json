@@ -16,30 +16,13 @@
 		"PairRequirements": "(Pair w/ Spell Power Cure or Olorime)"
 	},
 	{
-		"RankName": "Fine",
-		"RankID": "721310503015546951",
-		"Role": "Healer",
-		"SetName": "Sentinel of Rkugamz",
-		"ESOSETSURL": "https://eso-sets.com/set/sentinel-of-rkugamz",
-		"PairRequirements": ""
-	},
-	{
-		"RankName": "Fine",
-		"RankID": "721310503015546951",
+		"RankName": "Superior",
+		"RankID": "721310651137654834",
 		"Role": "Healer",
 		"SetName": "Troll King",
 		"ESOSETSURL": "https://eso-sets.com/set/the-troll-king",
 		"PairRequirements": ""
 	},
-	{
-		"RankName": "Fine",
-		"RankID": "721310503015546951",
-		"Role": "Healer",
-		"SetName": "Master's Restoration Staff",
-		"ESOSETSURL": "https://eso-sets.com/set/grand-rejuvenation",
-		"PairRequirements": ""
-	}
-	,
 	{
 		"RankName": "Fine",
 		"RankID": "721310503015546951",
@@ -65,12 +48,12 @@
 		"PairRequirements": ""
 	},
 	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
+		"RankName": "Fine",
+		"RankID": "721310503015546951",
 		"Role": "Healer",
 		"SetName": "Vestments of Olorime",
 		"ESOSETSURL": "https://eso-sets.com/set/perfect-vestment-of-olorime",
-		"PairRequirements": "(Body and Jewelry)"
+		"PairRequirements": "(Body, Jewelry, and Destro Staff)"
 	},
 	{
 		"RankName": "Superior",
@@ -89,19 +72,11 @@
 		"PairRequirements": ""
 	},
 	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
+		"RankName": "Fine",
+		"RankID": "721310503015546951",
 		"Role": "Healer",
 		"SetName": "Symphony of Blades",
 		"ESOSETSURL": "https://eso-sets.com/set/symphony-of-blades",
-		"PairRequirements": ""
-	},
-	{
-		"RankName": "Superior",
-		"RankID": "721310651137654834",
-		"Role": "Healer",
-		"SetName": "Stone-Talker's Oath",
-		"ESOSETSURL": "https://eso-sets.com/set/perfected-stone-talkers-oath",
 		"PairRequirements": ""
 	},
 	{
@@ -156,6 +131,14 @@
 		"RankName": "Epic",
 		"RankID": "721310549547417671",
 		"Role": "Healer",
+		"SetName": "Master Architect",
+		"ESOSETSURL": "https://eso-sets.com/set/master-architect",
+		"PairRequirements": ""
+	},
+	{
+		"RankName": "Epic",
+		"RankID": "721310549547417671",
+		"Role": "Healer",
 		"SetName": "Z'en's Redress",
 		"ESOSETSURL": "https://eso-sets.com/set/zens-redress",
 		"PairRequirements": "(Pair w/ Martial Knowledge)"
@@ -164,16 +147,16 @@
 		"RankName": "Epic",
 		"RankID": "721310549547417671",
 		"Role": "Healer",
-		"SetName": "Blackrose Prison Restoration Staff",
-		"ESOSETSURL": "https://eso-sets.com/set/menders-ward",
+		"SetName": "Powerful Assault",
+		"ESOSETSURL": "https://eso-sets.com/set/powerful-assault",
 		"PairRequirements": ""
 	},
 	{
 		"RankName": "Epic",
 		"RankID": "721310549547417671",
 		"Role": "Healer",
-		"SetName": "Powerful Assault",
-		"ESOSETSURL": "https://eso-sets.com/set/powerful-assault",
+		"SetName": "Blackrose Prison Restoration Staff",
+		"ESOSETSURL": "https://eso-sets.com/set/menders-ward",
 		"PairRequirements": ""
 	},
 	{
@@ -188,9 +171,9 @@
 		"RankName": "Epic",
 		"RankID": "721310549547417671",
 		"Role": "Tank",
-		"SetName": "Frozen Watcher",
-		"ESOSETSURL": "https://eso-sets.com/set/frozen-watcher",
-		"PairRequirements": "Frost Staff Required"
+		"SetName": "Crimson Oath's Rive",
+		"ESOSETSURL": "https://eso-sets.com/set/crimson-oaths-rive",
+		"PairRequirements": ""
 	},
 	{
 		"RankName": "Epic",
